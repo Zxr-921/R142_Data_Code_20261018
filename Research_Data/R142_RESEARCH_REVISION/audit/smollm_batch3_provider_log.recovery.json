@@ -1,0 +1,202 @@
+[
+  {
+    "run": "smollm_batch3",
+    "name": "protocol.json",
+    "bytes": 94004,
+    "sha256": "7ae364f4fcc5e63e3508b30d5fb2cbd898a088d976140b58103b7d9810cfdc03",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "benchmark_rows.json",
+    "bytes": 2208020,
+    "sha256": "44b73aa5c5094afc249ac71aaa36e15ef64156d073273bd13cf969f46af7a7fb",
+    "chunks": 37,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/M0_fresh_old.json",
+    "bytes": 47448,
+    "sha256": "f1abb21b2ea004216ccb7764a966b85f2e6b265997b60af7d3ddbbce6b065424",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/M0_cap_validation.json",
+    "bytes": 24592,
+    "sha256": "2b42bd6d1906041fd053411a6d0c961066f3c7ef777d18f5846e2f48dcd30c51",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/M0_cap_audit.json",
+    "bytes": 35327,
+    "sha256": "36ce148e846dc55d6083f26e63aea488975f87bbaf872821482ad96d9d156cab",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/full_update_fresh_old.json",
+    "bytes": 79708,
+    "sha256": "6a204e25cb00e74a010c33f8f1bf3c7a18e5e0c1d35d3e217d6f2fd28e05c098",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/full_update_cap_validation.json",
+    "bytes": 49550,
+    "sha256": "f9fb378a9f24e48125b90716183e9f299030af3efff77ff7d7f718c23134b5f5",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/full_update_cap_audit.json",
+    "bytes": 59147,
+    "sha256": "5e48287c9373960d1be12c8ce23df172e5ed3d30bdee6d90f05155894318aa9e",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "training/muscle_loss.json",
+    "bytes": 3995,
+    "sha256": "e71e8efeb578c7cf3cf0a317e90106b79e5237be597681788179f1b3b189dbfe",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "adapters/muscle_loss/README.md",
+    "bytes": 5100,
+    "sha256": "77f77d6f5a65bd427e9c1b49e0c2c5361e56162f6733549860993d4927ab070a",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "adapters/muscle_loss/adapter_config.json",
+    "bytes": 780,
+    "sha256": "90be8e0e378ba8540847268ed02bd656b63e4a01f4d862bc9fabf8a7076ec8d6",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "adapters/muscle_loss/adapter_model.safetensors",
+    "bytes": 6304096,
+    "sha256": "954497b328ee5e8aa730d44e9c7b9b1704dfa39bb5ac41268de7133c7eb3956c",
+    "chunks": 647,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/muscle_loss_fresh_old.json",
+    "bytes": 48676,
+    "sha256": "45917a1cee0f78ecda3c12af545d3f321b29eeace03f443583d974c38b0635e7",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/muscle_loss_cap_validation.json",
+    "bytes": 53803,
+    "sha256": "5519c2152e17f9d68f428a24cdd615684cae78c9bb92dd8af499ea1911242915",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/muscle_loss_cap_audit.json",
+    "bytes": 51260,
+    "sha256": "94800fb5d952889847617d804b9128d43fdc27c835e3553c59b43764ce304f98",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "training/extra_cross_entropy.json",
+    "bytes": 3845,
+    "sha256": "9b29efc42c32188dfb9dbb301acc515ecef392006c234f4f925a91da9a2fb902",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "adapters/extra_cross_entropy/README.md",
+    "bytes": 5100,
+    "sha256": "77f77d6f5a65bd427e9c1b49e0c2c5361e56162f6733549860993d4927ab070a",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "adapters/extra_cross_entropy/adapter_config.json",
+    "bytes": 780,
+    "sha256": "90be8e0e378ba8540847268ed02bd656b63e4a01f4d862bc9fabf8a7076ec8d6",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "adapters/extra_cross_entropy/adapter_model.safetensors",
+    "bytes": 6304096,
+    "sha256": "933a0dbaee6ae081350bfd16a57f8d7888c8e54b1243f30f8a535370a3db009c",
+    "chunks": 648,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/extra_cross_entropy_fresh_old.json",
+    "bytes": 48914,
+    "sha256": "5fe34204230065ee7ccbc36f9ebe163f71b74d4e111a51a741105a563718c29e",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/extra_cross_entropy_cap_validation.json",
+    "bytes": 47193,
+    "sha256": "affa79999d70a64215f420a23efbfab4ae65a9eb31479e7c3f2110cf7dc2fba3",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "rows/extra_cross_entropy_cap_audit.json",
+    "bytes": 51398,
+    "sha256": "9973bc050ab2b87c0c11515b64f9617aeffb39f52011a0a945a4eeb758225b5d",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "cost_events.json",
+    "bytes": 2249,
+    "sha256": "3cd061b983a6fd843bf759df789e797dff8795de300f2bcefab285e157f4327d",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "RESULT.json",
+    "bytes": 641,
+    "sha256": "75c9e2cc366e73ed2f556aaa7503b50e1b33f9fd3a6cf18406eb6192b54164ff",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch3",
+    "name": "artifact_manifest.json",
+    "bytes": 4242,
+    "sha256": "7f75b887395a6eb3e9e3a7723096579bc1c121c9370dccee146bc2b428c262f8",
+    "chunks": 1,
+    "status": "verified"
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "recovered_artifacts": 210,
+  "new_adapter_weights": 16,
+  "generated_record_evaluations": 6400,
+  "protocol_hash_matches_executed_runner": true,
+  "per_batch_executed_sources_verified": 9,
+  "completed_jobs": 9,
+  "deployment_verification": {
+    "seed": 1420921,
+    "tape_cases": 24562,
+    "optimization_cases": 600,
+    "max_optimization_gap": 0,
+    "workflow_cases": 360,
+    "workflow_equality_failures": 0,
+    "full_reads_per_workflow": 2480,
+    "selective_reads_mean": 1762.7,
+    "selective_reads_min": 1667,
+    "selective_reads_max": 1879,
+    "fingerprint_checks": [
+      {
+        "changed_field": "model",
+        "reuse_allowed": false
+      },
+      {
+        "changed_field": "input",
+        "reuse_allowed": false
+      },
+      {
+        "changed_field": "evaluator",
+        "reuse_allowed": false
+      },
+      {
+        "changed_field": "environment",
+        "reuse_allowed": false
+      },
+      {
+        "changed_field": "policy",
+        "reuse_allowed": false
+      }
+    ],
+    "evidence_status": "synthetic bounded-tape and graph validation; no measured enterprise savings",
+    "script_sha256": "6a391963b096af0f307194673788b24c2c5ca864e5ac0cd531ae80cfb9beb003"
+  },
+  "same_weight_diagnostic": {
+    "all_first_losses": 1,
+    "all_repeat_losses": 1,
+    "between_batch_text_differences": [
+      "simple_python_214",
+      "simple_python_324",
+      "simple_python_178"
+    ],
+    "between_batch_validity_differences": [
+      "simple_python_214",
+      "simple_python_324"
+    ],
+    "protected_n": 72,
+    "protected_only_losses": 3,
+    "within_all_text_differences": []
+  },
+  "response_items": 47,
+  "claims": 31,
+  "preserved_files": 9,
+  "analysis_python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "analysis_dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "PyMuPDF": "1.26.6",
+    "Pillow": "12.3.0"
+  },
+  "executed_compatibility_sha256": "9640c12a9957167bd3ec7b21dc003f9220d2c96e852fda711b50ecb11dfba5c8",
+  "executed_diagnostic_sha256": "f038b7fd0f1d4747f3eaae7a5a949d7700eabfc4fbb86ed1f5714accc55a390b"
+}

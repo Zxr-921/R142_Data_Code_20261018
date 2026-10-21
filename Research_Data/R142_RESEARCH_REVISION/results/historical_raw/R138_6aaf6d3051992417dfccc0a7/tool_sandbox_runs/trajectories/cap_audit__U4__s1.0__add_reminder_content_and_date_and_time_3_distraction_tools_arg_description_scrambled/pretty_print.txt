@@ -1,0 +1,53 @@
+Note that User Simulator few shot messages have been omitted
+shape: (34, 8)
+┌────────────┬────────────┬────────────┬───────────┬───────────┬───────────┬───────────┬───────────┐
+│ sandbox_me ┆ sender     ┆ recipient  ┆ content   ┆ openai_fu ┆ tool_call ┆ tool_trac ┆ visible_t │
+│ ssage_inde ┆ ---        ┆ ---        ┆ ---       ┆ nction_na ┆ _exceptio ┆ e         ┆ o         │
+│ x          ┆ enum       ┆ enum       ┆ str       ┆ me        ┆ n         ┆ ---       ┆ ---       │
+│ ---        ┆            ┆            ┆           ┆ ---       ┆ ---       ┆ list[str] ┆ list[enum │
+│ i32        ┆            ┆            ┆           ┆ str       ┆ str       ┆           ┆ ]         │
+╞════════════╪════════════╪════════════╪═══════════╪═══════════╪═══════════╪═══════════╪═══════════╡
+│ 0          ┆ SYSTEM     ┆ EXECUTION_ ┆ import    ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆ ENVIRONMEN ┆ json      ┆           ┆           ┆           ┆           │
+│            ┆            ┆ T          ┆ from tool ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ _sandbox. ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ …         ┆           ┆           ┆           ┆           │
+│ 1          ┆ SYSTEM     ┆ AGENT      ┆ Don't     ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ make assu ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ mptions   ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ about w…  ┆           ┆           ┆           ┆           │
+│ 14         ┆ SYSTEM     ┆ USER       ┆ You are   ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ no longer ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ an assist ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ ant…      ┆           ┆           ┆           ┆           │
+│ 15         ┆ USER       ┆ AGENT      ┆ Remind me ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ to buy    ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ chocolate ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ mil…      ┆           ┆           ┆           ┆           │
+│ 16         ┆ AGENT      ┆ EXECUTION_ ┆ call_9355 ┆ add_remin ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 7703ec_1_ ┆ der       ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ …          ┆ …          ┆ …          ┆ …         ┆ …         ┆ …         ┆ …         ┆ …         │
+│ 41         ┆ EXECUTION_ ┆ AGENT      ┆ 171112680 ┆ shift_tim ┆ null      ┆ ["{"tool_ ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ 0.0       ┆ estamp    ┆           ┆ name":    ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆           ┆           ┆           ┆ "shift_ti ┆ NMENT",   │
+│            ┆            ┆            ┆           ┆           ┆           ┆ mesta…    ┆ "AGE…     │
+│ 42         ┆ AGENT      ┆ EXECUTION_ ┆ call_a09c ┆ datetime_ ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 657d8e_1_ ┆ info_to_t ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆ imestamp  ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 43         ┆ EXECUTION_ ┆ AGENT      ┆ TypeError ┆ datetime_ ┆ TypeError ┆ null      ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ : missing ┆ info_to_t ┆ : missing ┆           ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ a         ┆ imestamp  ┆ a         ┆           ┆ NMENT",   │
+│            ┆            ┆            ┆ required  ┆           ┆ required  ┆           ┆ "AGE…     │
+│            ┆            ┆            ┆ …         ┆           ┆ …         ┆           ┆           │
+│ 44         ┆ AGENT      ┆ EXECUTION_ ┆ call_b2f5 ┆ datetime_ ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 6f92a6_1_ ┆ info_to_t ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆ imestamp  ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 45         ┆ EXECUTION_ ┆ AGENT      ┆ 171112680 ┆ datetime_ ┆ null      ┆ ["{"tool_ ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ 0.0       ┆ info_to_t ┆           ┆ name":    ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆           ┆ imestamp  ┆           ┆ "datetime ┆ NMENT",   │
+│            ┆            ┆            ┆           ┆           ┆           ┆ _info…    ┆ "AGE…     │
+└────────────┴────────────┴────────────┴───────────┴───────────┴───────────┴───────────┴───────────┘

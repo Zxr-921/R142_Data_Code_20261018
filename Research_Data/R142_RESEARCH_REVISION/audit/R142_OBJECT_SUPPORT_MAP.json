@@ -1,0 +1,401 @@
+[
+  {
+    "kind": "theorem",
+    "label": "eq:current_first_cross",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:current_joint_guarantee",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "eq:current_total_loss",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:current_inner",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:current_gaussian_lower",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "kind": "longtable",
+    "label": "object:R142_ASSUMPTIONS:6",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_ASSUMPTIONS.tex"
+  },
+  {
+    "kind": "longtable",
+    "label": "object:R142_ASSUMPTIONS:7",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_ASSUMPTIONS.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:batch_design",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_CONTROL_SUPPLEMENT.tex"
+  },
+  {
+    "kind": "longtable",
+    "label": "tab:all_choices",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_CONTROL_SUPPLEMENT.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:declarations",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_CONTROL_SUPPLEMENT.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:selection_cost",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_CONTROL_SUPPLEMENT.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:r138_answer_audit",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_R138_ENDPOINT_AUDIT.tex"
+  },
+  {
+    "kind": "longtable",
+    "label": "object:R142_SUPPORTING_RECORD:13",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "eq:r137_conformal_coverage",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_turnover",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_threshold",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_predictors",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "object:R142_SUPPORTING_RECORD:18",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_optimizer",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "longtable",
+    "label": "tab:s_tenruns",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "object:R142_SUPPORTING_RECORD:21",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "eq:s_ray_crossing",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "eq:s_second_cross",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:s_kl_lower",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:r137_gauss_info",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "object:R142_SUPPORTING_RECORD:26",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:r137_value_dual1",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "eq:r137_break_all_witnesses",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "object:R142_SUPPORTING_RECORD:29",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "eq:r137_Mxstar",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "object:R142_SUPPORTING_RECORD:31",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_checkpoint_archive",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_metrics_archive",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_gross_turnover",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "object:R142_SUPPORTING_RECORD:35",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_migration_checks",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:s_minimal_summary_cross",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:s_cube_root",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "eq:s_final_horizon_lp",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "object:R142_SUPPORTING_RECORD:40",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "longtable",
+    "label": "tab:s_tractability",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_neighbor_methods",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "eq:s_robust_preservation",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "proposition",
+    "label": "object:R142_SUPPORTING_RECORD:44",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_transformer44",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_qualification",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_samecase",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:r137_r133",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:r137_r134",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:s_r138_corrected",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "longtable",
+    "label": "tab:s_assets",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "thm:tape",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_DEPLOYMENT_THEORY.tex"
+  },
+  {
+    "kind": "theorem",
+    "label": "thm:mincut",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_DEPLOYMENT_THEORY.tex"
+  },
+  {
+    "kind": "longtable",
+    "label": "tab:compatibility_transitions",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_COMPATIBILITY_SUPPLEMENT.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:compatibility_cost",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_COMPATIBILITY_SUPPLEMENT.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:joint_reevaluation",
+    "main_label": "main:joint",
+    "main_support": "Result 1: paired outcomes and execution control",
+    "file": "R142_PAIRED_RECORDS.tex"
+  },
+  {
+    "kind": "table",
+    "label": "tab:batch_composition",
+    "main_label": "main:joint",
+    "main_support": "Result 1: paired outcomes and execution control",
+    "file": "R142_PAIRED_RECORDS.tex"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "operation": "logs",
+  "outcome": {
+    "kind": "logs",
+    "job_id": "6ab0722352d0dbd7f1d76546",
+    "lines": [
+      "debconf: delaying package configuration, since apt-utils is not installed",
+      "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.",
+      "",
+      "\rtokenizer_config.json:   <redacted>%|          | <redacted>.<redacted><redacted>/7.3<redacted>k [<redacted><redacted>:<redacted><redacted><?, ?B/s]\u001b[A\rtokenizer_config.json: 1<redacted><redacted>%|██████████| 7.3<redacted>k/7.3<redacted>k [<redacted><redacted>:<redacted><redacted><<redacted><redacted>:<redacted><redacted>, 58.1MB/s]",
+      "",
+      "\rvocab.json:   <redacted>%|          | <redacted>.<redacted><redacted>/2.78M [<redacted><redacted>:<redacted><redacted><?, ?B/s]\u001b[A\rvocab.json: 1<redacted><redacted>%|██████████| 2.78M/2.78M [<redacted><redacted>:<redacted><redacted><<redacted><redacted>:<redacted><redacted>, 65.1MB/s]",
+      "",
+      "\rmerges.txt:   <redacted>%|          | <redacted>.<redacted><redacted>/1.67M [<redacted><redacted>:<redacted><redacted><?, ?B/s]\u001b[A\rmerges.txt: 1<redacted><redacted>%|██████████| 1.67M/1.67M [<redacted><redacted>:<redacted><redacted><<redacted><redacted>:<redacted><redacted>, 44.7MB/s]",
+      "",
+      "\rtokenizer.json:   <redacted>%|          | <redacted>.<redacted><redacted>/7.<redacted>3M [<redacted><redacted>:<redacted><redacted><?, ?B/s]\u001b[A\rtokenizer.json: 1<redacted><redacted>%|██████████| 7.<redacted>3M/7.<redacted>3M [<redacted><redacted>:<redacted><redacted><<redacted><redacted>:<redacted><redacted>, 23.9MB/s]",
+      "Traceback (most recent call last):",
+      "  File \"/tmp/r141_control_experiment.py\", line 591, in <module>",
+      "    run()",
+      "  File \"/tmp/r141_control_experiment.py\", line 228, in run",
+      "    old, new = make_rows(\"simple_python\"), make_rows(\"parallel\")",
+      "               ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/tmp/r141_control_experiment.py\", line 2<redacted>4, in make_rows",
+      "    check = ast_checker(r[\"function\"], calls, gt, Language.PYTHON, category, alias)",
+      "            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/opt/conda/lib/python3.11/site-packages/bfcl_eval/eval_checker/ast_eval/ast_checker.py\", line 59, in ast_checker",
+      "    return simple_function_checker(",
+      "           ^^^^^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/opt/conda/lib/python3.11/site-packages/bfcl_eval/eval_checker/ast_eval/ast_checker.py\", line 353, in simple_function_checker",
+      "    func_name = convert_func_name(func_name, model_name)",
+      "                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+      "  File \"/opt/conda/lib/python3.11/site-packages/bfcl_eval/eval_checker/ast_eval/ast_checker.py\", line 86, in convert_func_name",
+      "    if MODEL_CONFIG_MAPPING[model_name_escaped].underscore_to_dot:",
+      "       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^",
+      "KeyError: 'R141/CHECKER/ALIAS'"
+    ],
+    "finished": false,
+    "truncated": false
+  },
+  "total_results": 29,
+  "results_shared": 29
+}

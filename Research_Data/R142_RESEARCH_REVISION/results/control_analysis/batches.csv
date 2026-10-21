@@ -1,0 +1,9 @@
+run,model_family,calibration_families,calibration_records,fresh_records,fresh_families,q,rank,incumbent_new_accuracy,admissible_pairs,observation_budget,direct_observations
+qwen_batch1,qwen,58,58,72,69,10.125,54,0.016666666666666666,12,1240,936
+qwen_batch2,qwen,60,61,70,69,8.75,55,0.0,12,1308,996
+qwen_batch3,qwen,56,56,78,78,7.75,52,0.03333333333333333,12,1200,912
+qwen_batch4,qwen,53,53,72,71,8.875,49,0.05,16,1144,1136
+smollm_batch1,smollm,52,56,65,65,1.765625,48,0.0,16,1200,1200
+smollm_batch2,smollm,52,53,74,74,2.640625,48,0.016666666666666666,16,1140,1136
+smollm_batch3,smollm,52,53,60,58,1.984375,48,0.016666666666666666,15,1140,1095
+smollm_batch4,smollm,54,55,66,64,2.28125,50,0.016666666666666666,12,1188,924

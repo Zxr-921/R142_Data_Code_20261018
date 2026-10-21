@@ -1,0 +1,69 @@
+{
+  "status": "retrospective reanalysis of verified historical archives",
+  "endpoint": "All required functional milestones plus a valid final response when the benchmark requires one",
+  "semantic_review": "Nine incumbent confirmations reviewed by the revising assistant; not an independent human annotation study",
+  "scope": "A benchmark without a final-answer milestone is not called complete conversational-agent success",
+  "summary": [
+    {
+      "phase": "cap_audit",
+      "model": "U2",
+      "n": 152,
+      "original_success_n": 2,
+      "functional_n": 2,
+      "complete_required_task_n": 0,
+      "unresolved_n": 0,
+      "missing_required_answer_n": 2
+    },
+    {
+      "phase": "cap_audit",
+      "model": "U4",
+      "n": 152,
+      "original_success_n": 2,
+      "functional_n": 2,
+      "complete_required_task_n": 1,
+      "unresolved_n": 0,
+      "missing_required_answer_n": 1
+    },
+    {
+      "phase": "cap_audit_m0",
+      "model": "M0",
+      "n": 152,
+      "original_success_n": 0,
+      "functional_n": 0,
+      "complete_required_task_n": 0,
+      "unresolved_n": 0,
+      "missing_required_answer_n": 0
+    },
+    {
+      "phase": "fresh_candidate",
+      "model": "U2",
+      "n": 9,
+      "original_success_n": 9,
+      "functional_n": 9,
+      "complete_required_task_n": 0,
+      "unresolved_n": 0,
+      "missing_required_answer_n": 9
+    },
+    {
+      "phase": "fresh_candidate",
+      "model": "U4",
+      "n": 9,
+      "original_success_n": 9,
+      "functional_n": 9,
+      "complete_required_task_n": 0,
+      "unresolved_n": 0,
+      "missing_required_answer_n": 9
+    },
+    {
+      "phase": "fresh_m0",
+      "model": "M0",
+      "n": 32,
+      "original_success_n": 9,
+      "functional_n": 9,
+      "complete_required_task_n": 9,
+      "unresolved_n": 0,
+      "missing_required_answer_n": 0
+    }
+  ],
+  "csv_sha256": "1b5af01df0556464a3c5f7d22b81388f640957de92f0ae01d38930309479b04f"
+}

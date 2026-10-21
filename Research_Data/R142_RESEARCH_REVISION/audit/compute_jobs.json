@@ -1,0 +1,385 @@
+{
+  "jobs": [
+    {
+      "job_id": "6ab07a7852d0dbd7f1d766fb",
+      "inspection_status": "success",
+      "id": "6ab07a7852d0dbd7f1d766fb",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:44.297Z",
+      "finished_at": "2026-09-21T01:05:54.943Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab07a7852d0dbd7f1d766fd",
+      "inspection_status": "success",
+      "id": "6ab07a7852d0dbd7f1d766fd",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:44.789Z",
+      "finished_at": "2026-09-21T01:06:03.647Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab07a7951992417dfcce4cc",
+      "inspection_status": "success",
+      "id": "6ab07a7951992417dfcce4cc",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:45.459Z",
+      "finished_at": "2026-09-21T01:07:40.702Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab07a7a51992417dfcce4ce",
+      "inspection_status": "success",
+      "id": "6ab07a7a51992417dfcce4ce",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:46.198Z",
+      "finished_at": "2026-09-21T01:14:09.026Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab07a7a52d0dbd7f1d766ff",
+      "inspection_status": "success",
+      "id": "6ab07a7a52d0dbd7f1d766ff",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:46.646Z",
+      "finished_at": "2026-09-21T01:09:02.140Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab07a7b52d0dbd7f1d76701",
+      "inspection_status": "success",
+      "id": "6ab07a7b52d0dbd7f1d76701",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:47.170Z",
+      "finished_at": "2026-09-21T01:07:00.754Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab07a7b51992417dfcce4d0",
+      "inspection_status": "success",
+      "id": "6ab07a7b51992417dfcce4d0",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:47.692Z",
+      "finished_at": "2026-09-21T01:08:27.402Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab07a7c51992417dfcce4d2",
+      "inspection_status": "success",
+      "id": "6ab07a7c51992417dfcce4d2",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:48.183Z",
+      "finished_at": "2026-09-21T01:06:27.009Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab0817952d0dbd7f1d76869",
+      "inspection_status": "success",
+      "id": "6ab0817952d0dbd7f1d76869",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "cpu-basic",
+      "created_at": "2026-09-21T00:59:37.090Z",
+      "finished_at": "2026-09-21T01:14:17.654Z",
+      "timeout_seconds": 4800
+    },
+    {
+      "job_id": "6ab0817951992417dfcce59a",
+      "inspection_status": "success",
+      "id": "6ab0817951992417dfcce59a",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "cpu-basic",
+      "created_at": "2026-09-21T00:59:37.680Z",
+      "finished_at": "2026-09-21T01:08:48.507Z",
+      "timeout_seconds": 4800
+    },
+    {
+      "job_id": "6ab0722352d0dbd7f1d76546",
+      "inspection_status": "success",
+      "id": "6ab0722352d0dbd7f1d76546",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-20T23:54:11.609Z",
+      "finished_at": "2026-09-20T23:56:11.349Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0724051992417dfcce42f",
+      "inspection_status": "success",
+      "id": "6ab0724051992417dfcce42f",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-20T23:54:40.555Z",
+      "finished_at": "2026-09-20T23:57:20.539Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0743152d0dbd7f1d765db",
+      "inspection_status": "success",
+      "id": "6ab0743152d0dbd7f1d765db",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:02:57.716Z",
+      "finished_at": "2026-09-21T00:05:23.219Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0743d52d0dbd7f1d765df",
+      "inspection_status": "success",
+      "id": "6ab0743d52d0dbd7f1d765df",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:03:09.733Z",
+      "finished_at": "2026-09-21T00:15:53.166Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0754852d0dbd7f1d76612",
+      "inspection_status": "success",
+      "id": "6ab0754852d0dbd7f1d76612",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:07:36.154Z",
+      "finished_at": "2026-09-21T00:20:51.631Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0773051992417dfcce471",
+      "inspection_status": "success",
+      "id": "6ab0773051992417dfcce471",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:15:44.448Z",
+      "finished_at": "2026-09-21T00:32:01.091Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0773151992417dfcce473",
+      "inspection_status": "success",
+      "id": "6ab0773151992417dfcce473",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:15:45.004Z",
+      "finished_at": "2026-09-21T00:32:53.887Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0773152d0dbd7f1d76658",
+      "inspection_status": "success",
+      "id": "6ab0773152d0dbd7f1d76658",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:15:45.507Z",
+      "finished_at": "2026-09-21T00:30:47.892Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0773152d0dbd7f1d7665a",
+      "inspection_status": "success",
+      "id": "6ab0773152d0dbd7f1d7665a",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:15:45.994Z",
+      "finished_at": "2026-09-21T00:31:38.580Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0773252d0dbd7f1d7665c",
+      "inspection_status": "success",
+      "id": "6ab0773252d0dbd7f1d7665c",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:15:46.592Z",
+      "finished_at": "2026-09-21T00:33:39.134Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab0773352d0dbd7f1d7665e",
+      "inspection_status": "success",
+      "id": "6ab0773352d0dbd7f1d7665e",
+      "status": {
+        "stage": "ERROR",
+        "message": "Job failed with exit code: 1. Reason: Error"
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:15:47.501Z",
+      "finished_at": "2026-09-21T00:30:23.431Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab07a4c51992417dfcce4c2",
+      "inspection_status": "success",
+      "id": "6ab07a4c51992417dfcce4c2",
+      "status": {
+        "stage": "CANCELED",
+        "message": null
+      },
+      "flavor": "l4x1",
+      "created_at": "2026-09-21T00:29:00.727Z",
+      "timeout_seconds": 3600
+    },
+    {
+      "job_id": "6ab077d951992417dfcce47b",
+      "inspection_status": "success",
+      "id": "6ab077d951992417dfcce47b",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "cpu-basic",
+      "created_at": "2026-09-21T00:18:33.004Z",
+      "finished_at": "2026-09-21T00:21:16.324Z",
+      "timeout_seconds": 7200
+    },
+    {
+      "job_id": "6ab07ab051992417dfcce4dc",
+      "inspection_status": "success",
+      "id": "6ab07ab051992417dfcce4dc",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "cpu-basic",
+      "created_at": "2026-09-21T00:30:40.700Z",
+      "finished_at": "2026-09-21T00:30:55.077Z",
+      "timeout_seconds": 1200
+    },
+    {
+      "job_id": "6ab07e3152d0dbd7f1d767c8",
+      "inspection_status": "success",
+      "id": "6ab07e3152d0dbd7f1d767c8",
+      "status": {
+        "stage": "COMPLETED",
+        "message": null
+      },
+      "flavor": "cpu-basic",
+      "created_at": "2026-09-21T00:45:37.645Z",
+      "finished_at": "2026-09-21T00:45:47.620Z",
+      "timeout_seconds": 300
+    }
+  ],
+  "flavor": "l4x1",
+  "verified_hourly_rate_usd": 0.8,
+  "timeout_hours_each": 2,
+  "source": "https://huggingface.co/docs/hub/jobs-configuration",
+  "authorization": "User requested completion of necessary new experiments and full revised research package.",
+  "status_note": "All 25 revision-created jobs are terminal; eight scientific batches completed in continuation jobs. Setup failures and canceled jobs are retained, not counted as replications.",
+  "billing_note": "The hourly rate was verified at launch. Neither scheduling-inclusive wall time nor selection-stage timers are presented as a final invoice.",
+  "continuations": [
+    {
+      "model": "qwen",
+      "batch": 1,
+      "source_job": "6ab0754852d0dbd7f1d76612",
+      "completed_job": "6ab07a7852d0dbd7f1d766fb"
+    },
+    {
+      "model": "qwen",
+      "batch": 2,
+      "source_job": "6ab0773051992417dfcce471",
+      "completed_job": "6ab07a7951992417dfcce4cc"
+    },
+    {
+      "model": "qwen",
+      "batch": 3,
+      "source_job": "6ab0773151992417dfcce473",
+      "completed_job": "6ab07a7a51992417dfcce4ce"
+    },
+    {
+      "model": "qwen",
+      "batch": 4,
+      "source_job": "6ab0773152d0dbd7f1d76658",
+      "completed_job": "6ab07a7a52d0dbd7f1d766ff"
+    },
+    {
+      "model": "smollm",
+      "batch": 1,
+      "source_job": "6ab0743d52d0dbd7f1d765df",
+      "completed_job": "6ab07a7852d0dbd7f1d766fd"
+    },
+    {
+      "model": "smollm",
+      "batch": 2,
+      "source_job": "6ab0773152d0dbd7f1d7665a",
+      "completed_job": "6ab07a7b52d0dbd7f1d76701"
+    },
+    {
+      "model": "smollm",
+      "batch": 3,
+      "source_job": "6ab0773252d0dbd7f1d7665c",
+      "completed_job": "6ab07a7b51992417dfcce4d0"
+    },
+    {
+      "model": "smollm",
+      "batch": 4,
+      "source_job": "6ab0773352d0dbd7f1d7665e",
+      "completed_job": "6ab07a7c51992417dfcce4d2"
+    }
+  ]
+}

@@ -1,0 +1,1969 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,left=0.76in,right=0.76in,top=0.72in,bottom=0.72in]{geometry}
+\usepackage{newtxtext}
+\usepackage{graphicx}
+\let\Bbbk\relax
+\usepackage{amsmath,amssymb,mathtools,amsthm}
+\usepackage{booktabs,tabularx,array,longtable,multirow}
+\usepackage{microtype,setspace,xurl,float,caption,xcolor,pdfpages,enumitem}
+\usepackage[colorlinks=true,hypertexnames=false,allcolors=blue]{hyperref}
+\usepackage{bookmark}
+\captionsetup{font=small,labelfont=bf,justification=raggedright,singlelinecheck=false}
+\setlength{\parindent}{0pt}\setlength{\parskip}{0.38em}\raggedbottom
+\setcounter{secnumdepth}{2}
+\theoremstyle{plain}
+\newtheorem{theorem}{Supplementary Theorem}
+\newtheorem{proposition}{Supplementary Proposition}
+\newtheorem{lemma}{Supplementary Lemma}
+\newcommand{\R}{\mathbb R}
+\newcommand{\1}{\mathbf 1}
+\renewcommand{\theequation}{S\arabic{equation}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\begin{document}\onehalfspacing
+\begin{center}
+{\LARGE\bfseries Supplementary Information\par}
+\vspace{0.4em}
+{\large Decision boundaries predict update-induced decision changes and constrain recovery\par}
+\vspace{0.8em}Anonymous authors
+\end{center}
+
+\section*{Scope and reading map}
+This Supplement is the R140 corrected technical integration. No scientifically valid historical theory, proof, experiment, robustness analysis or negative result from R137 is deleted in this round. The R132--R134 corrected proofs remain integrated in their corresponding technical sections. R138 adds a separately frozen second-family executable-tool experiment that tests the same direction-and-transfer logic with stateful ToolSandbox execution and resulting world-state milestones rather than only an abstract-syntax-tree endpoint. Its completed frozen branch selects U2/U4, observes sparse held-out executable gains, and returns $R^*=0$ rather than issuing an unsupported preservation certificate. The main manuscript remains organized around the same linked deployment questions---\textsc{Qualify}, \textsc{Predict}, \textsc{Control} and \textsc{Lifecycle}---while this Supplement preserves the larger technical archive recovered across earlier versions.
+
+The unifying mechanism is incoming information $\rightarrow$ model update $\rightarrow$ interaction with existing information $\rightarrow$ decision movement $\rightarrow$ gain, loss or recovery. A later model is treated as a candidate replacement, not as an improvement by definition. Update goals, protected requirements and risk tolerances are pre-specified by the deployment context. ``Forgetting'' is used only as a connection to neighboring literature; the operational object here is a previously reliable decision becoming unreliable after an update.
+
+For RQ1, see the partial-information certificates, finite repeated-run reliability rules, train--then--certify information results, qualification evidence and evaluator-portability checks. For RQ2, see exact first crossing, nonlinear paths, prospective boundary prediction and fixed-direction interventions. For RQ3, see signed recovery geometry, duality, Farkas infeasibility, robust/nonlinear recovery, prospective intervention experiments, actual-optimizer repair and the frozen ten-run replication. For RQ4, see repeated-release margin dynamics, stacked finite-horizon control, return/no-return, carried-state requirements and the history diagnostic. The unified migration-work reconstruction later in this Supplement restores the historical validate/repair/reopen objective, sound release-scope information, exact dependency consequences, lifecycle accounting and operational evidence. Downstream affected-operation counts are retained only as consequences after the reopened roots are known, not as an additional research question.
+
+Historical preservation snapshots remain embedded at the end so that reorganization cannot be mistaken for deletion. Where a later corrected statement conflicts with an older archived formulation, the R137 corrected theorem/proposition remains the mathematical control unless R138 explicitly supersedes it; R138 changes the evidence layer, not the theorem statements. Older material remains only as historical provenance. Branches previously judged scientifically weak or provenance-limited remain visibly labelled for review; their presence in the archive does not promote them to headline claims.
+
+
+\section*{R128 main-text promotion map}
+R128 keeps the four-stage main-text spine and restores the missing deployment shell around it. The editable main manuscript now defines one incumbent--candidate migration objective with validation work, approved intervention work and application-supplied re-establishment work for reopened decisions. RQ1 retains nearest decision-changing information, the fixed-confidence lower bound, the affine--Gaussian radius identity, shared system reliability allocation, Terminal-Bench exact stopping and chronological GPT/Claude holdouts, while adding the exact role of sound release-scope information. RQ2 retains the equal-size-update separation and fixed-direction mechanism evidence. RQ3 retains the interacting repair subclass $A(\eta)=D-\eta H$, the spectral feasibility boundary, the earlier economic exit, controlled 800/800 mixture tests and actual-optimizer collateral failures. RQ4 now carries the full state $(D_t,R_t,E_t,G_t)$ and connects one-update migration work to lifecycle adoption and re-establishment costs. The old downstream-counting results are restored below as supporting operational consequences and exact boundary cases, but they are not promoted to a fifth headline question.
+
+\tableofcontents
+\clearpage
+\part{Editable recovered technical record}
+
+\section{Historical source map and reconstruction status}
+\footnotesize
+\begin{longtable}{p{0.10\textwidth}p{0.22\textwidth}p{0.38\textwidth}p{0.16\textwidth}}
+\toprule
+Source block & Historical object & Scientific content retained in R123 & Status\\\midrule
+9/6 Note 1 & Exact preservation and first crossing & Pairwise relative-loss margins; affine and nonlinear first crossing; multi-direction preservation region; partial-information certificate; minimal margin state & Recovered\\
+9/6 Note 2 & Joint recovery & Signed effect matrix; minimum-cost LP; dual values; Farkas infeasibility; partial recovery; discrete-selection hardness; nonlinear and robust recovery & Recovered\\
+9/6 Note 3 & Training and certification & Fixed-confidence information; Gaussian inverse-square law; train--then--certify trade-off; cube-root specialization; multi-decision allocation & Recovered\\
+9/6 Note 4 & Repeated releases & Margin recursion; carried state; finite-horizon stacked control; return/no-return and horizon logic & Recovered\\
+9/6 Note 5 & Data order & Noncommuting optimizer steps and order effects on protected margins & Recovered\\
+9/6 Note 6 & Paid tiers & Pairwise switching regions under price, decision loss and human effort & Recovered\\
+9/6 Note 7 & Controlled intervention & Exact-affine prospective mixtures; nonlinear neural robustness; open-weight trajectories; boundary localization; fixed-direction mechanism tests & Recovered\\
+9/6 Note 8 & Solution closure & Closed-form / scalar-root / LP-convex / Bellman / information-program map and explicit obstruction boundaries & Recovered\\
+9/6 Note 9 & Decision-induced data & Action-dependent support and the no-support identifiability boundary & Recovered / supporting\\
+9/6 Note 10 & Sequential decisions & Bellman comparison margins; local decision preservation; evidence burden; architecture-independent decision cells & Recovered / supporting\\
+9/6 later notes & Continuous actions / shared parameters & Tolerance-based preservation; shared-parameter interference; architecture-independent action semantics & Recovered\\
+R71/R72 Note 18 & Actual optimizer & SmolLM2 stress test; exit-only versus protected replay; survivor collateral failures & Recovered\\
+R71/R72 Note 18 & Frozen 10-run replication & SmolLM2/Qwen families; five pre-frozen seeds each; 23.75\% to 1.60\% collateral-rate reduction & Recovered\\
+R71/R72 Notes 19--20 & Later executable replications & Larger-model and fixed-checkpoint branches remain indexed but are not promoted without primary-asset re-audit & Indexed / later review\\
+R71/R72 Notes 21--25 & Lifecycle, evidence and tractability closure & Dynamic adoption, release information, carried state, dependency consequences and exact-solution branches & Recovered / supporting\\
+R132 prospective BFCL & Endpoint-blind direction and repair transfer & Frozen SmolLM2 tool-routing direction test; Farkas-guided library expansion; fresh held-out partial repair and capability loss & Integrated / current\\
+R133 effect transfer & Calibrated local-effect trust region & Frozen Qwen2.5-0.5B second-family path residuals; split-conformal envelope; fresh undercoverage/abstention audit & Integrated / current\\
+R134 official BFCL & Same-recipe executable confirmation & Qwen2.5-1.5B; official AST function-name/argument endpoint; independent radius selection; fresh old-damage contrast & Integrated / current\\
+R138 ToolSandbox V2 & Executable-agent stress test & Hermes-3-Llama-3.2-3B; native tool execution; corrected task-aware endpoint; historical pair/radius lineage retained & Completed V2 run; sparse gains and evidence-sufficiency abstention ($R^*=0$)\\
+R6/R71 transformer map & 940-by-44 prospective intervention & 940 protected margins, 44 isolated directions, 80 precommitted mixtures, 75,200 prospective predictions, Farkas witness & Restored as historical evidence; primary-asset re-audit required\\
+R65/R72 qualification evidence & Exact / chronological target evidence & Terminal-Bench 435 to 266 exact trials; GPT/Claude chronological holdout; natural fixed-cap comparisons & Restored / core-compatible\\
+9/6 empirical archive & Same-case external evidence & BANKING77, Airline, HAIID and human-gold reviewer portability & Restored / supporting generality\\
+R71 repeated-release diagnostic & Earlier state beyond current margin & History-stratified retention and margin+history AUC diagnostic & Restored / supporting lifecycle\\
+9/6 sequential empirical archive & Bellman and topology robustness & Fresh robot locality, large-state scaling, unseen topology and continuous-action caution & Restored / supporting generality\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\clearpage
+\section{Historical Note 1 recovery: exact preservation and first crossing}
+The original technical backbone starts from the deployed decision, not from a scalar model score. For decision instance $i$, incumbent action $a_i^0$, target model state $\theta$ and rival $a$, the relative-loss margin is
+\begin{equation}
+ g_{ia}(\theta)=R_i(a;\theta)-R_i(a_i^0;\theta).
+\end{equation}
+The incumbent action is exactly preserved if and only if all such margins remain nonnegative. This statement is both necessary and sufficient and survives changes in architecture because the object compared is the action under a common downstream loss, not a parameter coordinate.
+
+Along an affine scalar update $\theta(\delta)$ with
+\begin{equation}
+ g_{ia}(\theta(\delta))=g_{ia}^0+s_{ia}\delta,
+\end{equation}
+the first positive crossing for decision $i$ is
+\begin{equation}
+ \delta_i^{\rm cross}=\min_{a:s_{ia}<0}\frac{g_{ia}^0}{-s_{ia}},
+\end{equation}
+with an empty minimum interpreted as $+\infty$. The binding rival is the minimizer. For a continuously differentiable monotone path, the same boundary is the smallest positive root of a relative-loss gap. Thus the closed form is specific to affine motion; the general exact object is the first root.
+
+\subsection{Multi-direction preservation region}
+If the update is controlled by $u\in\R^p$ and the complete protected margin vector is affine,
+\begin{equation}
+ g_i(u)=g_i^0+S_i u,
+\end{equation}
+then the exact simultaneous preservation region is
+\begin{equation}
+ \mathcal U=\bigcap_i\{u:g_i^0+S_i u\ge0\}.
+\end{equation}
+It is therefore a polyhedron. A scalar parameter-distance measure cannot characterize this region in general because two equal-length update vectors can point toward opposite sides of a decision boundary.
+
+\subsection{Partial-information certificate}
+When the target state is known only to lie in an uncertainty set $\Omega(H)$, uniform exact preservation requires the worst-case margin to remain nonnegative:
+\begin{equation}
+ m_{ia}(H)=\min_{\theta\in\Omega(H)}g_{ia}(\theta)\ge0\qquad\forall a\ne a_i^0.
+\end{equation}
+The condition is necessary and sufficient under incumbent-preserving tie breaking. This branch is kept because it distinguishes exact deployment evidence from heuristic confidence scores.
+
+\subsection{Minimality of the protected margin state}
+For prospective affine updates, no non-injective compression of the complete positive margin vector can determine every future directional first crossing. If two positive margin vectors are collapsed to one summary, choose a coordinate where they differ and an update direction whose only adverse sensitivity is on that coordinate. The two states then have different first-crossing distances despite the same summary. The result establishes a precise limit on replacing the margin vector with a single aggregate ``stability'' score.
+
+\clearpage
+\section{Historical Note 2 recovery: signed joint recovery and impossibility}
+After a release, let $g^0\in\R^K$ collect protected margins and let $x\in\R_+^J$ be amounts of allowed training, replay or correction interventions. In the affine effect model,
+\begin{equation}
+ g(x)=g^0+Ax,
+\end{equation}
+where column $j$ of $A$ records the signed effect of intervention $j$ on every protected decision. The signs are essential: one replay direction may restore one lost decision while harming a survivor through shared parameters.
+
+For target margin $\tau$, define deficit $d=\tau\1-g^0$. Minimum-cost full recovery is
+\begin{equation}
+ \min_{x\ge0}c^\top x\quad\text{s.t.}\quad Ax\ge d.
+\end{equation}
+The dual is
+\begin{equation}
+ \max_{y\ge0}d^\top y\quad\text{s.t.}\quad A^\top y\le c.
+\end{equation}
+Strong duality supplies exact shadow values when recovery is feasible. The dual weight $y_k$ is positive only when the corresponding protected margin is binding at the optimum.
+
+\subsection{Farkas certificate}
+Full recovery is infeasible if and only if there exists a nonnegative witness $y$ satisfying
+\begin{equation}
+ A^\top y\le0,\qquad y^\top d>0.
+\end{equation}
+Such a witness does more than report optimizer failure: it proves that no nonnegative combination of the allowed intervention directions can enter the required margin region.
+
+\subsection{Partial recovery and discrete selection}
+If full recovery is infeasible, a binary variable $z_k$ can denote whether decision $k$ is restored. In diagonal/separable cases each decision has an explicit benefit-versus-repair-cost threshold. With multiple indivisible shared interventions the selection problem contains weighted set cover and becomes NP-hard. The historical SI therefore separates continuous affine recovery, which is exactly LP-tractable, from general discrete intervention selection.
+
+\subsection{Nonlinear and robust recovery}
+For nonlinear effects $g(x)$, convexity is retained when each safety superlevel set $\{x:g_k(x)\ge\tau_k\}$ is convex; quasiconcavity of each protected margin is the exact single-margin geometric condition. If uncertain affine effects satisfy $A_{kj}\in[\underline A_{kj},\overline A_{kj}]$ and $x\ge0$, robust safety reduces to
+\begin{equation}
+ g^0+\underline A x\ge\tau\1,
+\end{equation}
+so the minimum-cost robust plan remains a linear program.
+
+\clearpage
+\section{Historical Note 3 recovery: model-changing training and later certification}
+The historical work distinguishes two operations that are often conflated. Training changes the production model and therefore moves protected margins. Revalidation holds the model fixed and collects evidence about the target side of a decision boundary.
+
+For evidence law $P_i$ and the set $\mathcal F_i(P_i)$ of alternative laws reversing decision $i$, define characteristic decision-reversal information
+\begin{equation}
+ C_i(P_i)=\inf_{Q\in\mathcal F_i(P_i)}D_{\rm KL}(P_i\Vert Q).
+\end{equation}
+Any uniformly $\delta$-correct procedure obeys
+\begin{equation}
+ \mathbb E_{P_i}[N_i]C_i(P_i)\ge \operatorname{kl}(1-\delta,\delta).
+\end{equation}
+Hence $C_i=0$ is an information-theoretic impossibility boundary for finite expected certification.
+
+\subsection{Gaussian specialization and train--then--certify rule}
+For a scalar Gaussian comparison with known variance $\sigma^2$ and post-training margin $g+\beta x$, the leading validation burden is proportional to $(g+\beta x)^{-2}$. With linear training cost $c_Tx$ and validation unit cost $c_V$, the historical objective is
+\begin{equation}
+ C(x)=c_Tx+\frac{2c_V\sigma^2\log(1/\alpha)}{(g+\beta x)^2}.
+\end{equation}
+When the optimum is interior,
+\begin{equation}
+ x^*=\frac{1}{\beta}\left[\left(\frac{4c_V\sigma^2\beta\log(1/\alpha)}{c_T}\right)^{1/3}-g\right]_+.
+\end{equation}
+The cube-root form is retained because it gives an explicit example of a nontrivial coupling between model-changing training and later evidence demand.
+
+\subsection{Multiple protected decisions}
+If independent comparisons receive error budgets $\delta_i$, evidence costs of the form $q_i\operatorname{kl}(1-\delta_i,\delta_i)$ lead to a convex allocation problem under a total error budget. This branch later grew into a system-wide reliability story; R123 retains the exact allocation mathematics but does not force it into the current headline narrative.
+
+\clearpage
+\section{Historical Note 4 recovery: repeated releases and carried state}
+Across releases, protected margins evolve through uncontrolled release movement and controlled intervention:
+\begin{equation}
+ g_{t+1}=g_t+r_t+A_tx_t.
+\end{equation}
+For known affine release paths and linear intervention costs, finite-horizon preservation is one stacked linear program:
+\begin{equation}
+ \min_{x_0,\ldots,x_{T-1}\ge0}\sum_{t=0}^{T-1}c_t^\top x_t
+ \quad\text{s.t.}\quad
+ g_0+\sum_{s<t}(r_s+A_sx_s)\ge\tau_t\quad\forall t.
+\end{equation}
+The state required for future prediction therefore contains more than current binary correctness. At minimum it must preserve the current margin information needed to determine future boundary crossings, together with variables required to predict the effect of later update directions.
+
+\subsection{Return and no-return}
+A previously lost decision can return when later uncontrolled or controlled movement pushes its margin back above zero. A no-return certificate follows whenever the cumulative maximum favorable future movement is smaller than the current deficit. If at time $t$ the deficit is $d_i>0$ and every admissible future path satisfies total positive movement at most $B_i<d_i$, then recovery is impossible over the remaining horizon.
+
+\subsection{History as a secondary empirical state variable}
+The corrected M25--M100 diagnostic is deliberately retained with weaker status. Among 94 M75 strict-reliable questions, 18 of 21 already reliable at M25 remain reliable at M100, versus 50 of 73 without M25 reliability. Adding M25/M50 strict-state indicators increases leave-one-question-out AUC from 0.714 to 0.772 beyond the current M75 margin. The evidence suggests possible history information but is not treated as a standalone theorem.
+
+\clearpage
+\section{Historical Note 5 recovery: data order and noncommuting training updates}
+Let $T_A(\theta)=\theta-\eta\nabla L_A(\theta)$ and $T_B(\theta)=\theta-\eta\nabla L_B(\theta)$. A second-order expansion gives
+\begin{equation}
+ T_B(T_A(\theta))-T_A(T_B(\theta))
+ =\eta^2\left[H_B\nabla L_A-H_A\nabla L_B\right]+O(\eta^3).
+\end{equation}
+Thus the same multiset of training examples can produce different protected-margin trajectories when the local update maps do not commute. The historical branch is important because intervention amount, intervention identity and intervention order are distinct control variables.
+
+A sufficient local condition for order-independence to second order is
+\begin{equation}
+ H_B\nabla L_A=H_A\nabla L_B.
+\end{equation}
+This includes the trivial case of parallel gradients with compatible local curvature but does not hold generically in shared neural representations.
+
+\clearpage
+\section{Historical Note 6 recovery: paid model tiers as a switching-region example}
+For model tier $m$, let
+\begin{equation}
+ J_m(c)=p_m+L_m+c h_m=b_m+c h_m,
+\end{equation}
+where $p_m$ is model price, $L_m$ expected decision loss, $h_m$ human effort and $c\ge0$ converts human effort to the common objective. Pairwise switching between tiers $m$ and $\ell$ occurs at
+\begin{equation}
+ c_{m\ell}^{\rm switch}=\frac{b_\ell-b_m}{h_m-h_\ell}
+\end{equation}
+when the denominator is nonzero. The optimal region of tier $m$ is the intersection of the resulting half-lines. A tier weakly dominated in both intercept and human-effort slope is never optimal.
+
+This branch is retained as an example of the same decision-boundary geometry under a model-choice rather than model-training decision. It is not a headline result in the current scientific reset.
+
+\clearpage
+\section{Historical Note 7 recovery: controlled causal intervention and prospective prediction}
+The controlled intervention program was built to answer a limitation of proprietary release trajectories: observed version-to-version turnover does not identify the training direction that caused the change. The open-weight experiments therefore separate observation, intervention and prospective prediction.
+
+\subsection{Exact-affine digits experiment}
+Base training, release training, development and test splits are disjoint under a fixed seed. One correctly classified boundary-near test point per class is frozen before the release. The exogenous release direction is computed from the disjoint release-training subset, and its step size is selected on a pre-specified development grid without protected outcomes.
+
+The selected release raises development accuracy from 93.13\% to 94.23\% while invalidating two of ten protected decisions. Ten class-specific replay channels are then measured separately. These isolated effects are frozen before any combination is opened. Eighty previously unopened pair/triple/quadruple mixtures yield 800 protected-decision sign predictions; the historical record reports 800/800 correct signs and exact affine agreement to numerical precision. The minimum-cost repair uses two channels with normalized cost 0.591 and restores all ten protected decisions. Restricting the intervention library produces an explicit Farkas infeasibility witness.
+
+\subsection{Nonlinear neural robustness}
+A two-layer ReLU network repeats the temporal separation between identification and audit. Development accuracy rises from 90.66\% to 91.48\%, two protected decisions are lost, and isolated replay updates define a local finite-difference map. A three-channel minimum-cost plan restores all ten decisions. Eighty sealed mixtures again produce 800 sign predictions; all 800 signs are correct, $R^2=0.999999687$, and the maximum absolute margin error is 0.001957.
+
+\subsection{Open-weight release trajectories and boundary localization}
+The non-redacted held-out ledger contains 4,400 records. During M50$\to$M75, 210 wrong records become correct and 188 correct records become wrong, so 398 gross transitions produce only 22 net new correct records. Old-checkpoint boundary position prospectively predicts record-level flips with ROC AUC 0.907, 0.922 and 0.939 across the three consecutive controlled updates. At M75$\to$M100, the 17.0\% closest records contain 90\% of observed flips and 27.9\% contain all observed flips.
+
+\clearpage
+\section{Historical fixed-direction mechanism tests}
+Independent checkpoints confound direction and magnitude. The fixed-direction experiments instead hold one learned LoRA update direction fixed and vary only its multiplier:
+\begin{equation}
+ \theta(\lambda)=\theta_{75}+\lambda(\theta_{100}-\theta_{75}).
+\end{equation}
+For Qwen2.5-3B, old boundary distance predicts 19 endpoint flips with ROC AUC 0.975; among crossing decisions, first-crossing rank correlation is 0.823. For SmolLM2-360M, the corresponding values are 0.971 and 0.863. The farthest old-boundary quartile contains no flips over the tested multiplier path in either system. These tests identify boundary proximity as a mechanism conditional on the learned update direction rather than merely as a retrospective correlate.
+
+\clearpage
+\section{Historical Transformer optimizer repair and shared-parameter interference}
+A real optimizer introduces a difficulty absent from ideal affine repair: the effect map itself can move as training proceeds. The historical stress test therefore compares two concrete training objectives rather than assuming a fixed $A$ throughout optimization.
+
+In the SmolLM2-360M stress test, the controlled release invalidates 29 of 320 source-correct protected decisions. Seventeen exits are used for repair calibration and twelve are held out. Exit-only LoRA repair recovers 12/12 held-out exits but flips 56/148 retained audit decisions. Adding protected replay recovers 11/12 exits and flips only 2/148 retained decisions. Mean held-out margin change moves from -1.3654 to +1.4483, while repair parameter-delta $L_2$ falls from 2.2030 to 1.7840.
+
+The scientific object is not simply negative-flip counting. The experiment shows shared-parameter interference: an optimization objective that perfectly repairs the observed failure set can move many unfailed decisions across their boundaries. The protected objective explicitly constrains that collateral movement.
+
+\clearpage
+\section{Frozen cross-model, multi-seed Transformer replication}
+The later frozen protocol uses SmolLM2-360M-Instruct and Qwen2.5-0.5B-Instruct with seeds 20260921--20260925. Source-correct decisions are partitioned into calibration and audit subsets before the controlled release is trained. Exit-only repair and protected replay use the same optimizer budget; the audit split is never used to select the repair.
+
+Across the ten runs, protected replay lowers the collateral flip rate in every paired comparison. The historical aggregate falls from 23.75\% to 1.60\%, while mean protected-replay exit recovery is 92.2\%. Ten decreases in ten pre-frozen pairs give the exact two-sided sign-test probability
+\begin{equation}
+ 2\times2^{-10}=0.001953125.
+\end{equation}
+The complete ten-row ledger is preserved in the accompanying CSV and in the editable reconstruction below.
+
+\begin{center}\small
+\begin{tabular}{llrrrrr}
+\toprule
+Family & Seed & Exits & Exit-only rec. & Replay rec. & Collateral EO & Collateral replay\\\midrule
+SmolLM2 & 0921 & 19 & 19 & 19 & 53/141 & 4/141\\
+SmolLM2 & 0922 & 34 & 34 & 31 & 18/126 & 1/126\\
+SmolLM2 & 0923 & 29 & 29 & 27 & 21/131 & 3/131\\
+SmolLM2 & 0924 & 27 & 27 & 22 & 32/133 & 1/133\\
+SmolLM2 & 0925 & 26 & 26 & 24 & 22/134 & 5/134\\
+Qwen2.5 & 0921 & 19 & 19 & 19 & 38/161 & 0/161\\
+Qwen2.5 & 0922 & 30 & 30 & 30 & 25/150 & 2/150\\
+Qwen2.5 & 0923 & 15 & 15 & 15 & 29/165 & 7/165\\
+Qwen2.5 & 0924 & 28 & 28 & 24 & 63/152 & 0/152\\
+Qwen2.5 & 0925 & 9 & 9 & 7 & 51/171 & 0/171\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\clearpage
+\section{Historical Note 8 recovery: unified solution and tractability map}
+The historical SI deliberately stopped short of inventing closed forms where the Model Setup does not permit them. The retained closure is:
+\begin{enumerate}[leftmargin=1.4em]
+\item finite-action affine preservation: explicit polyhedron and explicit first crossing along a ray;
+\item monotone scalar nonlinear preservation: unique root; arbitrary smooth path: global first-root problem;
+\item affine continuous recovery: linear program, exact dual, Farkas infeasibility;
+\item concave-margin / convex-cost nonlinear recovery: convex optimization with strong duality under standard regularity;
+\item indivisible shared intervention selection: NP-hard in general through set-cover-type reductions;
+\item fixed-confidence decision certification: characteristic-information max--min; zero separating information is impossible;
+\item Gaussian affine train--then--certify: cube-root explicit solution; general one-dimensional positive-concave information has a unique monotone root;
+\item known affine multi-release recovery: stacked LP; more general compact dynamic state: finite Bellman recursion;
+\item continuous actions: exact identity is nongeneric, positive action/value tolerance yields a nonzero preservation region.
+\end{enumerate}
+The purpose of the map is to distinguish mathematical depth from notation: when a general explicit formula does not exist, the exact optimization or root characterization is retained together with the obstruction.
+
+\clearpage
+\section{Historical Note 9 recovery: decision-induced observations and identifiability}
+If deployed action $a_t$ determines which later outcomes or corrections become observable, both the feasible data set and the intervention/evidence map can depend on the action:
+\begin{equation}
+ g_{t+1}=g_t+r_t+A_t(a_t)x_t,\qquad x_t\in\mathcal X_t(a_t).
+\end{equation}
+Conditional on a fixed action sequence, the earlier recovery theory applies. Optimizing actions introduces an exploration/identification problem.
+
+If the deployed policy assigns zero probability to an alternative action in a context and the model class imposes no structural link from observed actions to that unobserved counterfactual, no estimator can uniformly identify whether the unobserved action is better. Two environments can agree on every observed action-context pair and disagree only on the unsupported counterfactual, inducing identical data distributions but opposite optimal actions. This is the exact no-support boundary.
+
+\clearpage
+\section{Historical Note 10 recovery: sequential decisions and Bellman boundaries}
+For finite-horizon state $s$, stage $h$, incumbent action $a^0$ and rival $a$, define the Bellman comparison
+\begin{equation}
+ G_h(s,a)=Q_h(s,a)-Q_h(s,a^0).
+\end{equation}
+The incumbent action is preserved exactly when $G_h(s,a)\ge0$ for every rival. Thus the same margin geometry extends from one-step decisions to sequential systems; the only change is that each margin now contains immediate and continuation-value effects.
+
+\subsection{Fixed-confidence sequential evidence}
+Let $P_{hs}$ denote the local target evidence law and let $\mathcal F_{hs}$ be the nearest alternative that reverses the Bellman action ordering. The local information boundary is
+\begin{equation}
+ C_{hs}=\inf_{Q\in\mathcal F_{hs}}D_{\rm KL}(P_{hs}\Vert Q).
+\end{equation}
+Any uniformly fixed-confidence action certificate inherits the same change-of-measure lower bound. In Gaussian specializations the evidence burden scales with squared Bellman gap divided by variance. Paired old-release evidence can reduce variance through a control-variate term when the old and target coordinates are correlated.
+
+\subsection{Architecture-agnostic decision cells}
+For target family $P_\theta$ and deployed action cell $\mathcal C=\{\vartheta:a^*(\vartheta)=a^0\}$, define
+\begin{equation}
+ C_{\rm exact}(\theta)=\inf_{\vartheta\notin\mathcal C}D_{\rm KL}(P_\theta\Vert P_\vartheta).
+\end{equation}
+Positive $C_{\rm exact}$ is the finite-information boundary under regularity: it means the true target law is separated in information distance from every action-reversing alternative. This statement concerns decision semantics, not network architecture.
+
+\clearpage
+\section{Continuous-action and tolerance-based preservation}
+For continuous actions with a smooth strongly convex target loss, exact optimizer identity is generally destroyed by arbitrarily small perturbations. A finite positive preservation object is instead action or loss tolerance. If $R_i(a;\theta)$ is $\mu$-strongly convex in $a$ near the optimum,
+\begin{equation}
+ R_i(a_i^0;\theta)-R_i(a_i^*(\theta);\theta)\ge\frac{\mu}{2}\|a_i^0-a_i^*(\theta)\|^2.
+\end{equation}
+Therefore a loss tolerance $\epsilon_i$ implies
+\begin{equation}
+ \|a_i^0-a_i^*(\theta)\|\le\sqrt{2\epsilon_i/\mu}.
+\end{equation}
+The historical result is retained because it identifies the true distinction: not discrete versus continuous models, but whether the deployed decision map has a locally constant cell or only a tolerance neighborhood.
+
+\clearpage
+\section{Shared representations and parameter-frontier geometry}
+The signed effect matrix is a local finite-dimensional view of shared-parameter interference. If protected margin $g_k(\theta)$ is differentiable and intervention $j$ applies an infinitesimal parameter displacement $v_j$, then
+\begin{equation}
+ A_{kj}=\nabla_\theta g_k(\theta)^\top v_j.
+\end{equation}
+For gradient-based intervention $v_j=-H^{-1}\nabla L_j$ under a local quadratic approximation,
+\begin{equation}
+ A_{kj}=-\nabla g_k(\theta)^\top H^{-1}\nabla L_j.
+\end{equation}
+This expression explains why sharing parameters creates off-diagonal effects: two decisions with nonorthogonal gradients in the local inverse-Hessian metric cannot be moved independently by arbitrary task losses.
+
+If every allowed direction has nonpositive projection on one positive deficit-separating vector $y$, the Farkas witness proves local infeasibility. Conversely, when the positive cone of available directions spans the required deficit region, affine recovery is feasible. The result provides a mathematically explicit bridge from decision boundaries to trainable shared representations.
+
+\clearpage
+\section{Pilot identification of intervention effects}
+The historical recovery algorithm separates a pilot-identification stage from production repair. Let intervention $j$ have an unknown effect column $A_{\cdot j}$. Pilot observations are collected before the production mixture is chosen. A sound confidence set $\mathcal A_j$ is built for each column; the production repair solves the robust program over the Cartesian product of these sets.
+
+For rectangular intervals and nonnegative intervention amounts, worst-case safety uses the lower endpoint of each signed effect. With general convex uncertainty sets, robust feasibility remains convex when every margin constraint is the infimum of affine functions over a convex uncertainty set. Finite identification is impossible when two candidate effect maps induce the same pilot law but opposite recoverability status.
+
+This separation is the conceptual reason the sealed-mixture experiments are useful: the combined mixtures are withheld until after the isolated effect map is frozen.
+
+\subsection{Calibrating how far a local effect can be transferred}
+Local effect identification and cross-requirement transfer are different statistical questions. For a fixed update and protected requirement $i$, let $g_i(s)$ be its signed margin at update strength $s$. From the endpoint-blind pilot $s_p=0.05$, define
+\begin{equation}
+ \widehat d_i=\frac{g_i(s_p)-g_i(0)}{s_p}.
+\label{eq:r137_pilot_slope}
+\end{equation}
+For a predeclared radius $R$ and finite grid $S_R$, define the pathwise linearization residual
+\begin{equation}
+ E_i(R)=\max_{s\in S_R}\left|g_i(s)-g_i(0)-s\widehat d_i\right|.
+\label{eq:r137_path_residual}
+\end{equation}
+With $n$ calibration requirements and target miscoverage $\alpha$, let
+\begin{equation}
+ k=\left\lceil(n+1)(1-\alpha)\right\rceil,\qquad q_R=E_{(k)}(R),
+\label{eq:r137_conformal_q}
+\end{equation}
+where $E_{(k)}(R)$ is the $k$th order statistic of the calibration residuals.
+
+\begin{proposition}[Marginal transfer guarantee at a fixed radius]
+Fix the update, pilot rule, radius $R$ and grid $S_R$. If the $n$ calibration requirements and one future protected requirement are exchangeable, then
+\begin{equation}
+ \Pr\{E_{n+1}(R)\le q_R\}\ge1-\alpha.
+\label{eq:r137_conformal_coverage}
+\end{equation}
+If the future row is declared safe only when
+\begin{equation}
+ g_{n+1}(0)+s\widehat d_{n+1}-q_R>0\qquad\text{for every }s\in S_R,
+\label{eq:r137_conformal_safe}
+\end{equation}
+then the marginal probability of simultaneously issuing that declaration and observing a non-positive realized margin somewhere on the tested grid is at most $\alpha$.
+\end{proposition}
+\textit{Proof.} Conditional on the already fixed update and scoring rule, exchangeability makes the rank of $E_{n+1}(R)$ among the $n+1$ residuals uniform up to ties. The order statistic in Equation~\ref{eq:r137_conformal_q} therefore yields Equation~\ref{eq:r137_conformal_coverage}. On the event $E_{n+1}(R)\le q_R$, Equation~\ref{eq:r137_conformal_safe} implies $g_{n+1}(s)>0$ at every tested $s$, because the realized path can deviate below the pilot line by at most $q_R$. Thus a false-safe declaration is a subset of the conformal non-coverage event. $\square$
+
+The guarantee is deliberately marginal. It is not conditional coverage among selected safe rows, not simultaneous validity across several radii without a multiplicity argument, and not robustness to arbitrary distribution shift. It applies on the predeclared finite strength grid unless additional smoothness is supplied for interpolation. If a radius is selected after inspecting a separate transfer-selection set, the fixed-radius proposition does not by itself become a post-selection theorem for the selected radius. A production guarantee after adaptive radius choice requires either a simultaneously valid envelope over the candidate radii or a new calibration sample after the radius is frozen. The R134 fresh results below are therefore reported as an independent empirical audit of the selected radius, not as a theorem-level conditional guarantee for the adaptive rule.
+
+\clearpage
+\section{Train--then--certify characteristic information beyond the Gaussian example}
+Let intervention amount $x$ change both protected margin and the target evidence law. Write $C(x)$ for the characteristic information separating the post-training target law from the nearest decision-reversing alternative, and $C_T(x)$ for training cost. A first-order asymptotic objective is
+\begin{equation}
+ J(x)=C_T(x)+\frac{K}{C(x)},
+\end{equation}
+where $K$ collects the confidence logarithm and evidence price. If $C_T$ is convex and $C$ is positive concave, $1/C$ is convex and the entire problem is convex. In one dimension with strict monotonicity, the optimum is characterized by one monotone first-order root.
+
+The Gaussian affine cube-root solution is one closed-form member of this larger class. The general model does not admit a universal radical expression because the first-order condition can contain polynomial subclasses of degree five or higher. The exact convex or root characterization is therefore the correct closure.
+
+\clearpage
+\section{End-to-end information accounting: pilot, intervention and final certificate}
+A complete update can require three distinct resources: pilot evidence to learn intervention effects, model-changing intervention, and final target evidence. Let $n^{\rm pilot}$ be pilot sample allocations, $x$ the intervention plan and $n^{\rm final}$ final certification samples. A generic exact formulation is
+\begin{equation}
+ \min\ C_{\rm pilot}(n^{\rm pilot})+c^\top x+C_{\rm final}(n^{\rm final})
+\end{equation}
+subject to a high-confidence lower bound on $g^0+A x$ from the pilot stage and a final fixed-confidence decision certificate after training. The historical theory gives information lower bounds for the pilot and final stages separately; regular likelihood-ratio or confidence-sequence procedures achieve the same first-order order under separated alternatives.
+
+The decomposition is retained because it prevents one common mistake: treating an estimated repair direction as known and charging no evidence for learning it.
+
+\clearpage
+\section{Empirical release-family robustness archive}
+The proprietary release ledgers are used only to establish the phenomenon that reliable-set identity is not nested. In the matched GPT-5.4$\to$5.5 transition, 7 of 21 old strict-reliable tasks exit while 15 enter. Claude 4.8$\to$5.0 loses 6 of 22 old strict tasks while 15 enter. Gemini 3 Pro$\to$3.0 Flash has strict sets of size four at both endpoints but only one task overlaps; Grok 4.1 Fast$\to$4.2 loses three of five old strict tasks while five enter.
+
+The clean Claude 4.7$\to$4.8$\to$5.0 chain also contains reliable$\to$unreliable$\to$reliable paths. These records are historical observations, not causal evidence about hidden training. Their role is to motivate the controlled open-weight mechanism tests.
+
+\clearpage
+\section{Human-labelled safety and reviewer non-portability archive}
+The historical Supplement included independent safety/reviewer checks. Human-labelled harmful or compliant outputs differ across upstream model generators, and reviewer ranking can reverse across those upstream environments. The main lesson retained here is methodological: an evaluator that performs well on one generator need not transport unchanged to a later model generation.
+
+This branch is supporting only. It is not used to prove the decision-boundary mechanism, because the upstream release traces do not reveal the training direction and the reviewer experiments concern a different downstream task.
+
+\clearpage
+\section{Asset-level reproducibility and claim boundary}
+The preservation master uses four asset labels.
+\begin{enumerate}[leftmargin=1.4em]
+\item \textbf{Physically recovered}: LaTeX/PDF/data are present in the active runtime and copied into the package.
+\item \textbf{Authoritative File-Library source}: parsed content is available from the historical 130/150-page PDF, but original bytes are not mounted in the active runtime.
+\item \textbf{Primary-asset incomplete}: the scientific claim appears in a historical manuscript, but row-level ledgers, adapters or sealed records are not all currently recoverable; such claims remain visible but are not promoted.
+\item \textbf{Later-review branch}: mathematically valid material whose relevance to the new headline story is unresolved. It remains in the preservation master until a later scientific pruning decision.
+\end{enumerate}
+The historical 44-channel transformer sealed-mixture experiment remains primary-asset incomplete in this sense. The exact-affine, nonlinear neural, single-optimizer and frozen ten-run Transformer branches are physically recovered sufficiently for the present preservation record.
+
+\clearpage
+\section{Historical content classification after R128}
+The preservation record separates the broad migration framework from the narrower downstream-counting branch. R128 restores the scientifically useful migration objects---application gate, finite evidence, shared reliability, repair/infeasibility, sound release information, carried state and dynamic adoption---into the active manuscript. Dependency-graph recomputation, changed-count reversals, workflow resource savings and provider--deployer evidence incentives are retained as supporting material because they describe what happens after uncertain protected decisions are resolved or reopened. Their mathematical validity is preserved without making the number of affected downstream operations the paper's scientific center.
+
+Blocks whose primary assets remain incomplete continue to be labelled explicitly. Preservation still has priority over deletion: questionable or superseded material is marked for review rather than silently removed.
+
+\clearpage
+\part{Editable mechanism reconstruction retained from R120}
+\section{Reading map and claim boundary}
+The main paper contains four connected claims. First, candidate qualification is an information problem relative to the incumbent, with finite evidence and one deployment-wide reliability requirement. Second, pre-update decision-boundary position predicts where the next controlled update loses reliability, and fixed-direction scaling shows boundary-near decisions crossing first. Third, repair is coupled through shared parameters: a direction that restores a failed decision can harm decisions that survived, and a signed effect map gives exact feasibility and infeasibility conditions. Fourth, the verified state left after one update changes later qualification, repair and adoption decisions.
+
+R128 also restores the historical migration-work framework as the common accounting shell around those four claims. Validation and intervention are intrinsic to qualification/control; re-establishment work is application-specific and enters only when decisions are reopened. The later downstream-operation formulas, workflow resource checks and provider-evidence incentives are therefore retained as supporting consequences. The historical transformer-scale 44-channel sealed-mixture effect matrix remains excluded from headline claims because the current archive does not contain the complete row-level effects, adapters and sealed-mixture ledger needed for full independent reproduction.
+
+\section{Release-level turnover}
+\subsection{Matched frontier updates}
+The main text uses the five transitions in Table~\ref{tab:s_turnover}. Strict reliability is four successes in four aligned trials. These values are copied from the recovered release ledger and are not re-estimated in the rebuilt manuscript.
+
+\begin{table}[H]
+\centering
+\caption{Matched strict-reliability turnover.}
+\label{tab:s_turnover}
+\begin{tabular}{lrrrrrr}
+\toprule
+Update & Net gain & Old 4/4 & New 4/4 & Exits & Entries & Retained \\
+\midrule
+GPT-5.4$\rightarrow$5.5 & +20 & 21 & 29 & 7 & 15 & 14/21 \\
+Claude 4.7$\rightarrow$4.8 & -2 & 24 & 22 & 8 & 6 & 16/24 \\
+Claude 4.8$\rightarrow$5.0 & +35 & 22 & 31 & 6 & 15 & 16/22 \\
+Gemini 3 Pro$\rightarrow$3.0 Flash & +19 & 4 & 4 & 3 & 3 & 1/4 \\
+Grok 4.1 Fast$\rightarrow$4.2 & +20 & 5 & 7 & 3 & 5 & 2/5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the three updates with positive gain and old strict-set size above four, the number of exits remains material: seven of 21 for GPT-5.4$\rightarrow$5.5 and six of 22 for Claude 4.8$\rightarrow$5.0. Gemini and Grok show the same non-nesting with smaller strict sets. The clean Claude sequence also contains four tasks that are strict reliable at 4.7, not strict reliable at 4.8, and strict reliable again at 5.0.
+
+\subsection{Controlled threshold robustness}
+The non-redacted controlled trajectory gives the threshold counts in Table~\ref{tab:s_threshold}. The final update contains exits under every threshold shown.
+
+\begin{table}[H]
+\centering
+\caption{Reliable-set turnover under alternative repeated-response thresholds.}
+\label{tab:s_threshold}
+\begin{tabular}{lrrrrr}
+\toprule
+Update & Threshold & Old reliable & New reliable & Exits & Entries \\
+\midrule
+M25$\rightarrow$M50 & 7/10 & 379 & 408 & 13 & 42 \\
+M25$\rightarrow$M50 & 8/10 & 298 & 334 & 35 & 71 \\
+M25$\rightarrow$M50 & 9/10 & 177 & 222 & 35 & 80 \\
+M25$\rightarrow$M50 & 10/10 & 43 & 77 & 19 & 53 \\
+M75$\rightarrow$M100 & 7/10 & 407 & 410 & 12 & 15 \\
+M75$\rightarrow$M100 & 8/10 & 346 & 346 & 26 & 26 \\
+M75$\rightarrow$M100 & 9/10 & 245 & 253 & 27 & 35 \\
+M75$\rightarrow$M100 & 10/10 & 94 & 83 & 26 & 15 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Boundary-crossing theory}
+\subsection{Proof of the affine first-crossing theorem}
+Let $g_i(s)=g_i^0+s d_i$ with $g_i^0>0$. If $d_i\ge0$, the margin is nondecreasing and no crossing occurs. If $d_i<0$, the unique zero is $s=g_i^0/(-d_i)$. It lies in $(0,1]$ exactly when $g_i^0+d_i\le0$. Therefore the first crossing is
+\begin{equation}
+ s_i^*=\frac{g_i^0}{-d_i}
+\quad\text{when }d_i<0\text{ and }g_i^0+d_i\le0,
+\label{eq:s_affineproof}
+\end{equation}
+and is $+\infty$ otherwise. This proves the main theorem.
+
+If adverse sensitivities satisfy $0<d_{\min}\le -d_i\le d_{\max}$ for all crossing candidates, then
+\begin{equation}
+ \frac{g_i^0}{d_{\max}}\le s_i^*\le \frac{g_i^0}{d_{\min}}.
+\label{eq:s_bounds}
+\end{equation}
+Hence smaller margin implies an earlier crossing up to the multiplicative uncertainty $d_{\max}/d_{\min}$. The empirical use of margin alone is justified only to the extent that this directional variation does not dominate the starting-distance variation.
+
+\subsection{Smooth paths}
+For continuously differentiable $g_i(\theta(s))$, define $h_i(s)=g_i(\theta(s))$. The exact first crossing is the smallest root of $h_i(s)=0$ after $s=0$. If $h_i$ is strictly decreasing on an interval containing the root, bisection gives a certified crossing to arbitrary tolerance. There is no universal closed form for a general nonlinear path; the correct mathematical object is the first root, not a new named threshold.
+
+A second-order expansion clarifies when a first-order screen can fail. If $h_i'(0)=0$ but $h_i''(s)\le-\kappa<0$ locally, then Taylor's theorem gives
+\begin{equation}
+ h_i(s)\le h_i(0)-\frac{\kappa s^2}{2}.
+\label{eq:s_second}
+\end{equation}
+Whenever $\sqrt{2h_i(0)/\kappa}$ lies in the neighborhood, a crossing must occur by that value even though the initial directional derivative is zero. This is why the main paper treats the observed margin as a strong empirical predictor rather than a universal sufficient statistic for arbitrary future updates.
+
+\section{Prospective boundary prediction}
+For each consecutive controlled update, the old-checkpoint score is frozen before next-checkpoint labels are examined. The non-redacted record-level ROC AUC values are 0.907, 0.922 and 0.939 for M25$\rightarrow$M50, M50$\rightarrow$M75 and M75$\rightarrow$M100. At the final update, checking 17.0\% of records closest to the old boundary captures 90\% of observed flips; 20.5\% captures 95\%; 27.9\% captures all observed flips. These are empirical concentration curves, not zero-miss guarantees.
+
+The grouped competing-predictor check is reproduced in Table~\ref{tab:s_predictors}. Complete question identifiers are kept within folds.
+
+\begin{table}[H]
+\centering
+\caption{Five-fold question-grouped prediction of M75$\rightarrow$M100 record-level flips.}
+\label{tab:s_predictors}
+\begin{tabular}{lrr}
+\toprule
+Predictor & ROC AUC & Brier score \\
+\midrule
+Pre-update boundary margin only & 0.939 & 0.0402 \\
+Category + prompt style + source model + answer length & 0.727 & 0.0526 \\
+Boundary margin + metadata & 0.932 & 0.0412 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Fixed-direction mechanism tests}
+The fixed-direction experiment holds the learned LoRA direction constant and changes only its multiplier. This design removes a major ambiguity of comparing independently trained checkpoints: every tested point lies on the same update direction.
+
+For Qwen2.5-3B, old boundary distance predicts the 19 endpoint flips with AUC 0.975 and first-crossing order with Spearman $\rho=0.823$. For SmolLM2-360M, the corresponding values are 0.971 and 0.863. The farthest old-boundary quartile has zero flips at all tested multipliers in both systems. The nearest Qwen quartile first changes at multiplier 0.125 and reaches an 8.72\% endpoint flip rate.
+
+The permutation $P$ value reported in the historical analysis is $5.0\times10^{-4}$ for each AUC, based on 2,000 permutations. These intervention results are the main causal-mechanism evidence for the boundary claim; the frontier release data are observational.
+
+\section{Joint recovery under signed interventions}
+\subsection{Minimum-cost recovery and dual}
+The primal repair program is
+\begin{equation}
+ \min_{x\ge0} c^\top x\quad\text{subject to }Ax\ge d.
+\label{eq:s_primal}
+\end{equation}
+Its linear-programming dual is
+\begin{equation}
+ \max_{y\ge0} d^\top y\quad\text{subject to }A^\top y\le c.
+\label{eq:s_dual}
+\end{equation}
+When the primal is feasible and bounded, strong duality gives equality of Equations~\ref{eq:s_primal} and \ref{eq:s_dual}. The dual vector assigns shadow values to the protected-margin requirements. A direction is useful only through the protected margins it moves per unit cost.
+
+\subsection{Farkas infeasibility certificate}
+Set $C=\{Ax:x\ge0\}$. The requirement is feasible iff $d$ lies in $C-\R_+^K$. Farkas' lemma states that exactly one of the following holds: there is $x\ge0$ with $Ax\ge d$, or there is $y\ge0$ such that $A^\top y\le0$ and $y^\top d>0$. Therefore
+\begin{equation}
+ A^\top y\le0,\qquad y^\top d>0
+\label{eq:s_farkas}
+\end{equation}
+certifies that every nonnegative intervention combination fails to supply enough movement in at least one weighted protected direction.
+
+\subsection{Protecting survivors changes feasibility}
+Partition the rows into failed decisions $L$ and survivors $S$. Exit-only repair solves
+\begin{equation}
+ A_Lx\ge d_L,\qquad x\ge0.
+\label{eq:s_exitonly}
+\end{equation}
+Protected repair solves
+\begin{equation}
+ A_Lx\ge d_L,\qquad A_Sx\ge -g_S+\tau\1,\qquad x\ge0.
+\label{eq:s_protected}
+\end{equation}
+The protected feasible set is a subset of the exit-only feasible set. It can therefore have a larger minimum cost or be empty even when exit-only recovery is easy.
+
+\begin{proposition}[Perfect exit recovery can force collateral failure]
+There exist a failed row, a surviving row and one allowed intervention direction such that every intervention that repairs the failed row flips the survivor.
+\end{proposition}
+\textit{Proof.} Let post-update margins be $g=(-1,1/2)^\top$, target margin zero, and the only intervention effect be $A=(1,-1)^\top$. Repair of the first row requires $x\ge1$. The second margin is then $1/2-x<0$. Thus all feasible exit repairs flip the survivor. \(\square\)
+
+This two-row construction is not intended to model a transformer. It proves that success on the failed set alone is logically insufficient. The transformer experiments test whether the same conflict occurs under real gradient-based optimization.
+
+\section{Exact-affine controlled intervention}
+The exact-affine experiment uses ten protected decisions and ten isolated replay channels. The release step is selected from a pre-specified development grid. Development accuracy rises from 93.13\% to 94.23\%, while two of ten frozen protected decisions become invalid. Each isolated replay channel has signed cross-effects on all protected decisions.
+
+After the isolated effects are frozen, 80 previously unopened mixtures are evaluated. This creates 800 protected-decision predictions. All 800 predicted signs match the realized signs and $R^2=1.000000$. The minimum-cost recovery has normalized cost 0.591, uses two nonzero replay channels and restores every protected decision. A restricted intervention library yields a lost protected row for which every available channel has non-positive effect; the resulting $y$ gives an explicit instance of Equation~\ref{eq:s_farkas}.
+
+The key design feature is temporal: isolated effects are measured before the mixtures are opened. The 800 predictions are therefore prospective tests of the frozen effect map, not a fitted reconstruction of observed mixtures.
+
+\section{Nonlinear neural robustness}
+A two-layer ReLU network with 64 hidden units per layer repeats the split logic. Development accuracy rises from 0.906593 to 0.914835 at the selected release step while two of ten frozen protected decisions become invalid. Small isolated class-replay updates define a local finite-difference effect map. The minimum-cost plan uses three channels, has normalized cost 5.620582, restores all ten decisions and yields a minimum realized protected margin of 0.029132.
+
+The sealed stream again contains 80 unseen mixtures and 800 protected-decision predictions. All 800 signs are correct; predicted versus realized margins have $R^2=0.999999687$ and maximum absolute error 0.001957. The largest residual is therefore measurable but does not change any predicted protected-decision sign in this experiment.
+
+\section{Actual-optimizer shared-parameter repair}
+The single-system optimizer stress test uses SmolLM2-360M, rank-8 query/value LoRA, 600 adaptation examples, four release-update epochs and learning rate $2\times10^{-4}$. The release invalidates 29 of 320 source-correct protected decisions. Seventeen exits are assigned to repair calibration and twelve to held-out audit.
+
+\begin{table}[H]
+\centering
+\caption{Actual-optimizer repair audit.}
+\label{tab:s_optimizer}
+\begin{tabular}{lrr}
+\toprule
+Quantity & Exit-only repair & Exit + protected replay \\
+\midrule
+Calibration exits recovered & 17/17 & 17/17 \\
+Held-out exits recovered & 12/12 & 11/12 \\
+Held-out retained decisions & 148 & 148 \\
+Collateral flips & 56/148 (37.84\%) & 2/148 (1.35\%) \\
+Mean held-out margin change & -1.3654 & +1.4483 \\
+Minimum held-out margin change & -14.4488 & -5.8140 \\
+Repair parameter-delta $L_2$ & 2.2030 & 1.7840 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The experiment isolates the mechanism studied in Equations~\ref{eq:s_exitonly}--\ref{eq:s_protected}. Exit-only repair treats the 12 held-out exits as the outcome of interest and achieves perfect held-out recovery, yet many retained decisions move across their boundaries. Protected replay changes the update objective by explicitly including retained anchors. It sacrifices one held-out exit but reduces collateral flips by 96.43\%.
+
+\section{Pre-frozen cross-model, multi-seed replication}
+The protocol hash stored in the historical Supplement is \url{eca12df5145898e65b9eeb1e55ca8e5c3a142fe09db1fbfa74f73198c7eb12ec}. The two families are SmolLM2-360M-Instruct and Qwen2.5-0.5B-Instruct; seeds 20260921--20260925 are fixed before outcomes. For each seed, source-correct SST-2 decisions are shuffled into alternating calibration and audit subsets before the controlled release is trained.
+
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}{@{}llrrrrr@{}}
+\caption{All ten frozen optimizer runs.}\label{tab:s_tenruns}\\
+\toprule
+Family & Seed & Audit exits & Exit-only rec. & Replay rec. & Collateral exit-only & Collateral replay \\
+\midrule
+\endfirsthead
+\toprule
+Family & Seed & Audit exits & Exit-only rec. & Replay rec. & Collateral exit-only & Collateral replay \\
+\midrule
+\endhead
+SmolLM2-360M & 20260921 & 19 & 19 & 19 & 53/141 & 4/141 \\
+SmolLM2-360M & 20260922 & 34 & 34 & 31 & 18/126 & 1/126 \\
+SmolLM2-360M & 20260923 & 29 & 29 & 27 & 21/131 & 3/131 \\
+SmolLM2-360M & 20260924 & 27 & 27 & 22 & 32/133 & 1/133 \\
+SmolLM2-360M & 20260925 & 26 & 26 & 24 & 22/134 & 5/134 \\
+Qwen2.5-0.5B & 20260921 & 19 & 19 & 19 & 38/161 & 0/161 \\
+Qwen2.5-0.5B & 20260922 & 30 & 30 & 30 & 25/150 & 2/150 \\
+Qwen2.5-0.5B & 20260923 & 15 & 15 & 15 & 29/165 & 7/165 \\
+Qwen2.5-0.5B & 20260924 & 28 & 28 & 24 & 63/152 & 0/152 \\
+Qwen2.5-0.5B & 20260925 & 9 & 9 & 7 & 51/171 & 0/171 \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+Protected replay lowers the collateral flip rate in all ten paired runs. The mean falls from 23.75\% to 1.60\%, a 93.3\% relative reduction. Family means are 21.68\% to 2.08\% for SmolLM2 and 25.82\% to 1.12\% for Qwen2.5. The two-sided exact sign-test probability for ten decreases in ten pairs under a symmetric null is
+\begin{equation}
+ 2\times 2^{-10}=0.001953125.
+\label{eq:s_signtest}
+\end{equation}
+Exit-only repair recovers every audit exit in these runs by construction of the fixed budget. Protected replay recovers 92.2\% on average. This trade-off is reported rather than hidden because the claim is not that replay dominates on every metric; the claim is that repairing exits alone can produce substantial shared-parameter interference.
+
+\section{Repeated-release history as supporting evidence}
+The same M25--M100 trajectory permits a history diagnostic. Among 94 questions that are 10/10 reliable at M75, 68 remain reliable at M100 and 26 exit. Eighteen of 21 questions that were already reliable at M25 remain reliable at M100, compared with 50 of 73 that were not M25-reliable: 85.7\% versus 68.5\%, odds ratio 2.76, one-sided Fisher $P=0.0973$. Because the evidence is weaker than the boundary result, this is not a headline claim.
+
+A leave-one-question-out diagnostic within the fixed M75-reliable population gives ROC AUC 0.714 from the current M75 minimum signed margin alone and 0.772 after adding M25 and M50 strict-reliability indicators. This suggests that history may contain additional information, but the present manuscript does not build a theory around it.
+
+
+
+\part*{Preserved technical extensions from earlier manuscript development}
+\addcontentsline{toc}{part}{Preserved technical extensions from earlier manuscript development}
+
+The following material is retained because it remains mathematically valid and directly connected to model-update reliability, even when it is not required for every headline claim in the main paper. This part preserves the technical depth accumulated in earlier manuscript versions. Decision validity, boundary crossing, recovery, information, repeated releases and intervention geometry remain the scientific backbone; the migration-work reconstruction later in this part restores validation/repair/reopen accounting and dependency consequences without reorganizing the paper around workflow counts.
+
+\section{General decision preservation under a model update}
+\subsection{Multi-action decision margins}
+Let $i$ index a protected decision instance. The incumbent model induces a deployed action $a_i^0$ from a finite feasible action set $\mathcal A_i$. For model state $\theta$, write $R_i(a;\theta)$ for the decision loss of action $a$. The old action remains optimal exactly when every pairwise relative-loss margin
+\begin{equation}
+ g_{ia}(\theta)=R_i(a;\theta)-R_i(a_i^0;\theta),\qquad a\neq a_i^0,
+\label{eq:s_general_margin}
+\end{equation}
+is nonnegative. Hence the exact preservation region is
+\begin{equation}
+ \mathcal P_i=\{\theta:g_{ia}(\theta)\ge 0\ \text{for every }a\neq a_i^0\}.
+\label{eq:s_preservation_region}
+\end{equation}
+This formulation does not require the two model versions to share parameters. It requires only that their induced decisions be comparable under the same action semantics and decision loss.
+
+\begin{theorem}[Exact decision preservation]
+A previously deployed action $a_i^0$ remains optimal under target state $\theta_1$ if and only if $\theta_1\in\mathcal P_i$, equivalently $g_{ia}(\theta_1)\ge0$ for every rival $a\neq a_i^0$.
+\end{theorem}
+\textit{Proof.} By definition, $a_i^0$ is optimal at $\theta_1$ exactly when $R_i(a_i^0;\theta_1)\le R_i(a;\theta_1)$ for every rival. Rearranging each inequality gives Equation~\ref{eq:s_general_margin}. $\square$
+
+With tolerance $\epsilon_i\ge0$, exact identity can be relaxed to $\epsilon_i$-optimality. The admissible region becomes
+\begin{equation}
+ \mathcal P_i(\epsilon_i)=\{\theta:g_{ia}(\theta)\ge-\epsilon_i\ \forall a\neq a_i^0\}.
+\label{eq:s_tolerance_region}
+\end{equation}
+All exact-action statements are recovered by setting $\epsilon_i=0$.
+
+\subsection{Affine multi-direction updates}
+Let an update be parameterized by $u\in\mathbb R^p$ and suppose all relevant margins are affine,
+\begin{equation}
+ g_i(u)=g_i^0+S_i u,
+\label{eq:s_multi_affine}
+\end{equation}
+where $g_i^0$ stacks the incumbent margins and $S_i$ their signed sensitivities to the update coordinates. Then the set of update coordinates preserving decision $i$ is the polyhedron
+\begin{equation}
+ \mathcal U_i=\{u:g_i^0+S_i u\ge0\}.
+\label{eq:s_update_polyhedron}
+\end{equation}
+For a finite protected set $D$, simultaneous preservation is the intersection $\cap_{i\in D}\mathcal U_i$, again a polyhedron. Thus, in the affine class, preservation under multiple update directions is a feasibility question in the original signed margins; no scalar model-distance proxy is sufficient in general.
+
+\begin{proposition}[Directional first crossing]
+For a ray $u=s v$, $s\ge0$, the first crossing of decision $i$ is
+\begin{equation}
+ s_i^*=\min_{a:\,S_{ia}v<0}\frac{g_{ia}^0}{-S_{ia}v},
+\label{eq:s_ray_crossing}
+\end{equation}
+with the convention $s_i^*=+\infty$ when every directional derivative is nonnegative. The identity of the binding rival is the minimizer in Equation~\ref{eq:s_ray_crossing}.
+\end{proposition}
+This multi-action expression reduces to the scalar binary rule in the main paper.
+
+\subsection{Why aggregate model distance cannot replace the margin vector}
+Suppose two protected decisions have the same scalar parameter displacement $\|\theta_1-\theta_0\|$ but opposite signed directional derivatives. One moves deeper into its preservation region while the other moves toward the boundary. Any scalar summary that ignores the orientation of the update relative to the decision surfaces therefore fails to order the two vulnerabilities. More strongly, in the affine class the complete set of prospective ray crossings determines the positive margin vector up to the corresponding sensitivity map; collapsing that vector generally loses directional information needed to predict all future crossings.
+
+\section{Nonlinear update paths and higher-order failure modes}
+\subsection{Exact path formulation}
+Let $\theta:[0,1]\rightarrow\Theta$ be a continuous update path and define the binding margin
+\begin{equation}
+ h_i(s)=\min_{a\neq a_i^0} g_{ia}(\theta(s)).
+\label{eq:s_binding_margin}
+\end{equation}
+The exact first loss of preservation is
+\begin{equation}
+ s_i^{\mathrm{cross}}=\inf\{s>0:h_i(s)<0\}.
+\label{eq:s_general_cross}
+\end{equation}
+For monotone $h_i$, root isolation by bisection is exact to arbitrary tolerance. For a general smooth path, the relevant object is the global first root; there is no universal algebraic closed form.
+
+\subsection{First-order-neutral but harmful updates}
+The main paper notes that a decision can be vulnerable even when the first directional derivative vanishes. The second-order bound can be stated more generally.
+\begin{proposition}[Second-order crossing]
+If $h_i(0)>0$, $h_i'(0)=0$, and $h_i''(s)\le-\kappa_i<0$ on $[0,r]$, then whenever $\sqrt{2h_i(0)/\kappa_i}\le r$, a boundary crossing occurs no later than
+\begin{equation}
+ s_i^{\mathrm{cross}}\le\sqrt{\frac{2h_i(0)}{\kappa_i}}.
+\label{eq:s_second_cross}
+\end{equation}
+\end{proposition}
+\textit{Proof.} Taylor's theorem with the stated curvature bound gives $h_i(s)\le h_i(0)-\kappa_i s^2/2$. The right-hand side reaches zero at the displayed value. $\square$
+
+Two update directions may also be individually safe and jointly unsafe. For $u=(u_1,u_2)$, a quadratic margin
+\begin{equation}
+ h(u)=g_0+b_1u_1+b_2u_2-\gamma u_1u_2
+\label{eq:s_cross_curvature}
+\end{equation}
+can remain positive on both coordinate axes while becoming negative at an interior pair because the cross-curvature term disappears from one-direction tests. This construction is retained as a warning that a library of individually benign interventions need not be jointly benign.
+
+\section{Fixed-confidence information at a decision boundary}
+The geometry above is deterministic once the target margins are known. In stochastic evaluation, the target side of the boundary must itself be inferred.
+
+Let $P_i$ be the true evidence law for comparison $i$ and let $\mathcal F_i(P_i)$ be the set of alternative laws that reverse the target decision. Define the decision-reversal information
+\begin{equation}
+ C_i(P_i)=\inf_{Q\in\mathcal F_i(P_i)}D_{\mathrm{KL}}(P_i\|Q).
+\label{eq:s_reversal_information}
+\end{equation}
+When $C_i=0$, the true law lies on or arbitrarily close to a statistical decision boundary, so no finite uniform fixed-confidence certificate is possible without stronger assumptions.
+
+\begin{theorem}[Change-of-measure lower bound]
+For any $\delta$-correct procedure that identifies the decision side of comparison $i$,
+\begin{equation}
+ \mathbb E_{P_i}[N_i]\, C_i(P_i)\ge \operatorname{kl}(1-\delta,\delta),
+\label{eq:s_kl_lower}
+\end{equation}
+where $N_i$ is the number of observations from comparison $i$.
+\end{theorem}
+\textit{Proof sketch.} Compare the true law with a decision-reversing alternative $Q$ arbitrarily close to the infimum in Equation~\ref{eq:s_reversal_information}. Standard change-of-measure for the event of returning the true side gives $\mathbb E_P[N_i]D_{\mathrm{KL}}(P\|Q)\ge\operatorname{kl}(1-\delta,\delta)$. Taking the infimum over reversing $Q$ yields the result. $\square$
+
+For a regular one-parameter exponential family with a boundary separated by gap $\Delta_i$, $C_i=\Theta(\Delta_i^2)$ locally, giving the familiar order
+\begin{equation}
+ \mathbb E[N_i]=\Theta\!\left(\Delta_i^{-2}\log\frac1\delta\right).
+\label{eq:s_inverse_square}
+\end{equation}
+This statistical result is conceptually distinct from the empirical AUC claim: one concerns evidence needed to certify a side of a boundary; the other asks whether the old model's boundary position predicts where a specific learned update will cross.
+
+\subsection{Correct current-state Gaussian crossing information}
+The fixed-confidence quantity must be evaluated from the \emph{current} candidate state, not automatically from the incumbent basepoint. Let
+\begin{equation}
+ g(u)=g^0+\beta^\top u,\qquad g^0>0,
+\label{eq:r137_gauss_margin}
+\end{equation}
+and let one observation have law $\mathcal N(u,\Sigma)$ with $\Sigma\succ0$. Along $u(s)=sv$ with $\beta^\top v<0$, define the ray hit
+\begin{equation}
+ r=\frac{g^0}{-\beta^\top v}.
+\label{eq:r137_gauss_r}
+\end{equation}
+For $0\le s<r$, the current positive margin is
+\begin{equation}
+ m(s)=g^0+s\beta^\top v=-\beta^\top v\,(r-s)>0.
+\label{eq:r137_gauss_ms}
+\end{equation}
+
+\begin{theorem}[Current-state Gaussian crossing--information identity]
+For $0\le s<r$, the KL distance from $\mathcal N(sv,\Sigma)$ to the nearest reversing Gaussian mean is
+\begin{equation}
+ C(s)=\frac{m(s)^2}{2\beta^\top\Sigma\beta}
+ =\frac12(r-s)^2\frac{(\beta^\top v)^2}{\beta^\top\Sigma\beta}.
+\label{eq:r137_gauss_info}
+\end{equation}
+Every uniformly $\delta$-correct certificate for the current binary decision obeys
+\begin{equation}
+ \mathbb E_s[N]\ge \frac{\operatorname{kl}(1-\delta,\delta)}{C(s)}
+ =\frac{2\operatorname{kl}(1-\delta,\delta)\,\beta^\top\Sigma\beta}
+ { (\beta^\top v)^2(r-s)^2 }.
+\label{eq:r137_gauss_samples}
+\end{equation}
+\end{theorem}
+\textit{Proof.} For equal-covariance Gaussians,
+\begin{equation}
+ D_{\rm KL}\!\left(\mathcal N(sv,\Sigma)\,\|\,\mathcal N(u,\Sigma)\right)
+ =\frac12(u-sv)^\top\Sigma^{-1}(u-sv).
+\label{eq:r137_gauss_kl}
+\end{equation}
+Minimizing Equation~\ref{eq:r137_gauss_kl} subject to $g(u)=0$ gives
+\begin{equation}
+ u^*=sv-\frac{m(s)\Sigma\beta}{\beta^\top\Sigma\beta},
+\label{eq:r137_gauss_ustar}
+\end{equation}
+and substitution yields Equation~\ref{eq:r137_gauss_info}. The fixed-confidence lower bound follows from the binary change-of-measure inequality against reversing alternatives approaching this nearest mean. $\square$
+
+At $s=0$, Equation~\ref{eq:r137_gauss_info} reduces to the incumbent-basepoint formula. At a candidate state $s>0$ that remains on the incumbent side, the relevant quantity is the \emph{remaining} distance $r-s$. If the candidate has already crossed, certification must be defined relative to the candidate's current decision. This corrected statement supersedes any historical use of the original incumbent radius at a later candidate state.
+
+\section{Joint recovery geometry}
+\subsection{Reachable margin set}
+After an update, stack the protected margins into $g^0\in\mathbb R^K$. Let $x\in\mathbb R_+^J$ be nonnegative amounts of allowed interventions and let $A\in\mathbb R^{K\times J}$ be their signed effect map. Under an affine effect model,
+\begin{equation}
+ g(x)=g^0+Ax.
+\label{eq:s_recovery_affine}
+\end{equation}
+If target margin $\tau\ge0$ is required, define the deficit $d=\tau\mathbf1-g^0$. Full recovery is feasible exactly when
+\begin{equation}
+ \exists x\ge0\quad Ax\ge d.
+\label{eq:s_recovery_feas}
+\end{equation}
+The feasible deficit set is the downward closure of the cone generated by columns of $A$.
+
+\subsection{Minimum cost, duality and shadow prices}
+For intervention costs $c\ge0$, the minimum-cost repair is
+\begin{equation}
+ C^*(d)=\min_{x\ge0}\{c^\top x:Ax\ge d\}.
+\label{eq:s_recovery_cost}
+\end{equation}
+Its dual is
+\begin{equation}
+ C^*(d)=\max_{y\ge0}\{d^\top y:A^\top y\le c\}.
+\label{eq:s_recovery_dual}
+\end{equation}
+At optimality, $y_k$ is the marginal cost of tightening protected requirement $k$. Large $y_k$ identifies a binding or expensive-to-protect behaviour under the current intervention library.
+
+\subsection{Dominated intervention screening}
+If two directions $j$ and $\ell$ satisfy $A_{\cdot j}\le A_{\cdot\ell}$ componentwise and $c_j\ge c_\ell$, direction $j$ is dominated: replacing any positive amount of $j$ by the same amount of $\ell$ weakly improves every protected margin at weakly lower cost. Dominated directions can therefore be removed before solving Equation~\ref{eq:s_recovery_cost}.
+
+\subsection{Exact infeasibility}
+The Farkas witness in the main paper is a complete alternative to feasibility.
+\begin{theorem}[Farkas recovery alternative]
+Exactly one of the following holds:
+\begin{enumerate}
+\item there is $x\ge0$ with $Ax\ge d$;
+\item there is $y\ge0$ with $A^\top y\le0$ and $y^\top d>0$.
+\end{enumerate}
+\end{theorem}
+The witness $y$ proves that every allowed nonnegative combination moves the weighted protected deficits in a direction that cannot close the required gap.
+
+\subsection{Value-preserving partition and exact added-direction obstruction}
+For the current repair question, partition requirements into lost old requirements $L$, surviving old requirements $S$, and new-capability requirements $N$. Let $A_L,A_S,A_N$ be the corresponding rows of the signed effect map, $d_L>0$ the old-loss deficits, and $r_S,r_N\ge0$ the available reserves. Value-preserving repair requires
+\begin{equation}
+ A_Lx\ge d_L,\qquad A_Sx\ge-r_S,\qquad A_Nx\ge-r_N,\qquad x\ge0.
+\label{eq:r137_value_repair}
+\end{equation}
+
+\begin{theorem}[Value-preserving repair alternative]
+Equation~\ref{eq:r137_value_repair} is feasible if and only if there are no $y_L,y_S,y_N\ge0$ satisfying
+\begin{equation}
+ A_L^\top y_L+A_S^\top y_S+A_N^\top y_N\le0
+\label{eq:r137_value_dual1}
+\end{equation}
+and
+\begin{equation}
+ y_L^\top d_L>y_S^\top r_S+y_N^\top r_N.
+\label{eq:r137_value_dual2}
+\end{equation}
+\end{theorem}
+\textit{Proof.} Stack Equation~\ref{eq:r137_value_repair} as $Bx\ge b$, $x\ge0$, where
+\begin{equation}
+ B=\begin{bmatrix}A_L\\A_S\\A_N\end{bmatrix},\qquad
+ b=\begin{bmatrix}d_L\\-r_S\\-r_N\end{bmatrix}.
+\label{eq:r137_value_stack}
+\end{equation}
+Farkas' lemma states that exactly one of $Bx\ge b$, $x\ge0$ and $y\ge0$, $B^\top y\le0$, $b^\top y>0$ is feasible. Expanding the latter gives Equations~\ref{eq:r137_value_dual1}--\ref{eq:r137_value_dual2}. $\square$
+
+If loss-only repair is feasible but the full system is infeasible, every full old-loss repair violates at least one survivor or new-capability requirement. If the loss-only system is itself infeasible, the witness proves only that full value-preserving repair is unavailable in the current library; it does not justify the vacuous statement that every full repair damages a survivor.
+
+Now suppose an original infeasible system $Bx\ge b$, $x\ge0$ is augmented with a new nonnegative intervention amount $z$ and signed effect column $a$:
+\begin{equation}
+ Bx+az\ge b,\qquad x\ge0,\quad z\ge0.
+\label{eq:r137_augmented}
+\end{equation}
+Normalize the old witness set as
+\begin{equation}
+ \mathcal Y=\{y\ge0:B^\top y\le0,\ b^\top y=1\}.
+\label{eq:r137_witness_set}
+\end{equation}
+
+\begin{proposition}[Exact obstruction test for a new direction]
+The augmented system in Equation~\ref{eq:r137_augmented} remains infeasible if and only if there exists $y\in\mathcal Y$ with $a^\top y\le0$. Consequently, a new direction removes all normalized old infeasibility certificates only if
+\begin{equation}
+ a^\top y>0\qquad\text{for every }y\in\mathcal Y.
+\label{eq:r137_break_all_witnesses}
+\end{equation}
+\end{proposition}
+\textit{Proof.} Apply Farkas' lemma to the augmented matrix $[B\ a]$. An infeasibility witness must satisfy $B^\top y\le0$ and $a^\top y\le0$ with $b^\top y>0$. Scaling the positive witness gives Equation~\ref{eq:r137_witness_set}. $\square$
+
+This proposition is stronger than the historical shorthand ``break the witness'': positive projection on one observed witness is necessary for breaking that witness, but feasibility opens only when no remaining witness has nonpositive projection on the added direction.
+
+\section{Partial recovery and discrete intervention libraries}
+Full recovery can be infeasible or unnecessarily strict. Introduce binary indicators $z_k$ for which failed decisions are restored to target margin. A general selective-recovery formulation is
+\begin{equation}
+ \max_{x\ge0,\,z\in\{0,1\}^K}\ \sum_k w_k z_k-c^\top x
+\quad\text{s.t.}\quad
+ g_k^0+(Ax)_k\ge\tau_k-M_k(1-z_k).
+\label{eq:s_partial_recovery}
+\end{equation}
+For fixed $z$, the inner problem is linear. If interventions themselves are indivisible, binary selection of directions creates a mixed-integer problem. General discrete shared intervention selection contains set cover as a special case: let each intervention cover the protected deficits it can repair, set large rewards for repaired decisions and unit intervention costs. Choosing the least-cost directions that repair all requested deficits is then exactly set cover. Thus continuous affine recovery is LP-tractable, whereas arbitrary indivisible shared selection is NP-hard.
+
+Diagonal and one-direction subclasses remain explicit. If $A$ is diagonal with positive diagonal $a_k$ and intervention cost $c_k$, the minimum full-recovery amount is $x_k^*=(d_k/a_k)_+$ and total cost $\sum_k c_k(d_k/a_k)_+$. For a single signed direction $a\in\mathbb R^K$ and scalar amount $x\ge0$, define
+\begin{equation}
+ x_{\rm lo}=\max\!\left(\{0\}\cup\left\{\frac{d_k}{a_k}:a_k>0\right\}\right)
+\label{eq:r137_xlo}
+\end{equation}
+and
+\begin{equation}
+ x_{\rm hi}=\min\!\left\{\frac{d_k}{a_k}:a_k<0\right\},
+\label{eq:r137_xhi}
+\end{equation}
+with $x_{\rm hi}=+\infty$ if there is no negative component. Rows with $a_k=0$ require $d_k\le0$.
+
+\begin{proposition}[Exact single-direction feasibility]
+The one-direction system $ax\ge d$, $x\ge0$ is feasible if and only if every zero-effect row satisfies $d_k\le0$ and $x_{\rm lo}\le x_{\rm hi}$. For strictly positive scalar intervention cost, the minimum feasible amount is $x_{\rm lo}$.
+\end{proposition}
+\textit{Proof.} If $a_k>0$, row $k$ requires $x\ge d_k/a_k$; if $a_k<0$, it requires $x\le d_k/a_k$; if $a_k=0$, feasibility requires $d_k\le0$. Intersecting these half-lines with $x\ge0$ gives exactly $[x_{\rm lo},x_{\rm hi}]$. $\square$
+
+The missing upper bound is the survivor-protection issue. For $d=(1,-1/2)$ and $a=(1,-1)$, the failed row requires $x\ge1$ while the survivor row requires $x\le1/2$; no safe full repair exists despite the positive effect on the failed row. This proposition supersedes the earlier positive-deficit-only shorthand in the historical archive.
+
+A separate spectral closed form remains valid only for a nonnegative-deficit recovery subsystem. Let
+\begin{equation}
+ A(\eta)=D-\eta H,
+\label{eq:r137_Meta}
+\end{equation}
+where $D$ is positive diagonal, $H\ge0$, $D^{-1}H$ is irreducible, $d\ge0$ is nonzero, and $c>0$ componentwise. Define
+\begin{equation}
+ \eta_f=\frac{1}{\rho(D^{-1}H)}.
+\label{eq:r137_etaf}
+\end{equation}
+\begin{proposition}[Conditioned M-matrix repair threshold]
+For $0\le\eta<\eta_f$, $A(\eta)$ is a nonsingular M-matrix and
+\begin{equation}
+ x^*(\eta)=A(\eta)^{-1}d\ge0
+\label{eq:r137_Mxstar}
+\end{equation}
+is the componentwise-minimal feasible vector for $A(\eta)x\ge d$, $x\ge0$; hence it minimizes every strictly positive linear cost. As $\eta\uparrow\eta_f$, $c^\top x^*(\eta)\to+\infty$.
+\end{proposition}
+\textit{Justification.} For $\eta<\eta_f$, the inverse is nonnegative, so every feasible $x$ satisfies $x\ge A(\eta)^{-1}d$. Irreducibility supplies positive Perron left and right vectors. Because $d\ge0$ is nonzero and $c>0$, the singular Perron component has positive projection on both sides and the cost diverges at the threshold. No such conclusion is asserted for a mixed-sign deficit vector. $\square$
+
+These closed forms are useful diagnostics for whether complexity comes from the number of protected decisions or from cross-decision coupling.
+
+\section{Robust recovery when the effect map is estimated}
+The signed map $A$ may be estimated from pilot interventions. Suppose each entry satisfies a simultaneous interval $A_{kj}\in[\underline A_{kj},\overline A_{kj}]$. A repair that must succeed for every matrix in this rectangular uncertainty set solves
+\begin{equation}
+ \min_{x\ge0}c^\top x
+\quad\text{s.t.}\quad
+ \underline A x\ge d.
+\label{eq:s_robust_rect}
+\end{equation}
+Because $x\ge0$, the componentwise lower matrix is the worst case. Thus rectangular robust affine recovery is again a linear program.
+
+For any fixed uncertainty set $\mathcal A$ (convex or not), robust feasibility is
+\begin{equation}
+ \inf_{A\in\mathcal A}(Ax)_k\ge d_k\qquad(k=1,\ldots,K).
+\label{eq:s_robust_general}
+\end{equation}
+For each fixed $A$, these are linear half-space constraints in $x$; their intersection is therefore convex for an arbitrary fixed uncertainty set. Replacing $\mathcal A$ by its convex hull does not change the robust linear constraints. Ellipsoidal row uncertainty leads to second-order cone constraints when the worst-case row support function is available. Without tractable geometry for $\mathcal A$, the difficulty is computing or separating the worst-case constraint, not loss of convexity of the feasible set in $x$.
+
+\section{Pilot intervention identification}
+The effect map can be estimated by applying isolated pilot interventions to disposable copies of the post-update model. Let direction $j$ be piloted at small amount $\epsilon_j$ and let $\widehat g^{(j)}$ be the resulting margins. A finite-difference estimator is
+\begin{equation}
+ \widehat A_{\cdot j}=\frac{\widehat g^{(j)}-\widehat g^{(0)}}{\epsilon_j}.
+\label{eq:s_fd_effect}
+\end{equation}
+The exact-affine and nonlinear experiments deliberately separate three information roles: isolated pilots estimate $A$; the optimization uses only the frozen estimate; sealed mixtures are then opened to test whether the effect map generalizes to combinations not used in identification.
+
+When pilot outcomes are noisy, experimental design can allocate pilot samples toward directions and protected rows that are hardest to distinguish. For finite pilot menu $j=1,\ldots,J$, one natural max--min information criterion is
+\begin{equation}
+ \max_{\lambda\in\Delta_J}\ \min_{Q\in\mathcal Q_{\rm alt}}\sum_{j=1}^J\lambda_j D_{\mathrm{KL}}(P_j\|Q_j),
+\label{eq:s_pilot_design}
+\end{equation}
+where $\mathcal Q_{\rm alt}$ contains effect maps with a different recovery-feasibility or optimal-plan status. Zero optimum implies that the available pilots cannot statistically distinguish the statuses; positive optimum defines a characteristic information rate for identification.
+
+\section{Nonlinear recovery and path-integrated effects}
+For a smooth path $\theta(x)$ generated by intervention weights, the exact margin difference satisfies the line-integral identity
+\begin{equation}
+ g(\theta(x))-g(\theta(0))=\int_0^1 J_g(\theta(tx))\,\frac{d\theta(tx)}{dt}\,dt.
+\label{eq:s_integrated_effect}
+\end{equation}
+If the training solution itself depends smoothly on $x$, implicit differentiation gives a path-varying effect map $A(tx)$ and
+\begin{equation}
+ g(\theta(x))=g(\theta(0))+\left[\int_0^1 A(tx)\,dt\right]x.
+\label{eq:s_integrated_A}
+\end{equation}
+The affine model is exact when the integrated effect is constant over the allowed path. Otherwise, local pilots are approximations whose validity must be tested prospectively, as in the two-layer neural experiment.
+
+If each protected margin is concave in $x$, its superlevel set $\{x:g_k(x)\ge\tau_k\}$ is convex. With convex intervention cost, minimum-cost recovery is therefore a convex program and standard constraint qualifications give strong duality. Without quasiconcavity of the margins, even one protected superlevel set can be nonconvex, so no universal convex reformulation exists.
+
+\section{Shared-parameter interference and repair trade-offs}
+\subsection{A necessary condition for zero collateral movement}
+Partition protected rows into failed set $F$ and surviving set $S$. Suppose the update-control objective requires $A_Fx\ge d_F$ and exact nonmovement on survivors $A_Sx=0$. Such a repair exists iff the polyhedral system
+\begin{equation}
+ A_Fx\ge d_F,\qquad A_Sx=0,\qquad x\ge0
+\label{eq:s_zero_collateral}
+\end{equation}
+is feasible. In a neural network this is a strong requirement because shared parameters commonly make columns of $A$ dense across both $F$ and $S$.
+
+A softer protection rule requires survivors to stay above their current safety reserve:
+\begin{equation}
+ g_S^0+A_Sx\ge \tau_S.
+\label{eq:s_survivor_constraint}
+\end{equation}
+The protected-replay experiment approximates this idea by adding retained anchors to the repair objective. The experiment is not an exact solution of Equation~\ref{eq:s_survivor_constraint}; it tests the qualitative prediction that repair data chosen only from exits can have large unobserved effects on survivors.
+
+\subsection{Repair success and collateral loss are different objectives}
+Let $r(x)$ denote recovered exits and $c(x)$ collateral failures among survivors. Maximizing $r(x)$ alone does not control $c(x)$. The two-row construction in the core SI proves that a repair can be perfect on the failed set and necessarily harmful to a survivor. The transformer stress test shows the same qualitative conflict under actual gradient-based adapter optimization: exit-only repair achieves 12/12 audit recovery while changing 56/148 held-out survivors, whereas protected replay achieves 11/12 with 2/148 collateral flips.
+
+\section{Architecture-independent decision semantics}
+The prediction and certification layer does not require parameter correspondence between model generations. Let source model $M_0$ and target model $M_1$ have arbitrary parameter spaces $\Theta_0$ and $\Theta_1$. If both induce the same action semantics and the target decision margin $g_{ia}^{(1)}$ is well defined, Equations~\ref{eq:s_general_margin}--\ref{eq:s_preservation_region} apply without a map from $\Theta_0$ to $\Theta_1$.
+
+Parameter geometry enters only when the intervention itself edits one shared parameterization. Equation~\ref{eq:s_recovery_affine}, the implicit signed effect map and the recovery programs therefore apply directly to open-weight or otherwise editable targets. For proprietary frontier generations, the empirical release trajectory can reveal turnover and paired decision changes, but the internal repair geometry is not observed. This separation is why the main paper uses frontier releases for phenomenon evidence and controlled open-weight systems for mechanism evidence.
+
+\section{Continuous-action extension}
+Suppose the deployed action is continuous and $R_i(a;\theta)$ is twice differentiable and strongly convex in $a$ near the target optimum $a_i^*(\theta)$. Exact action identity is nongeneric: an arbitrarily small model update can move the optimizer continuously. A more meaningful protected object is an action tolerance $\|a-a_i^*\|\le r_i$ or loss tolerance
+\begin{equation}
+ R_i(a_i^0;\theta)-R_i(a_i^*(\theta);\theta)\le\epsilon_i.
+\label{eq:s_continuous_tol}
+\end{equation}
+Under $\mu$-strong convexity in $a$,
+\begin{equation}
+ R_i(a_i^0;\theta)-R_i(a_i^*;\theta)\ge\frac\mu2\|a_i^0-a_i^*\|^2,
+\label{eq:s_strong_convex}
+\end{equation}
+so loss tolerance $\epsilon_i$ implies the action-distance requirement $\|a_i^0-a_i^*\|\le\sqrt{2\epsilon_i/\mu}$. The decision-boundary concept therefore survives for continuous actions as a tolerance region rather than exact optimizer identity.
+
+\section{Repeated model releases as margin dynamics}
+The current paper makes lifecycle structure a headline result, while the empirical history diagnostic remains supporting evidence. The earlier repeated-release framework is therefore retained as a direct state-dynamics component and can be augmented, when an application has dependent state, by the re-establishment term defined in the migration-work reconstruction below.
+
+Let $g_t\in\mathbb R^K$ be protected margins after release $t$. Write the uncontrolled next-release movement as $r_t$ and the chosen intervention effect as $A_t x_t$:
+\begin{equation}
+ g_{t+1}=g_t+r_t+A_t x_t.
+\label{eq:s_margin_dynamics}
+\end{equation}
+A finite-horizon update-control problem can require $g_t\ge\tau_t$ for protected behaviours while minimizing intervention cost and maintaining new-capability constraints. In the affine deterministic case,
+\begin{equation}
+ \min_{x_0,\ldots,x_{T-1}\ge0}\sum_{t=0}^{T-1}c_t^\top x_t
+\quad\text{s.t.}\quad
+ g_0+\sum_{s<t}(r_s+A_sx_s)\ge\tau_t\quad\forall t.
+\label{eq:s_multirelease_lp}
+\end{equation}
+This is one linear program. The state relevant for future preservation is the current margin vector together with any variables needed to predict future update effects; current binary correctness alone is generally insufficient.
+
+The empirical M25--M100 history diagnostic is consistent with this distinction but is not strong enough for a headline causal claim. Among 94 M75-reliable questions, earlier reliability increases the observed M100 retention rate, and adding M25/M50 indicators raises leave-one-question-out AUC from 0.714 to 0.772 beyond the current M75 margin. These values are retained as descriptive evidence only.
+
+\section{Data order and curriculum effects}
+Even when the multiset of training examples is fixed, noncommuting optimizer updates can make order matter. Let small update maps be $T_A(\theta)=\theta-\eta\nabla L_A(\theta)$ and $T_B(\theta)=\theta-\eta\nabla L_B(\theta)$. In general,
+\begin{equation}
+ T_B(T_A(\theta))-T_A(T_B(\theta))
+ =\eta^2\left[H_B\nabla L_A-H_A\nabla L_B\right]+O(\eta^3),
+\label{eq:s_order_commutator}
+\end{equation}
+where Hessians are evaluated locally. Therefore two training schedules using the same examples can produce different protected-margin trajectories at second order. In an update-control algorithm, data selection and data order are separate design variables unless the relevant update maps commute or the step size is negligible.
+
+This extension is retained because it is a genuine model-update effect, but the current main experiments do not isolate curriculum order and no headline claim depends on Equation~\ref{eq:s_order_commutator}.
+
+\section{Decision-induced observations as an optional extension}
+If deployed decisions affect which future outcomes become observable, the evidence law used to evaluate a later update is action-dependent. Let action $a_t$ determine feasible observation set $\mathcal X_t(a_t)$ and update/evidence map $A_t(a_t)$. Then
+\begin{equation}
+ g_{t+1}=g_t+r_t+A_t(a_t)x_t,
+ \qquad x_t\in\mathcal X_t(a_t).
+\label{eq:s_decision_induced}
+\end{equation}
+Conditional on an action sequence, the reachability and recovery theory applies unchanged. Optimizing the action sequence introduces an exploration problem.
+
+\begin{proposition}[No-support identifiability limit]
+Suppose the deployed policy gives zero probability to an alternative action $a$ in context $i$, and the model class imposes no restriction linking the unobserved outcome law for $(i,a)$ to observed action--context pairs. Then no estimator using only deployed data can uniformly determine whether $a$ is better or worse than the deployed action.
+\end{proposition}
+\textit{Proof.} Construct two environments that agree on every action--context pair in the support of the deployed policy but assign opposite relative losses to the never-observed pair $(i,a)$. The observed-data distributions are identical, while the optimal decision differs. $\square$
+
+This extension is retained as a scope boundary: it is not used to explain the current transformer experiments.
+
+\section{Sequential decision systems: Bellman boundary form}
+For a finite-horizon decision process with stage $h$, state $s$ and action $a$, define the target Bellman comparison against incumbent action $a^0$ by
+\begin{equation}
+ G_h(s,a)=Q_h(s,a)-Q_h(s,a^0).
+\label{eq:s_bellman_gap}
+\end{equation}
+The incumbent action remains target-optimal at $(h,s)$ exactly when $G_h(s,a)\ge0$ for all rivals. Thus the same preservation geometry applies, but the margin now includes both immediate cost and target continuation value.
+
+If only a subset of primitive one-step costs or transition rows changes, Bellman effects propagate to predecessor states. This sequential decision-boundary theory is the upstream layer. R128 also restores the supporting dependency/recomputation layer below: once invalidated roots are known, downstream Bellman or workflow state is recomputed only where those roots can propagate.
+
+For stochastic target evidence, the fixed-confidence quantity becomes the KL distance from the target local evidence law to the nearest law that reverses the Bellman ordering. The same change-of-measure lower bound as Equation~\ref{eq:s_kl_lower} then applies. This provides an architecture-independent statistical interpretation of ``distance to a decision reversal'' in sequential systems.
+
+\section{Paid model tiers as a boundary example}
+An earlier extension considered a user choosing among paid model tiers. It is retained as a simple illustration of how model generations and prices can shift a decision boundary without changing the general theory.
+
+For tier $m$, let total decision cost be
+\begin{equation}
+ J_m(c)=p_m+L_m+c h_m=b_m+c h_m,
+\label{eq:s_tier_cost}
+\end{equation}
+where $p_m$ is model price, $L_m$ expected task loss, $h_m$ human effort and $c\ge0$ the value placed on human effort. Pairwise switching occurs only at
+\begin{equation}
+ c_{m\ell}^{\rm switch}=\frac{b_\ell-b_m}{h_m-h_\ell}
+\label{eq:s_tier_switch}
+\end{equation}
+when the denominator is nonzero. A tier is optimal on the intersection of the half-lines induced by all rivals. A release preserves the old tier exactly while every post-release pairwise cost gap remains nonnegative. This extension is mathematically valid but is not used in the current empirical story.
+
+\section{Empirical archive: controlled open-weight trajectory}
+\subsection{Checkpoint summary}
+The earlier controlled SmolLM2-135M trajectory contains the checkpoint-level summary in Table~\ref{tab:s_checkpoint_archive}. These rows are retained because they establish that broad information-quality improvement and reliable-set replacement can coexist under an observed parameter update.
+\begin{table}[H]
+\centering
+\caption{Controlled open-weight checkpoint summary from the archived trajectory.}
+\label{tab:s_checkpoint_archive}
+\begin{tabular}{lrrrr}
+\toprule
+Checkpoint & Held-out accuracy & Correct & Errors & Strict 10/10 questions\\
+\midrule
+M0 & 29.51\% & 1328 & 3172 & 0\\
+M25 & 71.80\% & 3231 & 1269 & 23\\
+M50 & 77.89\% & 3505 & 995 & 38\\
+M75 & 78.56\% & 3535 & 965 & 46\\
+M100 & 76.04\% & 3422 & 1078 & 31\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A later non-redacted ledger uses 4,400 held-out records and 440 complete questions. On that ledger, M25$\rightarrow$M50 improves accuracy, balanced accuracy, positive-class F1 and MCC simultaneously. M50$\rightarrow$M75 changes 398 correctness records for only 22 net additional correct records, an 18.1-fold gross-to-net ratio. These numbers explain why aggregate change is an inadequate proxy for behavioural replacement.
+
+\begin{table}[H]
+\centering
+\caption{Non-redacted information-quality metrics.}
+\label{tab:s_metrics_archive}
+\begin{tabular}{lrrrr}
+\toprule
+Checkpoint & Accuracy & Balanced accuracy & Positive F1 & MCC\\
+\midrule
+M25 & 0.7118 & 0.5500 & 0.2287 & 0.1776\\
+M50 & 0.7775 & 0.7522 & 0.6512 & 0.4901\\
+M75 & 0.7825 & 0.7168 & 0.6047 & 0.4607\\
+M100 & 0.7561 & 0.6403 & 0.4627 & 0.3586\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Gross correctness turnover and strict reliable-set replacement.}
+\label{tab:s_gross_turnover}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Update & Wrong$\to$correct & Correct$\to$wrong & Gross & Net & Gross/$|$net$|$ & Old strict & Exits/entries\\
+\midrule
+M25$\to$M50 & 730 & 441 & 1171 & +289 & 4.05 & 14 & 8/31\\
+M50$\to$M75 & 210 & 188 & 398 & +22 & 18.09 & 37 & 15/20\\
+M75$\to$M100 & 159 & 275 & 434 & -116 & 3.74 & 42 & 25/9\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Empirical archive: boundary localization}
+The prospective score for each controlled transition is computed from the old checkpoint before the next checkpoint is examined. On non-redacted records the AUCs are 0.907, 0.922 and 0.939 for M25$\to$M50, M50$\to$M75 and M75$\to$M100. At the final transition, the 17.0\% closest records contain 90\% of flips, 20.5\% contain 95\%, and 27.9\% contain all observed flips. These are concentration curves rather than formal zero-miss certificates.
+
+The grouped predictor comparison is particularly useful because it tests a competing explanation: that boundary distance merely proxies task category or prompt metadata. Boundary margin alone has AUC 0.939 and Brier 0.0402; category, prompt style, source-model identity and answer length together have AUC 0.727 and Brier 0.0526; adding those metadata to the boundary margin gives AUC 0.932. The margin therefore carries information not explained by those descriptors in this dataset.
+
+\section{Empirical archive: fixed-direction interventions}
+The Qwen2.5-3B and SmolLM2-360M fixed-direction tests use a stronger design than independent checkpoint comparison. For each model, a learned M75$\to$M100 LoRA direction is held fixed and scaled by multipliers $\lambda\in\{0,0.125,0.25,\ldots,1\}$. Only the magnitude of the same parameter-space direction changes.
+
+For Qwen2.5-3B, the old boundary distance predicts 19 endpoint flips with ROC AUC 0.975; a 2,000-permutation test gives $P=5.0\times10^{-4}$; among crossing decisions, first-crossing rank correlation is $\rho=0.823$. The nearest boundary quartile first changes at $\lambda=0.125$ and reaches an 8.72\% flip rate at $\lambda=1$, while the farthest quartile never flips over the tested path. SmolLM2-360M independently gives AUC 0.971, the same permutation resolution, and first-crossing $\rho=0.863$, again with zero flips in the farthest quartile.
+
+These experiments identify boundary proximity as a mechanism conditional on the learned update direction. They do not imply that the old margin alone predicts arbitrary future directions.
+
+\section{Empirical archive: exact-affine intervention study}
+The exact-affine experiment uses the public handwritten-digits classification data. Base training, release training, development and test splits are disjoint under a fixed seed. One correctly classified boundary-near test observation per digit is frozen before the release, giving ten protected decisions.
+
+The exogenous release direction is the mean cross-entropy gradient on the disjoint release-training subset. Its step size is selected only from a pre-specified development grid, not from protected outcomes. The selected release improves development accuracy while invalidating two of ten protected decisions. Ten class-specific replay batches are then applied separately to identical post-release copies. These isolated interventions populate the signed effect matrix before any combined mixture is opened.
+
+The frozen map is evaluated on 80 unseen pair, triple and quadruple mixtures, giving 800 protected-decision margin predictions. All 800 signs are correct and the realized margins are exactly affine to numerical precision. The minimum-cost repair uses two channels, has normalized cost 0.591 and restores all ten protected decisions. A restricted library makes one lost row unreachable and yields an explicit Farkas witness.
+
+\section{Empirical archive: nonlinear neural robustness}
+A two-layer ReLU network with 64 hidden units per layer repeats the same temporal separation between identification and audit. Development accuracy rises from 90.66\% to 91.48\%, two of ten protected decisions are invalidated, and isolated class-replay updates define a local finite-difference map. A conservative design target of 0.03 is used for a deployment target of 0.02. The minimum-cost plan uses three channels, has normalized cost 5.6206 and restores all ten protected decisions with minimum realized margin 0.02913.
+
+The 80 sealed mixtures again generate 800 protected-decision predictions. Sign accuracy is 800/800, $R^2=0.999999687$, and maximum absolute margin error is 0.001957. The experiment therefore preserves the prospective sign predictions despite measurable nonlinearity.
+
+\section{Empirical archive: actual optimizer and frozen replication}
+The single-system optimizer stress test and the ten frozen family-seed runs are retained in full because they move beyond output-layer or finite-difference interventions to actual gradient-based transformer optimization.
+
+In the single SmolLM2-360M stress test, the controlled release invalidates 29 of 320 source-correct protected decisions. Seventeen exits are calibration and twelve are held-out audit. Exit-only repair recovers all twelve held-out exits but changes 56/148 held-out retained decisions. Protected replay recovers 11/12 while changing 2/148. Mean held-out margin change switches from -1.3654 to +1.4483. This demonstrates that repair success on exits and preservation of survivors are different objectives.
+
+Across the ten frozen SmolLM2/Qwen runs reported earlier in Table~\ref{tab:s_tenruns}, protected replay reduces collateral flip rate in every paired run. Mean rate falls from 23.75\% to 1.60\%, while mean exit recovery remains 92.2\% under protected replay. The exact two-sided sign-test probability for ten decreases in ten pairs is 0.001953125.
+
+\section{Frontier-family turnover archive}
+The frontier release ledgers are observational and are therefore used only to establish the phenomenon, not the mechanism. The strict reliable sets are non-nested across matched GPT, Claude, Gemini and Grok transitions. The clean Claude chain includes tasks that are strict reliable at 4.7, leave at 4.8 and return at 5.0. Gemini and Grok provide independent-family replication with smaller strict sets. These data motivate a paired model-update question: which incumbent reliable behaviours survive a new release? They do not reveal the internal training direction of proprietary systems.
+
+The archive also contains threshold-robustness and human-labelled safety checks. These remain useful as supporting evidence that turnover is not an artifact of one strict reliability threshold or one benchmark family, but they are not used to identify the boundary mechanism.
+
+\section{History dependence: retained only as a secondary diagnostic}
+Earlier versions emphasized history more strongly. The corrected evidence is weaker than the boundary evidence and is therefore demoted. Among 94 M75 strict-reliable questions, 18/21 that were already M25-reliable remain reliable at M100 versus 50/73 that were not M25-reliable (85.7\% vs 68.5\%; odds ratio 2.76; one-sided Fisher $P=0.0973$). A leave-one-question-out diagnostic gives AUC 0.714 from current M75 margin alone and 0.772 when M25/M50 strict-state indicators are added.
+
+These numbers suggest that current binary state is not necessarily the entire predictive state, but they do not justify a standalone theorem about release history. They are preserved because repeated-release prediction may become important again if future data provide stronger evidence.
+
+\section{Supporting migration-work reconstruction: validate, repair and reopen}
+The historical migration story contained two different objects that should not be conflated. The first is a broad deployment decision: after a candidate release arrives, how much target evidence should be read, whether the candidate should be repaired, which old decisions can be carried, which must be reopened, and what verified state is left for the next release. The second is the narrower calculation performed after the reopened set is already known: follow the dependency graph and count or weight the operations whose values may be invalid. R128 restores the first object as the common deployment shell and retains the second only as an operational consequence.
+
+\subsection{Unified one-update migration work}
+Let $\mathcal D$ be the protected decisions, $T$ a target-evidence plan, $x$ an approved intervention, and $U\subseteq\mathcal D$ the decisions reopened for complete reevaluation. Let $C^{\mathrm{test}}(T)$ be validation work, $c^\top x$ intervention work and $f(U)$ application re-establishment work. Complete evaluation of the repaired target gives $a_i^{\mathrm{full}}(x)$. The historical objective is
+\begin{equation}
+\begin{aligned}
+W^*=\min_{T,x,U}\;&C^{\mathrm{test}}(T)+c^\top x+f(U)\\
+\text{s.t. }&\Pr\!\left(\widehat a_i(T,x,U)=a_i^{\mathrm{full}}(x)\ \text{for all }i\in\mathcal D\right)\ge 1-\delta,\\
+&x\in\mathcal X_{\mathrm{app}},\qquad U\subseteq\mathcal D.
+\end{aligned}
+\label{eq:s_migration}
+\end{equation}
+The application gate is imposed before deployment and after any model-changing intervention. Setting $f\equiv0$ recovers pure qualification and control; setting $x=0$ gives selective validation/reopening; setting both $f\equiv0$ and a separable unit-cost certificate recovers the usual independent keep-or-replace special case. Thus migration work is a wrapper around the active scientific results, not a competing theory of model learning.
+
+The three terms should be measured in units fixed before target outcomes are opened. When calls, latency, human effort and money cannot be converted without an application-specific trade-off, they are reported separately; a scalar decision objective is used only when that trade-off is supplied by the deployment protocol.
+
+\subsection{Downstream work after reopened roots are known}
+For an explicit dependency workflow, operation $v$ has nonnegative work $w_v$ and protected parent set $pa(v)\subseteq\mathcal D$. If an operation must be recomputed whenever at least one reopened parent can invalidate it, then
+\begin{equation}
+f(U)=\sum_v w_v\,\mathbf 1\{U\cap pa(v)\neq\varnothing\}.
+\label{eq:s_coverage}
+\end{equation}
+Let $B(U)$ denote the descendant closure reached from $U$. Reusing values outside $B(U)$ and recomputing within $B(U)$ is exact for pure/idempotent operations and for explicitly modelled admissible state transitions. This is standard invalidation once $U$ is known; the update problem is to determine $U$ correctly under incomplete evidence and possible repair.
+
+For random reopened sets, linearity of expectation gives
+\begin{equation}
+\mathbb E[f(U)]=\sum_v w_v\Pr\!\left(U\cap pa(v)\neq\varnothing\right).
+\label{eq:s_expected_coverage}
+\end{equation}
+Per-decision change probabilities are generally insufficient because a shared operation is paid once whether one or several parents reach it. The needed statistic is the activation probability of each downstream operation.
+
+\begin{proposition}[Exact boundary for when changed-decision count is sufficient]
+Aggregate all operations with the same nonempty parent set $P\subseteq\mathcal D$ into weight $\omega(P)$. The coverage work in Equation~\ref{eq:s_coverage} depends only on $|U|$ for every reopened set $U$ if and only if $\omega(P)$ is invariant under every permutation of decision labels, equivalently the aggregated weight depends only on $|P|$. If, in addition, validation/repair choices factor by decision and reopening work is modular, the total one-update optimum decomposes into singleton optima. When either separability condition fails, two updates with the same number of changed or reopened decisions can have different total migration work.
+\end{proposition}
+This proposition records the exact positive boundary for counting. It is useful because it tells us when a simple count is adequate; it is not used as a headline discovery about AI updates.
+
+\subsection{Sound release information localizes unresolved decisions}
+Let $E$ denote any sound information about the candidate release and let $\Gamma(E)$ be the complete-target action profiles still compatible with that evidence. Define
+\begin{equation}
+Z(E)=\{i\in\mathcal D:\ \text{some profile in }\Gamma(E)\text{ differs from the incumbent at }i\}.
+\label{eq:s_unresolved}
+\end{equation}
+Every decision outside $Z(E)$ is safe to carry without new target evidence, while every decision inside $Z(E)$ remains unresolved from $E$ alone. Refining sound evidence can only shrink $Z(E)$. Under a scalar release certificate $|g_i^{\mathrm{new}}-g_i^0|\le\Delta$, this becomes the explicit set $Z_\Delta=\{i:g_i^0\le\Delta\}$. For a dependency workflow,
+\begin{equation}
+U\subseteq Z(E),\qquad B(U)\subseteq B(Z(E)).
+\label{eq:s_scope}
+\end{equation}
+Thus release information is valuable first because it removes protected decisions from qualification and second, where relevant, because it excludes their descendants from operational re-establishment. Under coordinate-complete black-box uncertainty, every unresolved coordinate is necessary in the worst case; with cross-coordinate restrictions the exact problem becomes a finite identification/decision-tree problem rather than a simple item count.
+
+\subsection{Carried state, adoption and repeated releases}
+After release opportunity $t$, the verified state is
+\begin{equation}
+S_t=(D_t,R_t,E_t,G_t),
+\label{eq:s_carried_state}
+\end{equation}
+where $D_t$ is the deployed model, $R_t$ the decisions still certified, $E_t$ reusable evidence and $G_t$ the dependency/timing state needed to value future re-establishment. Two histories ending at the same model can therefore have different future migration work. If an application has no dependent workflow, $G_t$ is empty and the state reduces to the model, protected certificates and evidence.
+
+For a chosen deterministic release path $\pi=(t_0,\ldots,t_K)$, the downstream component decomposes operation by operation as
+\begin{equation}
+F_\pi=\sum_v w_v m_v(\pi),\qquad
+m_v(\pi)=\sum_{k=1}^{K}\mathbf 1\{U^*_{t_{k-1},t_k}\cap pa(v)\neq\varnothing\}.
+\label{eq:s_path_downstream}
+\end{equation}
+A transient reopening can therefore create work on an intermediate migration even when the direct endpoint comparison would not reopen that root. This is one operational reason that adjacent release decisions need not compose; the main-text lifecycle theorem gives the stronger state/re-entry boundary without requiring a downstream graph.
+
+Passing the application gate makes a candidate admissible, not automatically worth adopting. If $V_{\mathrm{app}}(M)$ is application value and $W_t^*$ is the minimum one-update migration work from the current carried state, adoption compares the application-value gain with $W_t^*$ and the change in continuation value. This restores the historical distinction between candidate qualification and dynamic adoption.
+
+\subsection{Provider release information as a supporting extension}
+The historical framework also valued information supplied before target testing. Let $C_{\mathrm{life}}(E)$ be minimum lifecycle work conditional on sound evidence set $E$. The marginal value of additional evidence item $\ell$ is
+\begin{equation}
+\Delta_\ell(E)=C_{\mathrm{life}}(E)-C_{\mathrm{life}}(E\cup\{\ell\})\ge0.
+\label{eq:s_provider_value}
+\end{equation}
+A deployer purchases or generates that evidence when its cost is below the work saved. A provider that internalizes fraction $\alpha\in[0,1]$ of deployment savings has the corresponding threshold scaled by $\alpha$. Evidence can be complementary: two individually uninformative disclosures can jointly eliminate the last evidence-consistent changed state. This strategic layer is retained as a supporting consequence of the same qualification problem; no headline claim depends on a provider game.
+
+\subsection{Recovered operational checks and numerical consequences}
+The following historical checks are retained because they test that the carry/repair/reopen rule reproduces the same complete target while reducing repeated work. They do not establish the decision-boundary mechanism by themselves.
+
+\begin{table}[H]
+\centering
+\caption{Historical migration-work checks retained as supporting operational evidence.}
+\label{tab:s_migration_checks}
+\small
+\setlength{\tabcolsep}{3.5pt}\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.19\textwidth}>{\raggedright\arraybackslash}p{0.22\textwidth}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}X}
+\toprule
+Evidence block & Complete / comparator & Selective result & What it shows\\
+\midrule
+120-review controlled workflow & 2,520 target calls; 372 downstream operations & 1,414 target calls; 107 carry, 10 repair, 3 reopen; 12 downstream operations & 120/120 complete-target decisions and deterministic artifacts reproduced\\
+Post-freeze BFCL TinyLlama v0.6$\rightarrow$v1.0 & 812 full downstream operations; 137 dependency-only & 135 carry, 16 repair, 5 reopen; 33 selective operations & 156/156 complete-target decisions reproduced under the frozen protocol\\
+Archived GPT-5.4$\rightarrow$5.5 agent trace & 1,476 tool calls; 3,445 messages & 310 tool calls and 693 messages avoided by exact revalidation & Same target decisions with less repeated execution\\
+Ten provider-release pairs & Negative-flip-rate ranking & Kendall $\tau=-0.63$ with exact target-trial work; 34/45 pairwise rankings reverse & Decision-change count is not a work proxy\\
+Fixed recomputation-budget study & Oracle-assisted NFR and random selection & Dependency-aware rule 270/270 complete policies; NFR 49/270; random 18/270 & Dependency location matters after roots are chosen\\
+Controlled queue timing check & Mean human visits 2.510 & Mean visits 2.464 while waiting probability rises 0.614$\rightarrow$0.693 & Timing/concentration, not only total work, can change operational disruption\\
+Rolling-release backtest & Adjacent versus direct strict-reliability checking & GPT 129 versus 65 trials; Claude 189 versus 24 & Repeated intermediate releases can require more requalification than a direct endpoint comparison\\
+\bottomrule
+\end{tabularx}
+\end{table}
+The scientific interpretation is deliberately limited. These rows show that an update can have operational consequences not captured by a count of changed decisions and that the unified migration objective can be executed end to end. The core causal and statistical claims remain the information boundary, prospective first crossing, signed intervention effects and lifecycle state.
+
+
+
+
+\section{Minimality of the margin vector for prospective affine crossings}
+The earlier Supplement contained a stronger statement than the scalar boundary theorem: if one wants to predict first crossings under \emph{every} affine update direction, the complete positive margin vector cannot be compressed to a strictly coarser universal summary.
+
+\begin{theorem}[Minimal prospective decision state]
+Let $g\in\mathbb R_{++}^K$ be the vector of positive margins against all relevant rivals. Suppose a summary $T(g)$, together with an arbitrary direction $s\in\mathbb R^K$, is sufficient to determine
+\begin{equation}
+ \chi(g,s)=\min_{k:s_k<0}\frac{g_k}{-s_k}
+\label{eq:s_minimal_summary_cross}
+\end{equation}
+for every $g$ and every $s$, with $+\infty$ for an empty minimizing set. Then $T$ must be injective on $\mathbb R_{++}^K$.
+\end{theorem}
+\textit{Proof.} Suppose $g\neq g'$ but $T(g)=T(g')$. Choose coordinate $k$ with $g_k\neq g'_k$ and direction $s=-e_k$. Then $\chi(g,s)=g_k$ and $\chi(g',s)=g'_k$. The same summary value would have to determine two different crossings, a contradiction. $\square$
+
+This result clarifies the relation between current correctness and future vulnerability. Margin \emph{signs} are enough to state whether a decision is currently preserved; the full positive margin vector is the minimal state for uniformly determining all prospective affine first-crossing distances. Any smaller scalar score can still be predictive for a restricted distribution of update directions, as the empirical boundary score is, but cannot be universally sufficient.
+
+\section{Training versus later certification}
+Earlier versions developed a train--then--certify extension because moving a decision farther from its boundary can reduce the evidence required to establish its sign. This section is retained as a mathematically complete extension of the same boundary mechanism.
+
+\subsection{Gaussian one-margin specialization}
+Assume current positive margin $g$, one repair direction with gain $\beta>0$ per unit intervention $x\ge0$, linear intervention cost $c_Tx$, and Gaussian validation observations with mean $g+\beta x$ and variance $\sigma^2$. A fixed-confidence sign certificate has leading validation cost
+\begin{equation}
+ C_V(x)=\frac{2c_V\sigma^2\log(1/\alpha)}{(g+\beta x)^2}.
+\label{eq:s_gaussian_validation_cost}
+\end{equation}
+The total asymptotic design cost is
+\begin{equation}
+ C(x)=c_Tx+\frac{2c_V\sigma^2\log(1/\alpha)}{(g+\beta x)^2}.
+\label{eq:s_train_certify_cost}
+\end{equation}
+
+\begin{theorem}[Cube-root train--then--certify rule]
+The unique optimum of Equation~\ref{eq:s_train_certify_cost} is
+\begin{equation}
+ m^*=\left(\frac{4\beta c_V\sigma^2\log(1/\alpha)}{c_T}\right)^{1/3},
+ \qquad
+ x^*=\frac{[m^*-g]_+}{\beta}.
+\label{eq:s_cube_root}
+\end{equation}
+\end{theorem}
+\textit{Proof.} In the interior,
+\begin{equation}
+ C'(x)=c_T-\frac{4c_V\sigma^2\beta\log(1/\alpha)}{(g+\beta x)^3},
+\qquad
+ C''(x)=\frac{12c_V\sigma^2\beta^2\log(1/\alpha)}{(g+\beta x)^4}>0.
+\label{eq:s_cube_derivative}
+\end{equation}
+Setting the derivative to zero gives $g+\beta x=m^*$; nonnegativity of $x$ gives the positive part. $\square$
+
+The result is not used as a main-paper recommendation. It is retained because it makes an important mechanism explicit: when validation is expensive or noisy, moving a vulnerable margin farther from zero can be valuable even after the desired classification has already been restored. Conversely, expensive intervention makes minimal movement preferable.
+
+\subsection{General characteristic information after training}
+For fixed training choice $x$, let validation channel $j$ have law $P_{j,x}$ and cost $v_j>0$. Let $\operatorname{Alt}(x)$ be the set of admissible post-training laws under which at least one protected decision vector differs from the truth. Define information per unit validation cost
+\begin{equation}
+ \Gamma(x)=\sup_{\rho\ge0:\,v^\top\rho=1}\ \inf_{Q\in\operatorname{Alt}(x)}
+ \sum_j \rho_j D_{\rm KL}(P_{j,x}\|Q_j).
+\label{eq:s_gamma_x}
+\end{equation}
+Any $\alpha$-correct sequential certificate with total validation cost $C_V$ obeys
+\begin{equation}
+ \mathbb E_x C_V\ge \frac{\operatorname{kl}(1-\alpha,\alpha)}{\Gamma(x)}.
+\label{eq:s_gamma_lower}
+\end{equation}
+If $\Gamma(x)=0$, finite expected validation cost is impossible uniformly over the admissible alternatives. A matching generalized-likelihood-ratio tracking upper bound requires additional conditions beyond identifiability: the post-training model must be correctly specified, the relevant alternatives must be uniformly separated, the information optimizer must be attainable by a stable sampling design, and the likelihood process must satisfy the regularity needed for the stated iterated-logarithm remainder. Under such conditions one may obtain the first-order form
+\begin{equation}
+ \mathbb E_x C_V\le \frac{\log(1/\alpha)+O(\log\log(1/\alpha))}{\Gamma(x)}.
+\label{eq:s_gamma_upper}
+\end{equation}
+Outside these conditions only the lower-bound statement is asserted here. Thus, within the regular subclass, an asymptotic train--then--certify design minimizes
+\begin{equation}
+ \inf_x\left\{C_T(x)+\frac{\log(1/\alpha)}{\Gamma(x)}\right\}.
+\label{eq:s_general_train_certify}
+\end{equation}
+If $C_T$ is convex and positive $\Gamma$ is concave, Equation~\ref{eq:s_general_train_certify} is convex because $z\mapsto1/z$ is convex and decreasing on the positive line. In one dimension strict convexity reduces the solution to a unique monotone root. A universal radicals formula is impossible for the unrestricted convex class because it can contain first-order conditions with a generic nonsolvable quintic.
+
+\section{End-to-end pilot, intervention and certification information}
+Pilot experiments may be needed before choosing the production intervention. Let $\Gamma_{\rm rec}(\theta)$ denote the characteristic information rate for deciding whether the required recovery is feasible from the available intervention library. Suppose pilot interventions are run on independent disposable copies and do not alter the production model. If recoverability identification has error at most $\alpha_I$, the production intervention is $x$, and final certification has error at most $\alpha_V$, every stagewise procedure satisfies
+\begin{equation}
+ \mathbb E C_{\rm total}\ge
+ \frac{\operatorname{kl}(1-\alpha_I,\alpha_I)}{\Gamma_{\rm rec}(\theta)}
+ +C_T(x)
+ +\frac{\operatorname{kl}(1-\alpha_V,\alpha_V)}{\Gamma(x)},
+ \qquad \alpha_I+\alpha_V\le\alpha.
+\label{eq:s_end_to_end_info}
+\end{equation}
+When the regularity assumptions for pilot tracking and final validation hold, both information terms are first-order attainable. If $A=1/\Gamma_{\rm rec}$ and $B=1/\Gamma(x)$, replacing binary relative entropy by its leading small-error logarithm gives the optimal error split
+\begin{equation}
+ \alpha_I^*=\alpha\frac{A}{A+B},\qquad
+ \alpha_V^*=\alpha\frac{B}{A+B}.
+\label{eq:s_error_split}
+\end{equation}
+The statistically harder stage receives the larger share of allowable error. This extension is useful when a future algorithm must learn an effect map from a small number of pilot updates before committing to a repair direction.
+
+\section{Multi-release recovery and no-return conditions}
+Equation~\ref{eq:s_multirelease_lp} gives one retained affine dynamic model. Several exact consequences are worth preserving.
+
+\begin{proposition}[Final-horizon affine recovery]
+Suppose only the final margin vector $g_T$ is constrained, and updates satisfy $g_{t+1}=g_t+r_t+A_tx_t$. Then minimum intervention cost over a known $T$-release path is the linear program
+\begin{equation}
+ \min_{x_t\ge0}\sum_{t=0}^{T-1}c_t^\top x_t
+ \quad\text{s.t.}\quad
+ \sum_{t=0}^{T-1}A_tx_t\ge \tau-g_0-\sum_{t=0}^{T-1}r_t.
+\label{eq:s_final_horizon_lp}
+\end{equation}
+\end{proposition}
+The stacked intervention matrix $[A_0\ A_1\ \cdots\ A_{T-1}]$ reduces the problem to the same cone-reachability geometry as one-release recovery.
+
+If protection is required at every release, the LP gains intermediate prefix constraints
+\begin{equation}
+ g_0+\sum_{s=0}^{t-1}(r_s+A_sx_s)\ge\tau_t,
+ \qquad t=1,\ldots,T.
+\label{eq:s_all_release_constraints}
+\end{equation}
+These can change the optimum because an intervention that is cheapest for final recovery may allow an unacceptable intermediate loss.
+
+\begin{proposition}[No-return certificate]
+Suppose a protected margin has become negative at release $t$ and every admissible future uncontrolled movement and intervention effect on that margin is nonpositive. Then that decision cannot return to the required nonnegative region at any later release.
+\end{proposition}
+This simple certificate explains why observed reliable$\to$unreliable$\to$reliable trajectories imply that at least one later release direction must have a favorable signed component for the lost behaviour. The frontier-model return examples establish the phenomenon but do not identify the hidden favorable direction.
+
+\section{Exact tractability map retained from the earlier Supplement}
+Table~\ref{tab:s_tractability} records which parts of the recovered theory have explicit forms and where a different mathematical object is unavoidable. It is intentionally limited to branches that survive the new scientific scope.
+
+\begingroup\scriptsize
+\begin{longtable}{p{0.16\textwidth}p{0.25\textwidth}p{0.25\textwidth}p{0.18\textwidth}}
+\caption{Exact solution and tractability map for the retained theory.}\label{tab:s_tractability}\\
+\toprule
+Result family & Most explicit general solution & Why no stronger universal formula is available & Exact tractable boundary\\
+\midrule\endfirsthead
+\toprule
+Result family & Most explicit general solution & Why no stronger universal formula is available & Exact tractable boundary\\
+\midrule\endhead
+Decision preservation & Multi-factor affine polyhedron $g_i^0+S_iu\ge0$; straight-direction first crossing explicit; general path uses first zero of binding gap & A summary sufficient for every affine direction must be injective in the positive margin vector; arbitrary smooth roots have no universal radicals form & Affine region is polyhedral; monotone scalar gaps have unique roots; general continuous path uses global first root\\
+Affine recovery & Cone feasibility, primal--dual LP and Farkas witness; scalar, one-direction and diagonal closed forms & Active dual faces and cheapest directions change with cost/effect thresholds & Fixed continuous library is LP-tractable; indivisible shared selection contains set cover\\
+Nonlinear recovery & Exact feasible superlevel intersection; concave-margin minimum cost has strong duality & Non-quasiconcave margins can have nonconvex safety superlevel sets & Concave margins + convex cost give a convex program\\
+Pilot identification & Cost-normalized KL max--min for recoverability or plan status & Opposite-status alternatives depend on the observation family; zero separating information makes finite identification impossible & Finite separated menu with regular identifiable channels admits first-order tracking\\
+Robust recovery & Minimum-cost intervention over effect-map confidence set; rectangular affine uncertainty uses lower matrix & Without geometry on uncertainty, worst-case effect is unrestricted & Convex confidence sets preserve convexity; boxes give an LP\\
+Train--then--certify & $\inf_x\{C_T(x)+\log(1/\alpha)/\Gamma(x)\}$; Gaussian affine case has cube-root closed form & General convex costs can yield nonsolvable polynomial first-order equations & Positive concave $\Gamma$ plus convex $C_T$ is convex; one-dimensional strict case has unique root\\
+Multi-release affine control & Stacked LP and dual; final-only scalar subclasses explicit & Intermediate protection changes active future constraints & Known affine release path is LP-tractable\\
+Data order & Exact composition or second-order commutator & No simplification without structure on batch Hessians and gradients & Quadratic two-batch update explicit; general smooth order uses composed maps\\
+Paid model tiers & Every pairwise switch and tier-optimality interval explicit & None within finite affine total-cost tier model & Lower envelope of finitely many affine tier costs\\
+Boundary information & KL characteristic-information max--min; Gaussian subclasses explicit & Nearest reversing law depends on observation family and shared channels & Regular finite-dimensional families admit first-order GLR tracking\\
+Decision-induced data & Exact no-support identifiability impossibility & Unobserved unrestricted counterfactual can change without altering observed law & Positive support, external intervention or structural linking is necessary\\
+Continuous actions & Tolerance region explicit under strong convexity; exact identity generically unstable & Exact optimizer identity has no positive open cell under regular continuous maps & Positive action/loss tolerance restores a nonzero region\\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\section{Relationship to neighbouring model-update methods}
+The rebuilt paper now sits closer to compatibility training and continual learning than the later migration versions did. Table~\ref{tab:s_neighbor_methods} therefore states the novelty boundary without claiming that neighbouring methods are weaker.
+
+\begin{table}[H]\centering\small
+\caption{Research objects in neighbouring model-update lines.}\label{tab:s_neighbor_methods}
+\begin{tabularx}{\textwidth}{p{0.22\textwidth}p{0.24\textwidth}p{0.22\textwidth}X}
+\toprule
+Research line & Primary object & Typical action & Relation to current paper\\
+\midrule
+Continual/lifelong learning & Old-task capability and representations & Update model while reducing forgetting & Shares the interference problem; current paper focuses on decision-level vulnerability, first crossing and signed repair geometry\\
+Positive-congruent/backward-compatible updates & Old-correct/new-wrong regressions, logits or predictive margins & Change training objective to reduce negative flips & Closest learning literature; current paper adds prospective boundary localization and joint intervention feasibility/infeasibility under signed cross-decision effects\\
+Model editing & Selected factual or behavioural targets & Local parameter edit & Related to targeted repair; current paper explicitly audits collateral movement on decisions that were not repair targets\\
+Regression testing & Cases likely to fail after an update & Prioritize tests after model changes & Related to vulnerability ranking; current fixed-direction experiments intervene on update magnitude to test a boundary mechanism rather than only prioritize tests\\
+Safe policy improvement & New policy relative to incumbent baseline & Constrain expected performance degradation & Similar incumbent-relative logic but usually at policy/value level; current object is a vector of protected model decisions and shared-parameter training effects\\
+Current paper & Reliable decisions across a model update & Predict crossings; choose or audit intervention directions; protect survivors & Mechanism chain is turnover $\to$ boundary vulnerability $\to$ coupled repair\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Detailed experimental protocols retained for replication}
+\subsection{Controlled SORRY-Bench checkpoint trajectory}
+The open-weight trajectory uses the official SORRY-Bench human-judgment data with disjoint training and held-out records. Rank-8 LoRA updates query/value projections under fixed hyperparameters; checkpoints at 25\%, 50\%, 75\% and 100\% of the update define a release sequence. Strict reliability is evaluated from repeated held-out decisions. Boundary distance is the absolute signed binary-logit gap at the old checkpoint. For prospective prediction, the old-checkpoint score is computed before the next checkpoint is examined. Question identifiers remain grouped inside folds in the metadata comparison.
+
+\subsection{Qwen2.5-3B fixed-direction path}
+The fixed-direction test uses 2,700 SST-2 training examples and all 872 validation examples. M75 and M100 adapter states define
+\begin{equation}
+ \theta(\lambda)=\theta_{75}+\lambda(\theta_{100}-\theta_{75}),
+ \qquad \lambda\in\{0,0.125,0.25,\ldots,1\}.
+\label{eq:s_fixed_direction_path}
+\end{equation}
+Endpoint-flip ROC AUC uses the M75 boundary distance. Among examples that change at some tested multiplier, first-crossing order is the smallest multiplier at which the label changes. A 2,000-permutation test provides the reported AUC resolution. The independent SmolLM2-360M path repeats the same logic.
+
+\subsection{Actual-optimizer repair stress test}
+The SmolLM2-360M repair stress test uses rank-8 query/value LoRA. A class-imbalanced release update uses 600 adaptation examples for four epochs at learning rate $2\times10^{-4}$ and invalidates 29 of 320 source-correct protected decisions. Seventeen exits are repair calibration and twelve are held-out audit. Exit-only repair trains on calibration exits only. Protected replay adds retained calibration anchors. Held-out exits and held-out retained decisions are never used to select training examples or hyperparameters.
+
+\subsection{Ten-run frozen replication}
+Two families, SmolLM2-360M-Instruct and Qwen2.5-0.5B-Instruct, use seeds 20260921--20260925. Source-correct SST-2 decisions are shuffled into alternating calibration and audit subsets before the controlled release is trained. Both repair conditions use the same optimizer budget. The frozen historical protocol hash is recorded in the core SI. Primary outcomes are held-out exit recovery, collateral flips among held-out survivors and signed margin changes on those survivors.
+
+\subsection{Exact-affine and nonlinear sealed-mixture studies}
+The exact-affine digits study uses disjoint base, release, development and test splits. Ten boundary-near correctly classified test cases, one per digit, are frozen before the release step is selected from a development grid. Ten class replay batches are then applied separately to identify the signed effect map. A minimum-cost plan is frozen before 80 unseen mixtures are opened. The nonlinear two-layer ReLU study repeats the same information split with finite-difference pilot effects and a conservative target margin.
+
+\section{Data provenance and claim-level reproducibility}
+The recovered manuscript deliberately distinguishes three evidence tiers. Frontier-model release ledgers provide observational paired-update phenomena. Controlled open-weight checkpoint trajectories and fixed-direction scaling provide stronger mechanism evidence because the model state and update path are observed. Repair experiments provide intervention evidence because training data and optimizer budget are manipulated and held-out survivors are audited for collateral movement.
+
+Not every historical result meets the same reproducibility standard today. The 44-channel transformer sealed-mixture experiment was once reported with a large prospective prediction ledger, but the currently recovered archive lacks the complete row-level effect matrix, adapter set and sealed-mixture record. That claim is therefore not used as headline evidence. The digits exact-affine study, nonlinear neural study, actual-optimizer repair audit and ten-run transformer replication remain included because the key numerical records and protocols are recovered.
+
+
+
+
+\section{Partial-information preservation certificates}
+A model update is often only partly observed. Let $H$ denote sound information about the target release and let $\Omega(H)$ be the set of target states consistent with that information. A previously validated action can be carried without inspecting the exact target state only when it remains valid for every state in $\Omega(H)$.
+
+\begin{theorem}[Necessary and sufficient robust preservation certificate]
+Assume each pairwise target margin $g_{ia}(\theta)$ is continuous on compact $\Omega(H)$ and incumbent-preserving tie breaking is used. Then old action $a_i^0$ is identical to the full-information action for every target state consistent with $H$ if and only if
+\begin{equation}
+ m_{ia}(H):=\min_{\theta\in\Omega(H)}g_{ia}(\theta)\ge0
+ \qquad\forall a\neq a_i^0.
+\label{eq:s_robust_preservation}
+\end{equation}
+\end{theorem}
+\textit{Proof.} If all minima are nonnegative, every consistent target state preserves all pairwise optimality inequalities. Conversely, if one minimum is negative, compactness and continuity yield a consistent target state at which a rival action strictly beats the incumbent. $\square$
+
+This result is more informative than a generic scalar model-distance statement because it makes the role of the uncertainty geometry explicit. For affine margins $g_{ia}(\theta)=b_{ia}+s_{ia}^\top\theta$:
+\begin{itemize}
+\item for a box $\theta\in[\ell,u]$, the worst-case margin is obtained coordinatewise by choosing $\ell_j$ when $s_{ia,j}>0$ and $u_j$ when $s_{ia,j}<0$;
+\item for an ellipsoid $\{\theta:(\theta-\mu)^\top\Sigma^{-1}(\theta-\mu)\le r^2\}$, the worst case is
+\begin{equation}
+ b_{ia}+s_{ia}^\top\mu-r\sqrt{s_{ia}^\top\Sigma s_{ia}};
+\label{eq:s_ellipsoid_gap}
+\end{equation}
+\item for a polyhedron, each worst-case rival gap is one linear program.
+\end{itemize}
+Thus sound release-scope information can be propagated directly to decision-level guarantees without requiring access to target parameters.
+
+\section{Finite repeated-run reliability rules}
+Some empirical datasets define reliability from repeated Bernoulli outcomes rather than one logit margin. The exact stopping logic is simple and is retained because it makes the frontier-release ledger reproducible without introducing a new scientific claim.
+
+For a $k$-of-$n$ endpoint, after $t$ trials let $S_t$ and $F_t$ be successes and failures. The final label is already determined exactly when
+\begin{equation}
+ S_t\ge k
+ \quad\text{or}\quad
+ F_t\ge n-k+1.
+\label{eq:s_kn_stop}
+\end{equation}
+No zero-error rule can stop earlier on that same outcome prefix because both endpoint labels remain attainable by different completions whenever neither inequality holds.
+
+For strict $n$-of-$n$ reliability, Equation~\ref{eq:s_kn_stop} reduces to stopping at the first failure; success requires all $n$ trials. This is the rule used conceptually in the four-trial frontier tables. The present manuscript uses complete archived outcomes for turnover statistics, so no claimed model improvement depends on a selective stopping rule.
+
+\section{A shared system reliability budget}
+Earlier versions also considered the case where many retained decisions share one total error allowance $\delta$. This is a statistical extension rather than a workflow-counting result and is therefore preserved in the SI.
+
+Let decision $i$ receive individual error allowance $\delta_i>0$ and let its evidence requirement be $h_i(\delta_i)$. Robust control of the probability that any retained decision is wrong uses
+\begin{equation}
+ \sum_{i\in R}\delta_i\le\delta.
+\label{eq:s_union_budget}
+\end{equation}
+When only marginal guarantees are assumed, the union bound is sharp in the worst case.
+
+For $h_i(\delta_i)=q_i\,\operatorname{kl}(1-\delta_i,\delta_i)$, the minimum evidence allocation is
+\begin{equation}
+ H_\delta(R)=\min_{\delta_i>0}
+ \left\{\sum_{i\in R}q_i\operatorname{kl}(1-\delta_i,\delta_i):
+ \sum_{i\in R}\delta_i\le\delta\right\}.
+\label{eq:s_reliability_alloc}
+\end{equation}
+The objective is strictly convex on the relevant range. At an interior optimum there is one multiplier $\lambda>0$ satisfying
+\begin{equation}
+ q_i\left[-\phi'(\delta_i^*)\right]=\lambda,
+ \qquad \sum_i\delta_i^*=\delta,
+ \qquad \phi(z)=\operatorname{kl}(1-z,z).
+\label{eq:s_reliability_kkt}
+\end{equation}
+Identical $q_i$ give the closed form $\delta_i^*=\delta/|R|$. Heterogeneous $q_i$ reduce to a single monotone multiplier search. This shows why equal confidence levels are generally not evidence-optimal when decisions have different statistical difficulty.
+
+A useful consequence is that soundly certifying one decision can save more evidence than its own tests: removing a certified item from the shared error budget releases probability mass to all remaining items, decreasing their required evidence as well. This system effect is mathematically valid but is not part of the three main findings.
+
+\section{Recovery value, shadow prices and sensitivity}
+The dual variables in Equation~\ref{eq:s_recovery_dual} permit comparative statics that were present in the older technical development.
+
+Let $y^*$ be an optimal dual solution at deficit vector $d$. For any perturbation $\Delta d$ that does not change the active dual face, the first-order change in optimal recovery cost is
+\begin{equation}
+ C^*(d+\Delta d)-C^*(d)=y^{*\top}\Delta d.
+\label{eq:s_shadow_sensitivity}
+\end{equation}
+Thus $y_k^*$ measures the local value of relaxing protected requirement $k$. If $y_k^*=0$, a small tightening of requirement $k$ has no first-order cost because the current optimal intervention already provides slack. Positive $y_k^*$ identifies a binding protected behaviour.
+
+Similarly, reducing intervention cost $c_j$ changes the dual feasibility inequality $(A^\top y)_j\le c_j$. A direction with strict slack in this inequality remains unused locally. When a cost reduction makes the inequality bind, the active repair basis can switch. These basis changes explain the piecewise-linear structure of the affine recovery value function.
+
+The function $C^*(d)$ is convex and positively homogeneous in $d$ on the feasible cone when intervention costs are linear. Positive homogeneity follows by scaling both the primal intervention and the deficit. Convexity follows either from LP value-function theory or by mixing feasible interventions for two deficit vectors.
+
+\section{Exact partial recovery in separable subclasses}
+When full recovery is infeasible, the general binary formulation in Equation~\ref{eq:s_partial_recovery} can be difficult. Several special cases remain explicit and were retained in earlier supplements.
+
+If effects are diagonal and each decision $k$ has independent intervention $x_k$ with gain $a_k>0$, cost $c_k$ and recovery value $w_k$, then restoring decision $k$ is beneficial exactly when
+\begin{equation}
+ w_k>c_k\frac{d_k}{a_k}.
+\label{eq:s_diagonal_partial}
+\end{equation}
+The optimal partial recovery set therefore separates decision by decision.
+
+With one common intervention direction $a\ge0$, recovery amounts are nested in the scalar $x$. Decision $k$ is restored once $x\ge d_k/a_k$. Sorting these thresholds gives all candidate active sets, so the optimum over a finite reward-cost objective can be found by checking the sorted breakpoints. The combinatorial hardness arises only when multiple indivisible directions create nonseparable coverage patterns.
+
+\section{A solution-closure theorem for the retained model}
+The historical SI contained a broad closure statement. The following restricted version records the strongest exact representation for every branch still kept after the current scientific reset.
+
+\begin{theorem}[Retained solution closure]
+Within the model-update reliability framework retained in this Supplement:
+\begin{enumerate}
+\item affine preservation under finitely many update coordinates is a polyhedral feasibility problem with explicit first crossing along a ray;
+\item monotone one-dimensional nonlinear paths have a unique certifiable root, while unrestricted smooth paths require global first-root isolation;
+\item continuous affine recovery is a linear program with dual and Farkas certificates; concave-margin recovery with convex cost is a convex program;
+\item robust affine recovery under rectangular effect uncertainty is a linear program;
+\item fixed-confidence decision identification is governed by characteristic KL information; zero separating information is an impossibility boundary;
+\item Gaussian affine train--then--certify control has the cube-root closed form in Equation~\ref{eq:s_cube_root}; the general positive-concave-information/convex-cost case is a convex optimization problem, reducing to one monotone root in one dimension;
+\item known affine multi-release recovery is a stacked linear program; data-order effects require exact composition unless the update maps commute;
+\item decision-induced observations are unidentified without positive support, intervention or structural linkage;
+\item exact preservation for continuous actions is nongeneric, while positive loss/action tolerance gives a nonzero admissible region.
+\end{enumerate}
+No additional closed form is asserted outside these tractable subclasses.
+\end{theorem}
+
+This theorem deliberately closes the decision-boundary, recovery and information subproblems without making application-specific workflow optimization part of the theorem. The restored migration objective and its exact dependency consequences are treated separately around Equation~\ref{eq:s_migration} and the surrounding migration-work reconstruction; provider evidence incentives remain a supporting extension rather than a separate headline game.
+
+\section{Additional release-family robustness}
+The current main text uses five matched frontier transitions. Earlier SI versions retained broader release-family context. Those records are useful for robustness but remain observational.
+
+In the matched Grok chain, Grok 4 Fast, 4.1 Fast and 4.2 share the same benchmark commit, retrieval setting, user simulation and seed. Strict 4/4 counts are 4, 5 and 7. The 4 Fast$\to$4.1 Fast transition retains three of four old strict tasks; 4.1 Fast$\to$4.2 retains two of five, with three exits and five entries. A later Grok 4.5 record has a different execution setup and is therefore treated only as a robustness point; it still demonstrates that a large aggregate improvement need not retain every old strict task.
+
+The Gemini records show the same non-nesting. In the matched 3 Pro$\to$3.0 Flash comparison, 48 aligned trial failures become successes and 29 successes become failures, giving 77 gross outcome changes for a net gain of 19. The strict 4/4 sets both contain four tasks but overlap in only one. A cleaner 2.5 Pro$\to$3.1 Pro comparison under matched task definitions also loses its one old strict-reliable task while the target strict set grows.
+
+The role of these records is limited: they establish that replacement of reliable-set identity is not confined to one provider family. They do not identify the latent update direction or the causal source of any specific regression.
+
+\section{Human-labelled safety release check}
+\sloppy A supporting SORRY-Bench analysis uses matched GPT and Claude versions with human-labelled refusal/compliance outcomes. These are not controlled training experiments, but they show release-conditioned reversals in a safety domain. A GPT-4 release pair lowers aggregate matched compliance while still containing both refusal$\to$compliance regressions and compliance$\to$refusal improvements. Across observed versions, some prompts move from refusal to compliance and later return to refusal. This evidence is retained as an independent domain check only; it is not used to estimate update-boundary sensitivities.\fussy
+
+
+\clearpage
+\section{Recovered transformer-scale prospective intervention geometry}
+This section restores one of the strongest historical mechanism experiments that was not physically written into R123. It is retained because it answers the current control question directly: after an update has moved protected decisions, can isolated training directions predict the joint movement induced by combinations, and can the same effect geometry certify when recovery is impossible?
+
+The historical controlled SmolLM2 experiment fixes 94 non-redacted questions that are strict 10/10 reliable at the pre-update checkpoint, giving 940 protected response-level margins. At the updated checkpoint, 26 protected rows have negative signed margin. Forty-four category-specific intervention directions are identified one at a time on identical model copies. The resulting empirical effect map has 940 rows and 44 columns. Before any combined intervention is opened, 80 pair, triple and quadruple mixtures and their weights are fixed. They generate 75,200 prospective protected-margin predictions. The frozen affine map attains 99.541\% sign accuracy and $R^2=0.996760$; mean absolute residual is 0.1143 and maximum absolute residual is 0.875.
+
+The experiment also contains a genuine negative branch. Eight of the 26 negative rows have no available category direction with a positive isolated effect. For one protected row, the current signed margin is $-0.625$ and the required shift to the positive target is 0.6251, while every one of the 44 isolated effects is non-positive. Thus the one-row vector is an explicit Farkas witness: within this frozen nonnegative intervention library, full protected-set recovery is impossible. The certificate is library-local; it does not claim impossibility under a different retraining method or a newly added intervention direction.
+
+This block is scientifically important but receives a different asset label from the exact-affine and 10-run optimizer experiments. The historical R6/R71 manuscript and figure-audit lineage record the 940-by-44 map and sealed-mixture results, whereas a separate master-asset audit also records an earlier 420-by-44 lineage as missing. R126 therefore preserves the 940-by-44 result as \emph{historical mechanism evidence requiring a final primary-asset re-audit before headline use}; it is not discarded simply because the current runtime does not contain the original adapter/effect files.
+
+\begin{table}[H]
+\centering
+\caption{Historical transformer-scale signed-intervention block restored in R126.}
+\label{tab:s_transformer44}
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.32\textwidth}>{\raggedright\arraybackslash}X}
+\toprule
+Object & Frozen historical record \\
+\midrule
+Protected population & 94 strict questions; 940 response-level margins \\
+Updated failures & 26 negative protected rows \\
+Intervention library & 44 isolated category directions \\
+Prospective combinations & 80 precommitted pairs/triples/quadruples \\
+Prospective predictions & 75,200 protected-margin predictions \\
+Prediction quality & 99.541\% sign accuracy; $R^2=0.996760$ \\
+Infeasibility branch & 8/26 negative rows lack a positive isolated direction \\
+Explicit witness & one row requires shift 0.6251 while all 44 isolated effects are non-positive \\
+Current preservation status & historical result restored; final primary-asset re-audit required before headline use \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\clearpage
+\section{Recovered update-qualification evidence}
+The present research question asks how an update should be qualified relative to the model it replaces. Earlier versions contained several exact or pseudo-prospective evidence blocks that R123 did not physically restore. They belong here because they test whether the final target decision can be reproduced with less evidence without changing the decision criterion.
+
+\subsection{Terminal-Bench exact sequential certificate}
+Across 87 protected Terminal-Bench tasks with five target trials each, complete reevaluation uses 435 target trials. A stopping rule fixed before outcomes are read stops at the first target failure when strict 5/5 reliability is already impossible, and otherwise reads all five trials. The rule uses 266 trials, saves 169 trials (38.9\%), and returns the same 87/87 final strict labels as complete reevaluation. This is an exact decision certificate under the fixed strict rule, not a boundary-ranking heuristic.
+
+The historical natural-strategy benchmark over 129 complete protected decisions makes the distinction explicit. Carrying every old decision uses no target trials but disagrees with the complete target on 42 decisions; fixed one-, two- and three-trial caps trade fewer trials for residual errors; the exact sequential certificate uses 438 rather than 516 trials and is the only non-full strategy in that benchmark with zero error relative to the complete target.
+
+\subsection{Chronological frontier-release holdout}
+R72 later added a retrospective chronological holdout in which the rule and archived trial order are frozen before the later release is scored. For GPT-5.4$\rightarrow$5.5, the procedure reproduces 21/21 complete-target decisions with 67 of 84 available trials, a 20.2\% reduction. For Claude-4.8$\rightarrow$5.0, it reproduces 22/22 complete-target decisions with 73 of 88 trials, a 17.0\% reduction. These are not live production deployments; they are chronological pseudo-prospective checks using later archived releases.
+
+The relevance to the current qualification question is narrow and direct: if the deployment criterion is a prespecified repeated-run rule, evidence collection can stop exactly when the final rule is already logically determined. This does not by itself solve risk-weighted qualification, but it supplies a real-release implementation of the ``minimum evidence until the decision is fixed'' idea.
+
+\begin{table}[H]
+\centering
+\caption{Recovered exact and chronological update-qualification checks.}
+\label{tab:s_qualification}
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.30\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}p{0.17\textwidth}>{\raggedright\arraybackslash}X}
+\toprule
+Evidence block & Full evidence & Exact/frozen rule & Endpoint \\
+\midrule
+Terminal-Bench, 87 tasks & 435 trials & 266 trials & 87/87 same strict labels \\
+Natural ten-pair archive, 129 decisions & 516 trials & 438 trials & 129/129 same final labels \\
+GPT-5.4$\to$5.5 chronological holdout & 84 trials & 67 trials & 21/21 same decisions \\
+Claude-4.8$\to$5.0 chronological holdout & 88 trials & 73 trials & 22/22 same decisions \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\clearpage
+\section{Recovered same-case evidence beyond the frontier release ledgers}
+The frontier GPT/Claude/Gemini/Grok trajectories establish non-nesting across commercial generations, but the historical project also contained same-case evidence in banking, stateful tool use and human-AI decisions. These blocks do not identify the hidden training mechanism. They are retained because they show that average improvement and set-level preservation separate in several deployment-relevant settings.
+
+\subsection{BANKING77 fixed-case panel}
+The recovered BANKING77 panel contains 3,080 fixed test cases and 24,640 model outputs under eight frozen configurations. Four paired context/model updates raise aggregate accuracy by 7.40, 9.68, 7.95 and 2.44 percentage points while still producing 67, 61, 54 and 49 correct-to-wrong case transitions, respectively. At the historical 0.85 class gate, the corresponding exit/entry counts are $(2,12)$, $(1,13)$, $(3,11)$ and $(6,7)$. Thus a positive aggregate gain does not imply nesting of the reliable case or class set.
+
+\subsection{Stateful Airline trajectories}
+The recovered Airline panel contains 360 complete trajectories over 30 preselected tasks and four model-tier configurations. The evidence was historically used to show that a model/context change can improve aggregate task success while changing which stateful tool-use decisions remain reliable. In R126 this block is retained only as a stateful-agent generalization check; no downstream-operation count is treated as a contribution.
+
+\subsection{HAIID human-AI decisions}
+The HAIID archive contains 17,973 AI-advice observations from 567 participants. Initial human accuracy is 67.49\%, AI advice accuracy is 78.31\%, and final human accuracy is 74.68\%. The positive 7.19-point average gain contains 2,069 wrong-to-correct transitions and 777 correct-to-wrong transitions. When an initially wrong human receives correct advice, 53.52\% of eligible decisions are corrected; when an initially correct human receives incorrect advice, harmful reliance occurs in 38.18\% of eligible decisions. The empirical point is decision-level: a positive average effect can coexist with substantial loss of previously correct decisions.
+
+Across stated-accuracy conditions of 65\%, 80\% and 95\%, realized AI advice accuracy remains similar, while human response changes strongly. Both beneficial correction and harmful reliance rise with stated confidence. This supporting block is useful for policy interpretation because it separates information-source accuracy from the decision actually reached after a human or system consumes that information.
+
+\begin{table}[H]
+\centering
+\caption{Recovered same-case evidence retained as supporting generality.}
+\label{tab:s_samecase}
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}p{0.24\textwidth}>{\raggedright\arraybackslash}X}
+\toprule
+Dataset & Scale & Preserved empirical fact \\
+\midrule
+BANKING77 & 3,080 fixed cases; 24,640 outputs & Aggregate gains coexist with 49--67 correct-to-wrong case transitions across paired updates \\
+Airline & 360 complete stateful trajectories & Model/context changes alter which stateful decisions remain reliable \\
+HAIID & 17,973 observations; 567 participants & +7.19 pp average human gain contains 2,069 corrections and 777 induced errors \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\clearpage
+\section{Recovered reviewer-portability and human-gold safety evidence}
+Earlier supplements included two independent checks showing that an evaluator or reviewer cannot automatically be treated as equally reliable after the upstream model environment changes.
+
+The public Do-Not-Answer archive contains 5,634 human-labelled outputs generated from 939 common prompts across six upstream generators. Historical paired BERT/Longformer reviewer analyses show that reviewer-error ordering reverses across generator environments and that same-output reviewer disagreement varies significantly across generators. This is evidence about evaluator portability, not about model-training causality.
+
+A separate frozen crossed GPT/Gemini reviewer panel contains 480 upstream outputs and 922 reviewer-lane records after adjudication. The recovered claim-level panel reproduces reviewer errors of 16/240, 17/211, 26/240 and 10/231 across the four generator-reviewer lanes, with a four-way same-source interaction of 7.9602 percentage points (exact sign $P=0.00154388$; Fisher $P=0.00591540$). R126 retains this block because qualification of a new release may itself depend on the evaluator used to judge that release. The result does not imply that these two reviewer models are universal regulatory surrogates.
+
+\section{Recovered repeated-release history diagnostic}
+R123 retained repeated-release margin dynamics but did not preserve the later corrected empirical history diagnostic. In the fixed M75-reliable population, 18 of 21 questions that were already strict-reliable at M25 remain strict-reliable at M100, compared with 50 of 73 that were not M25-reliable (85.7\% versus 68.5\%; odds ratio 2.76; one-sided Fisher exact $P=0.0973$). The count is descriptive rather than causal.
+
+A leave-one-question-out diagnostic compares current state with current state plus earlier-release history. Using only the current M75 minimum signed margin gives ROC AUC 0.714 for M100 retention; adding M25 and M50 strict-reliability indicators raises AUC to 0.772. This is retained as supporting evidence for the lifecycle question---past release state may contain information beyond the current margin---but the sample is too small for a headline claim.
+
+\clearpage
+\section{Recovered sequential and architecture-general supporting experiments}
+The earlier project explored whether the same decision-boundary logic extends beyond one-step classification. These results should remain in the SI as supporting generality, not as a competing RL storyline.
+
+\subsection{Fresh Bellman-locality rerun}
+The historical robot-replanning experiment was re-audited after an older 90.6-backup number could not be reproduced. The fresh lineage uses the same 288 target transitions under both methods and returns the same target action in 99.743\% of sampled cases, while mean Bellman backups fall from 288 to approximately 214.7. R126 keeps only the fresh rerun, not the unreproduced 90.6 value.
+
+\subsection{Large-state and unseen-topology stress tests}
+At 10,241 states, the historical scaling experiment reports 593,978 full target transitions versus 297,018 local target transitions, with the initial target action recovered in 270/270 runs across nine sizes. A separate unseen-topology/size experiment reports 270 held-out runs with exact policy match and mean target-evidence savings between 9.2\% and 30.9\%. These experiments support the architectural statement that decision validity can be localized by boundary/support structure; they are not used to claim a universally superior RL solver.
+
+\subsection{Continuous-control caution}
+The continuous SAC experiment used 30 seeds and the same 650 target interactions. It produced 16 wins and 14 losses, with positive paired mean return but a confidence interval spanning zero. This is deliberately retained as a negative/ambiguous robustness result. It supports the theoretical caution already present in the SI: exact action identity is nongeneric in continuous action spaces, so positive action or value tolerance is the meaningful preservation object.
+
+\section{Recovered historical learning-comparator block}
+An older matched comparison used the same target problem within each row to compare selective target evidence against target-only RL and MFMCRL. With 1,674 target samples, the selective procedure reported 93.90\% recovery versus 90.52\% for a 3,840-sample target-only RL baseline. Against MFMCRL, 1,674 versus 1,920 samples gave 93.90\% versus 93.23\%; at the approximately 95\% recovery point, 2,294 versus 3,840 samples gave 95.17\% versus 95.23\%. These comparisons are preserved as historical algorithmic evidence only. They do not substitute for the new head-to-head comparison against compatibility-oriented model-update methods that the current paper still needs.
+
+
+\section{R137 integration relative to the historical 154-page SI}
+The R72 completion audit recorded a 154-page Supplement. R137 no longer treats later proofs as a detachable short appendix. The editable preservation record remains compressed relative to the page-for-page R72 layout only where exposition was duplicated, while every scientifically distinct theorem, proof, experiment, robustness check and negative result is retained. The corrected R132--R134 proof layer is now inserted into the corresponding boundary, information, recovery and pilot-transfer sections. The migration-work branch is no longer deleted: R128 restores its unified objective, dependency consequence, changed-count sufficiency boundary, sound release-information rule, carried-state accounting, provider-evidence value and principal operational checks in compact form. Detailed historical workflow figures and repeated derivations remain available in the packaged 42-page historical source rather than being duplicated page for page. The historical transformer-scale 44-channel sealed-mixture result is restored explicitly as historical evidence but remains flagged for final primary-asset re-audit before headline use.
+
+The resulting SI is a preservation master rather than a summary-only appendix. It retains exact preservation, minimal margin state, nonlinear crossings, decision-boundary information, affine and nonlinear recovery, partial and robust recovery, pilot identification, train--then--certify theory, shared reliability, sound release information, migration accounting, repeated-release dynamics, data-order effects, decision-induced observation limits, architecture independence, continuous actions, controlled interventions, fixed-direction tests, actual-optimizer repair and multi-seed transformer replication.
+
+
+\clearpage
+\section{Prospective effect transfer, official-BFCL confirmation and stateful execution (R132--R138)}
+\label{sec:r137_latest}
+This section retains the latest frozen experiments in the same technical record as the proofs above. R132--R134 are completed claim-bearing experiments. R138 adds a prospectively frozen executable-tool stress test whose scientific split, transfer-selection rule and failure branches were fixed before valid fresh-old outcomes were opened. The historical candidate-selection implementation used mean ToolSandbox similarity rather than the binary executable-success quantity named in the written protocol; R140 records this as a protocol deviation rather than retroactively changing the selection rule. None of these experiments is used to rewrite the mathematical conditions after outcomes are seen.
+
+\subsection{R132: endpoint-blind direction and held-out repair boundary}
+The R132 SmolLM2-360M experiment used a controlled routing classification derived from BFCL records. It is retained as a historical zero/one/two-plus routing experiment, not as an official BFCL ``multiple function'' or tool-call-count benchmark: in BFCL, ``multiple'' denotes choosing one function from several candidate function documents, whereas multiple invocations are evaluated by the parallel categories. Candidate selection used new-capability validation before protected old endpoints were opened. The official function-name/argument result used for the current headline evidence begins with R134. The selected A2/B2 pair attained validation capability $0.8875/0.9000$ and independent capability audit $0.85625/0.8125$. On 59 incumbent-protected mechanism-audit rows per update, endpoint changes were 54/59 for A2 and 51/59 for B2. The old-margin, endpoint-blind pilot-direction and ratio AUCs were $(0.507,0.631,0.552)$ for A2 and $(0.243,0.729,0.690)$ for B2; the predicted-ratio versus first-tested-crossing Spearman correlations were 0.218 and 0.584.
+
+The primary frozen repair library was infeasible. A separately frozen minimum-$\ell_1$ signed output-readout direction had $\ell_1$ norm 5.5152 and positive projection 1.1838 on the frozen Farkas witness. It opened calibration feasibility exactly, but the fresh audit did not produce safe full repair: 29/51 old losses were recovered, 2/6 old survivors flipped, 24 old protected decisions remained reopened, and new-capability accuracy fell from 76.875\% at the target update to 59.375\% after repair. Thus calibration feasibility is not a held-out repair guarantee.
+
+\subsection{R133: second-family effect-transfer audit}
+A separately frozen Qwen2.5-0.5B experiment retained the same derived routing interface but created independent transfer calibration and fresh-old splits. A2 and B1 were exactly tied at 98.75\% new-capability validation; their independent audits were 98.75\% and 99.375\%. Nevertheless, among 152 incumbent-protected fresh old rows, endpoint changes were 104/152 (68.42\%) and 151/152 (99.34\%). The useful local score was update dependent: for B1 the endpoint-blind direction and ratio AUCs were 0.947 and 0.967 and ratio/first-crossing Spearman correlation was 0.817, whereas A2 did not show the same predictor geometry.
+
+\begin{table}[H]
+\centering
+\caption{R133 fresh pathwise transfer audit. The robust rule uses the calibrated lower envelope; the naive rule sets $q_R=0$.}
+\label{tab:r137_r133}
+\small
+\begin{tabular}{llrrrr}
+\toprule
+Update & $R$ & coverage & robust safe / false & naive safe / false & actual crossings\\
+\midrule
+A2 & 0.25 & 141/152 & 54/1 & 141/8 & 14\\
+A2 & 0.50 & 134/152 & 0/0 & 100/57 & 87\\
+A2 & 0.75 & 144/152 & 0/0 & 60/46 & 97\\
+A2 & 1.00 & 134/152 & 0/0 & 33/28 & 104\\
+B1 & 0.25 & 144/152 & 64/0 & 122/0 & 14\\
+B1 & 0.50 & 129/152 & 20/2 & 73/43 & 122\\
+B1 & 0.75 & 126/152 & 4/2 & 62/59 & 149\\
+B1 & 1.00 & 133/152 & 0/0 & 57/56 & 151\\
+\bottomrule
+\end{tabular}
+\end{table}
+The protocol-primary radii $R=0.5$ and $R=1$ under-covered the nominal 90\% level in the realized fresh batch for both updates. The smaller predeclared $R=0.25$ attained 92.8\% and 94.7\% realized coverage with nonempty robust safe sets. This empirical fact is retained together with the marginal theorem; it is not rewritten as a batchwise guarantee.
+
+\subsection{R134: official BFCL same-recipe confirmation}
+R134 moves from the derived routing endpoint to the pinned official BFCL AST checker on function names and arguments, using Qwen2.5-1.5B-Instruct. The old task is BFCL simple-python and the new task is BFCL parallel. All four candidate updates use the same 100 new-task records, the same 40-record replay set, the same optimizer, LoRA rank and budget; only random seed, LoRA initialization and data order differ. Pair selection uses new-capability validation and update norm only.
+
+The four validation accuracies were 40.0\%, 45.0\%, 37.5\% and 42.5\% for U1--U4. The frozen selection rule chose U1/U4, whose validation difference is 2.5 percentage points and whose update-direction cosine is 0.0414. On the unopened new-capability audit, the full-strength M0/U1/U4 models scored 8.33\%, 38.33\% and 35.00\%, respectively. On those same two full-strength candidate models, among 61 incumbent-protected fresh old requirements U1 lost 18 (29.51\%) and U4 lost 31 (50.82\%), an observed 21.31-percentage-point damage gap under the same update/replay recipe. The claim-bearing log did not persist the row-level intersection of the two loss sets, so this gap is reported descriptively rather than as a paired-significance result or a statement about run-to-run stability.
+
+Independent transfer selection fixed $R^*=0.25$ for both updates before the fresh path was opened. This radius describes the range over which the local pathwise preservation rule was audited; it is not evidence that the quarter-strength model retains the full-strength new-capability gain reported above. On the fresh paths, U1/U4 realized coverage was 98.36\%/96.72\%; the robust rule made 27/29 safe declarations with zero observed false-safe cases, while the naive local-linear rule made 35 declarations for each update and produced one observed false-safe case in each. The robust rule therefore trades coverage for fewer observed false-safe declarations in this audit. Because the archived R134 run does not contain a complete accounting of calibration, pilot and execution cost, these numbers are not used to claim lower total validation cost than full revalidation.
+
+\begin{table}[H]
+\centering
+\caption{R134 official-BFCL same-recipe fresh audit.}
+\label{tab:r137_r134}
+\small
+\begin{tabular}{lrr}
+\toprule
+Quantity & U1 & U4\\
+\midrule
+Parallel validation AST & 40.0\% & 42.5\%\\
+Parallel fresh audit AST & 38.33\% & 35.00\%\\
+Fresh old protected rows & 61 & 61\\
+Old losses & 18 (29.51\%) & 31 (50.82\%)\\
+Frozen $R^*$ & 0.25 & 0.25\\
+Fresh path coverage & 98.36\% & 96.72\%\\
+Robust safe / false-safe & 27/0 & 29/0\\
+Naive safe / false-safe & 35/1 & 35/1\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{R138: corrected executable-agent stress test and evidence boundary}
+R138 asks a stricter question than R134: whether the same prospective separation between new-capability gain and old-task preservation remains meaningful when a different model family must execute tools and affect a live benchmark state. The historical candidate-selection implementation matched candidates on mean ToolSandbox similarity plus update norm, although the written protocol described the matching quantity as executable success. R140 treats this as a protocol deviation; the historical U2/U4 pair remains fixed and is not reselected after outcome inspection. The benchmark is Apple ToolSandbox pinned to commit \texttt{c8571d7854316d2e1c5f288e59fe1e34e53f6dd1}, and the backbone is \texttt{NousResearch/Hermes-3-Llama-3.2-3B}, revision \texttt{7f1a6bec8cdce6551014fd5bbeb4cd8c0f1fbeab}, evaluated deterministically with \texttt{do\_sample=False}. R138 is not treated as a second proof of the R134 effect size; it is an executable-agent stress test of the endpoint, the evidence requirement, and the abstention rule.
+
+Engineering preflight touched four scenario bases while an incompatible prompt adapter was being diagnosed. Before claim-bearing candidate training, those four bases and all augmentations were permanently reserved for engineering only. After this exclusion, the frozen scientific pools contain 11 local canonical old-capability base families and 38 local canonical new-capability base families. Augmentations of a base family remain in the same split. The old bases are hash ordered into four transfer-fit, three transfer-select and four fresh-old families; the new bases are hash ordered into 19 capability-validation and 19 capability-audit families. This grouping blocks leakage among the eight tool augmentations of one named base, but it does not fully isolate semantic task families: several \texttt{\_alt} scenarios share the same initial state, tools, milestone constraints and task intent across validation and audit. Accordingly, R138 treats the 19 audit bases (not the 152 augmentations) as the natural task-family scale and does not use the 152 rows as independent evidence. The prospective extension freezes semantic-family grouping before any candidate outcomes: scenarios with the same non-conversational initial state, available-tool signature, functional milestone/minefield signature and canonical task intent are assigned to one family, and an entire family is kept in one split.
+
+The update data are drawn from the ToolBench mirror \texttt{Adorg/ToolBench}, revision \nolinkurl{0c25df5e6937aae854c2cc1bb203297600afce8b}, using \nolinkurl{toolllama_G123_dfs_train.json} (26,999 rows; source-file SHA-256 \nolinkurl{ffa0a7c5fef95b5693ccffdf19c30d2d2baff963b9df35cfd31dd4f42a9dbc78}). Exactly 600 update rows are selected by predeclared SHA-256 ordering; the selected-ID hash is \nolinkurl{ec6910566207d2f1df4773f592b2058c29d1ef6da8d0947ad6372e687bf82608}. U1--U4 use seeds 55101--55104 and the same rank-8 LoRA recipe. Candidate pairing is old-outcome blind. The validation scores for U1--U4 are 0.12555, 0.13925, 0.13380 and 0.14364, with update norms 4.9726, 5.0054, 5.1063 and 4.9581. The frozen matching rule selects U2/U4; the pair was fixed before fresh-old execution or capability-audit outcomes were opened.
+
+\paragraph{Corrected functional endpoint.}
+The historical R138-V2 custom \texttt{exact\_state\_success} required a non-SANDBOX state milestone and therefore could not count a query/read task as an exact functional success even when the correct tool call was executed. We retain that historical field unchanged for audit provenance and add a frozen corrected endpoint derived only from the pinned scenario definitions and already-generated trajectories. A milestone is functional if it either constrains a non-SANDBOX database, measuring the requested state transition, or contains a SANDBOX \texttt{tool\_trace} target, measuring executable tool name and specified arguments. Pure agent-to-user wording is retained in ToolSandbox's continuous similarity score but is not part of the binary functional endpoint. A trajectory is a corrected functional success only if every functional milestone has mapped similarity 1 and no minefield is triggered. No model is retrained, no trajectory is regenerated, and no split, pair, seed, radius or threshold changes under this correction.
+
+Under this corrected endpoint, transfer-fit remains 8/32 protected requirements and transfer-select changes from 6/24 to 7/24 because one genuine query-tool success had been missed by the historical state-only field. Fresh-old M0 protection remains 9/32. Capability-audit exact functional success remains 0/152 for M0 and 2/152 for both U2 and U4. Thus the endpoint correction repairs the task semantics but does not convert R138 into a broad positive replication.
+
+\paragraph{Evidence-sufficiency boundary.}
+The corrected transfer-fit set still contains eight protected requirements. For the predeclared 90\% split-conformal rule, the required order statistic is
+\begin{equation}
+ k=\left\lceil (n_{\mathrm{fit}}+1)(1-\alpha)\right\rceil
+   =\left\lceil 9\times0.9\right\rceil=9>8.
+\label{eq:r138_evidence_boundary}
+\end{equation}
+The finite-sample allowance is therefore \(q_R=+\infty\) at every tested radius and the frozen procedure abstains with \(R^*=0\). This is an evidence-sufficiency failure, not empirical evidence that the true executable-agent preservation radius is zero. More generally, a finite order statistic at miscoverage \(\alpha\) requires at least \(n\ge 1/\alpha-1\) protected calibration examples; a 90\% guarantee therefore requires at least nine. The prospective extension protocol is frozen separately with a target of at least 20 protected fit requirements before candidate outcomes are opened.
+
+The fresh-old holdout contains 32 variants, of which M0 protects nine under the corrected functional endpoint. This remains below the preregistered minimum of ten required for a strong old-damage claim. On these nine protected variants, corrected exact old-task damage is 0/9 for both U2 and U4. This is descriptive only: even under an independence idealization, zero failures in nine trials leaves a wide one-sided 95\% binomial upper bound (about 28\%), and the augmented variants are clustered within base tasks. The continuous ToolSandbox similarity nevertheless falls from 0.9350 for M0 to 0.5845 for U2 and 0.5000 for U4. Similarity aggregates multiple milestones, so its decline is not interpreted as a direct amount of world-state damage; it only shows that binary functional retention and the broader benchmark trajectory score capture different aspects of the update.
+
+On the independently opened 19-base capability-audit holdout (152 augmented variants), corrected functional success is 0/152 for M0 and 2/152 for both U2 and U4. Mean ToolSandbox similarity is 0.05961, 0.06239 and 0.08781, respectively. Because the eight variants of a base are not independent task families and semantically equivalent \texttt{\_alt} bases were not completely isolated by the historical split, these counts are descriptive executable cases, not a 152-independent-sample significance test. The sparse gains show that the updates can create some held-out executable successes absent in the incumbent, but they do not establish broad cross-family capability improvement.
+
+\begin{table}[H]
+\centering
+\caption{R138 corrected executable-agent audit. The endpoint correction repairs query/read scoring but leaves the main scientific conclusion unchanged: the capability gains are sparse, and the historical 90\% certificate must abstain because only eight protected transfer-fit requirements are available.}
+\label{tab:s_r138_corrected}
+\small
+\begin{tabular}{lccc}
+\toprule
+Quantity & M0 & U2 & U4\\
+\midrule
+Capability-audit functional success & 0/152 & 2/152 & 2/152\\
+Capability-audit mean similarity & 0.05961 & 0.06239 & 0.08781\\
+Fresh-old protected variants & 9 & 9 & 9\\
+Exact old damage on protected variants & -- & 0/9 & 0/9\\
+Protected-case mean similarity & 0.93498 & 0.58452 & 0.50000\\
+Transfer-fit protected variants & -- & 8 & 8\\
+Transfer-select protected variants & -- & 7 & 7\\
+Frozen historical $R^*$ & -- & 0 (abstain) & 0 (abstain)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+R138 therefore has a different role from R134. R134 is the primary positive controlled result: under the same update data and optimization budget, capability-matched updates incur sharply different legacy costs. R138 tests what happens when the same prospective logic is moved to a second model family and native tool execution. It reveals two deployment constraints: preservation endpoints must follow task semantics, and nontrivial finite-sample certification cannot be issued without enough protected calibration evidence. The experiment is therefore retained as a boundary and abstention result rather than described as a strong cross-family replication.
+
+\subsection{Information timing, raw-data boundary and interpretation for R134--R138}
+The R134 claim-bearing job is provider job \texttt{6aac6ac2b1dc2b62dc58f887}; its frozen scientific protocol SHA-256 is \texttt{661ac596c265734bf072250aebc82796f9f464ac93b80ecc6a8055a63404fb5b}. The run persisted claim-bearing aggregate results in provider logs but not a complete row-level raw ledger. The package therefore preserves the aggregate JSON/CSV, frozen script/protocol hashes and provider job record. Post-result reruns that do not exactly reproduce the aggregate run are labelled replication ledgers and are not relabelled as original raw data.
+
+R138 uses protocol SHA-256 \nolinkurl{d494350d71204132198ff834058660e989d2001887af75cca583106d335a38c8}, original scientific-runner SHA-256 \nolinkurl{d57a2e180798741afaeec33a4bdde6ef32d4eae7f67386b237d91747b625c4a2}, and final holdout-wrapper SHA-256 \nolinkurl{d5f8868bcd0e796372ffbc229dc514076d5e86f3cb45522b64f48f433eff8a36}. Stage-2 archive jobs are \texttt{6aaf38c952d0dbd7f1d71c72} (U2; archive SHA-256 \nolinkurl{1bb4927de421deba0962ab01d6cc5e1f9df3d9f685088c5e7dd91554c56f9484}) and \texttt{6aaf390051992417dfccb9a4} (U4; \nolinkurl{ed888d15746e91bb804b0b078785fe6d2e66595b1a026e9b0e77abbb28402055}). The fresh-old M0 archive is job \texttt{6aaf72cc52d0dbd7f1d72a11}, SHA-256 \nolinkurl{8e92559e8a083993a063431e44ee4d277ce4ef32db97493416578d0f9a9d5957}; fresh U2/U4 jobs are \texttt{6aaf77a452d0dbd7f1d72b65} and \texttt{6aaf77a451992417dfccc224}. Capability-audit M0 and the four candidate shards are recorded in the audit registry. Every authoritative final archive passed zero-based chunk completeness and SHA-256 reconstruction before its result was counted. Failed startup, duplicate and canceled jobs are retained separately and excluded from scientific aggregation.
+
+The archived raw bundles retain the applicable scenario ledgers, prompts and tool schemas, generated calls, executed tool code, execution contexts and world-state snapshots, ToolSandbox milestone/minefield/similarity outcomes, incumbent-protection flags, path strengths, margins, residuals, result summaries, runner/wrapper source, manifests and file-level SHA-256 inventories. Because the current Hugging Face credential permits jobs and repository reads but not repository writes, the large raw tar archives are preserved through complete verified job-log chunks plus an authenticated recovery script; the submission audit package records the expected archive hash, chunk count, byte count and file count for every claim-bearing bundle.
+
+Taken together, R132--R134 establish the current positive empirical chain, with R134 providing the cleanest controlled evidence. Under an official function-calling endpoint, two full-strength updates trained with the same data, optimizer budget and replay composition produce similar fresh new-capability performance (38.33\% and 35.00\%, versus 8.33\% for M0) yet lose 18/61 and 31/61 protected old requirements. Because row-level overlap and repeated same-recipe runs were not preserved in the claim-bearing archive, the 21.31-point damage gap is an observed controlled contrast rather than a claim of stable population separation. Separately, the pathwise audit fixes $R^*=0.25$ and observes zero false-safe robust declarations on fresh paths, but this local radius is not conflated with the full-strength new-capability result or with a theorem-level post-selection guarantee. R138 does not duplicate the R134 effect size under a second family. Its corrected executable-agent audit instead identifies where the framework must be more explicit: task success must follow operational semantics; candidate matching metrics must match their protocol labels; semantic task families, rather than tool augmentations, are the relevant dependence scale; and a requested guarantee must abstain when protected calibration evidence is insufficient. The combined evidence therefore separates target gain, legacy damage, pathwise predictability and evidentiary sufficiency without claiming that all four have already been jointly optimized in one deployed model.
+
+\clearpage
+\section{Asset and reproducibility map}
+\small
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.27\textwidth}>{\raggedright\arraybackslash}p{0.45\textwidth}>{\raggedright\arraybackslash}p{0.20\textwidth}}
+\caption{Status of the historical assets used in the rebuilt manuscript.}\label{tab:s_assets}\\
+\toprule
+Asset & Role & Status in rebuilt manuscript \\
+\midrule
+\endfirsthead
+\toprule
+Asset & Role & Status in rebuilt manuscript \\
+\midrule
+\endhead
+Frontier GPT/Claude/Gemini/Grok turnover ledgers & Observed non-nesting of reliable sets & Used; counts recovered from frozen ledgers \\
+Controlled SmolLM M25--M100 trajectory & Prospective boundary prediction and threshold robustness & Used \\
+Qwen2.5-3B fixed-direction path & Boundary-first crossing mechanism & Used \\
+SmolLM2-360M fixed-direction repetition & Independent boundary-first crossing replication & Used \\
+Exact-affine 10-decision intervention system & Sealed combination prediction, LP recovery, infeasibility & Used \\
+Two-layer ReLU intervention system & Nonlinear robustness of prospective effect map & Used \\
+Single SmolLM2 optimizer repair stress test & Actual gradient-based collateral damage & Used \\
+Ten-run SmolLM2/Qwen repair replication & Cross-model, multi-seed collateral result & Used \\
+R132 frozen BFCL-derived prospective direction/repair & Endpoint-blind direction; Farkas library expansion; held-out repair failure & Used / current \\
+R133 Qwen transfer experiment & Split-conformal path error and trust-range audit & Used / current \\
+R134 official-BFCL same-recipe experiment & Function-name/argument AST; matched-gain/different-old-damage; independent $R^*$ & Used / current \\
+R138 ToolSandbox V2 experiment & Second-family native tool execution and world-state endpoint; pair and transfer radius frozen before fresh opening & Completed; U2/U4 selected prospectively; sparse held-out executable gains; $R^*=0$ abstention retained \\
+Historical transformer-scale 44-channel effect matrix & 75,200 prospective margin predictions and Farkas infeasibility & Restored as historical evidence; final primary-asset re-audit required \\
+Terminal-Bench and chronological GPT/Claude stopping & Exact / pseudo-prospective update qualification & Restored as core-compatible evidence \\
+BANKING77 / Airline / HAIID & Same-case cross-domain decision turnover & Restored as supporting generality \\
+Do-Not-Answer and crossed reviewer panel & Evaluator portability across upstream model environments & Restored as supporting qualification evidence \\
+Repeated-release history diagnostic & Earlier-state information beyond current margin & Restored as supporting lifecycle evidence \\
+Robot / scaling / unseen topology & Sequential and architecture-general boundary support & Restored in SI only \\
+Downstream migration/coverage/counting experiments & Supporting operational consequence and exact sufficiency boundary & Restored in compact SI form; not a headline result \\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\section{Scope and future extensions}
+The historical R138 branch is fully interpretable only as a corrected executable-agent stress test plus an evidence-sufficiency abstention; it does not complete a cross-family certification claim. The next claim-bearing experiment is therefore prospective control rather than another descriptive replication. It freezes one base model, one update dataset, a minimum new-capability requirement, an old-task risk target, a validation budget and semantic task-family splits before candidate outcomes are opened. It then compares ordinary fine-tuning, simple update scaling, direct old-task validation, relevant compatibility/forgetting baselines, and a boundary/effect-aware selection or repair rule under the same seeds and optimization budget. Every final model must be evaluated at the same final update strength on new-capability performance, old-correct/new-wrong transitions, old-wrong/new-correct transitions, refusal/abstention rate and total pilot/calibration/execution cost. A successful result must improve old-task damage at the prespecified new-capability floor or reduce validation cost at the prespecified risk target; prediction alone is not counted as completing the deployment claim.
+
+The algorithmic question is whether a method can use old-model boundary information and pilot signed effects to change the final transition, not merely predict it. A tractable first implementation is to choose intervention weights from Equation~\ref{eq:s_primal} while adding frozen new-capability constraints. If the relevant margins and capability constraints are affine in the intervention weights, the update-control problem remains a linear program; for smooth neural updates the effect map must be re-estimated or tracked as the path moves. This future algorithm comparison is kept separate from R138 so that a null stateful-execution replication cannot be hidden by changing the intervention method after seeing the result.
+
+
+\clearpage
+\section{R138 control rule for superseded archived statements}
+The embedded historical snapshot below is preserved for provenance. It is not a second set of current claims. When an older statement in that snapshot conflicts with the R137 mathematical record or the explicitly updated R138 evidence record above, the later current statement controls. In particular, this applies to the exact one-direction upper/lower feasibility interval, the conditioned nonnegative-deficit spectral threshold, the current-state Gaussian information basepoint, the distinction between breaking one Farkas witness and eliminating all witnesses, and the marginal/exchangeability scope of the split-conformal effect-transfer guarantee.
+
+\clearpage
+\part{Frozen R122 preservation snapshot}
+This part embeds the complete R122 SI snapshot unchanged. It is intentionally retained even where the editable reconstruction above overlaps with it, because R122 contains the exact local merge lineage from R120/R121/R116 and the historical-source crosswalk as it existed before R123. Later compression must operate from this preservation master, not by replacing the snapshot.
+\includepdf[pages=-,pagecommand={\thispagestyle{empty}},fitpaper=true]{source_snapshots/R122_CONTENT_PRESERVATION_SI.pdf}
+\end{document}

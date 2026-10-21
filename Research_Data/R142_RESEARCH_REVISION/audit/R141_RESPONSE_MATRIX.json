@@ -1,0 +1,338 @@
+[
+  {
+    "id": "D1",
+    "source": "Daniel",
+    "comment": "Introduce the problem in nontechnical terms.",
+    "response": "The Introduction begins with an assistant acquiring a new tool-use capability while disrupting familiar requests. It states the organization’s three practical questions before introducing margins. A deployment replacement is distinguished from a known continued-training path.",
+    "location": "Main: Introduction, first two paragraphs",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "D2",
+    "source": "Daniel",
+    "comment": "Give specific task examples and explain what is updated.",
+    "response": "The study overview gives a triangle-area request and a parallel music request from the pinned BFCL records. It explains that the output must contain correct function names and arguments. BANKING77 is identified as 77-way service-intent classification, not a banking transaction or credit decision.",
+    "location": "Main: Tasks, measurements and study design; Methods: task definitions",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "D3",
+    "source": "Daniel",
+    "comment": "Provide an overview before Results; identify decisions, models and processing.",
+    "response": "A dedicated overview before Results identifies the old single-call and new parallel-call tasks, the training and pilot stages, separate calibration/selection/audit roles, both model families and the unit of outcome. Figure 1 now names the old and new endpoints directly.",
+    "location": "Main: Tasks, measurements and study design; Figure 1",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "D4",
+    "source": "Daniel",
+    "comment": "The italic question and later research questions do not fit together.",
+    "response": "The disconnected italic question and acronym-based research-question sequence are removed from the current main text. One overarching question links benefit, existing requirements and limited evidence; the following paragraph explains the roles of prediction, repair and verification.",
+    "location": "Main: Introduction, paragraphs three to five",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "D5",
+    "source": "Daniel",
+    "comment": "Theorems are referenced before readers know what they say.",
+    "response": "Each main result introduces its decision, variables and plain meaning before pointing to the proof. Part I of the Supplement states and proves the current results. Supporting formal results receive an interpretation-and-scope paragraph with an appropriate mathematical source.",
+    "location": "Main: Results; SI: Part I and formal-result explanations in Part III",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "D6",
+    "source": "Daniel",
+    "comment": "Check page breaks at the reported page transitions.",
+    "response": "The full main text is rebuilt and compiled as one document. The final audit checks page boundaries, undefined references and overflow. Historical page numbers are not treated as current locations because the supplied annotated PDF and the email refer to different earlier layouts.",
+    "location": "Final PDFs and audit/layout_verification.json",
+    "status": "Layout checked in the delivered revision"
+  },
+  {
+    "id": "D7",
+    "source": "Daniel",
+    "comment": "Text overlaps the bars in Figure 5g/h.",
+    "response": "Current main and Extended Data figures are rebuilt with short panel titles and separate legends/captions. All sixteen panels from the recovered complete main source remain represented. Earlier immutable figures remain in the preservation archive; their panel numbers are not silently assigned to current figures.",
+    "location": "Figures 1–5; Extended Data 1–4; original figure archive",
+    "status": "Current figures redrawn and visually checked"
+  },
+  {
+    "id": "D8",
+    "source": "Daniel",
+    "comment": "Fix the paragraph indent near page 21, line 327.",
+    "response": "The current manuscript uses a consistent zero-indent paragraph style. Manual local indentation is avoided and the compiled pages are checked.",
+    "location": "Main and SI document preambles",
+    "status": "Implemented"
+  },
+  {
+    "id": "F1",
+    "source": "Fanlin PDF annotation",
+    "comment": "Specify “under M_t”.",
+    "response": "The incumbent and replacement are defined before use, and every measured outcome has an explicit model state.",
+    "location": "Main: Introduction and study overview",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F2",
+    "source": "Fanlin PDF annotation",
+    "comment": "An action notation is undefined.",
+    "response": "The current main text removes the unexplained action-estimate notation. The supporting decision formulation defines incumbent and full-information actions before their comparisons.",
+    "location": "Main: study overview; SI: definitions and decision preservation",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F3",
+    "source": "Fanlin PDF annotation",
+    "comment": "Identify the central question.",
+    "response": "The Introduction states one overarching deployment question and explains how the component questions relate.",
+    "location": "Main: Introduction",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F4",
+    "source": "Fanlin PDF annotation",
+    "comment": "“Carry an old decision” is unclear.",
+    "response": "Current main text uses preserving a specified task outcome or reusing valid evidence. In the supporting operational model, retained decisions and avoided recomputation are distinguished and illustrated.",
+    "location": "Main: Introduction; SI: access and shared-work explanation",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F5",
+    "source": "Fanlin PDF annotation",
+    "comment": "Insert the missing article.",
+    "response": "The affected introductory passage has been rewritten in plain academic English.",
+    "location": "Main: Introduction",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F6",
+    "source": "Fanlin PDF annotation",
+    "comment": "Specify the word “decision”.",
+    "response": "The revised passage names task outcomes, decisions and evidence separately.",
+    "location": "Main: study overview",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F7",
+    "source": "Fanlin PDF annotation",
+    "comment": "Clarify the ordering word “following”.",
+    "response": "The revised introduction follows a single problem-to-method-to-result order.",
+    "location": "Main: Introduction and study overview",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F8",
+    "source": "Fanlin PDF annotation",
+    "comment": "Is sensitivity analysis needed for important parameters?",
+    "response": "The new simulations vary confidence, margin/noise, calibration count, uncertainty and budget. Additional analyses use saved experimental margins for pilot strengths 0.05, 0.25 and 0.50, several confidence levels and calibration-family counts. Benefit-floor sweeps are audit-only sensitivity analyses and never replace frozen primary choices.",
+    "location": "Figures 2–4; SI: numerical checks; results/control_analysis",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F9",
+    "source": "Fanlin PDF annotation",
+    "comment": "How easy or expensive is estimation for a black box?",
+    "response": "The Supplement has an explicit access/cost table. Output-only APIs permit paired task testing but generally do not identify exact token margins or hidden parameter directions. Pilot, calibration-grid, selection and audit operations are recorded separately.",
+    "location": "SI: Sources, assumptions and access requirements; Methods: resource accounting",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F10",
+    "source": "Fanlin PDF annotation",
+    "comment": "Highlight the shared downstream-work result.",
+    "response": "The supporting model now explains that only identical deterministic operations with identical inputs and state are reusable. Statistical correlation between tasks is not sufficient.",
+    "location": "SI: access table and shared-lookup example",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F11",
+    "source": "Fanlin PDF annotation",
+    "comment": "Why does reopening one task make part of another task free?",
+    "response": "The example uses two tasks sharing one verified database lookup. The lookup is paid once; distinct later responses and actions retain their own costs. No whole-task free-work claim is made.",
+    "location": "SI: shared-lookup example",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F12",
+    "source": "Fanlin PDF annotation",
+    "comment": "Remove figure/text overlap on old page 13.",
+    "response": "The current figures are redrawn from source tables, with explanations outside data marks.",
+    "location": "Current figures and final visual QA",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F13",
+    "source": "Fanlin PDF annotation",
+    "comment": "Remove figure/text overlap on old page 17.",
+    "response": "The repair figure retains all scientific panels with shorter titles, separate annotations and readable axes.",
+    "location": "Extended Data 3 and Figure 3",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F14",
+    "source": "Fanlin PDF annotation",
+    "comment": "Remove figure/text overlap on old page 19.",
+    "response": "The prospective experiment figure separates capability, prediction, feasibility and fresh-audit outcomes.",
+    "location": "Extended Data 4",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "F15",
+    "source": "Fanlin PDF annotation",
+    "comment": "Remove figure/text overlap on old page 44.",
+    "response": "All current figure layouts are inspected at rendered manuscript size; the unchanged earlier PDF is kept as provenance.",
+    "location": "Final PDFs and preservation archive",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "A1",
+    "source": "R138/R140 internal audit",
+    "comment": "Deliver a complete integrated manuscript, not a replacement patch.",
+    "response": "R141 contains a complete editable main manuscript, Methods, Supplement, figures, source data, code, result tables and this response. The complete R132 main source was recovered and used with the later technical record to restore integration. Earlier packages remain unchanged.",
+    "location": "Main/SI PDFs and LaTeX; preservation folder",
+    "status": "Completed integrated deliverable"
+  },
+  {
+    "id": "A2",
+    "source": "R140 internal audit",
+    "comment": "The functional endpoint can pass without the required user-facing answer.",
+    "response": "Ten original stateful-agent archives were recovered and checksum-verified. The retrospective audit finds that both full-strength candidates omit all nine required old-task confirmations. Their new-task successes change from two each to zero and one among 152 variants; the remaining benchmark task has no final-answer milestone. All counts and task-family limitations are updated. The nine incumbent confirmations were reviewed by the revising assistant, not independent human annotators.",
+    "location": "SI: required-answer audit; results/R138_communication_audit",
+    "status": "Recovered-data issue resolved; stronger independent conversational validation remains open"
+  },
+  {
+    "id": "A3",
+    "source": "R140 internal audit",
+    "comment": "Protocol, implementation and delivered results are inconsistent.",
+    "response": "One frozen R141 protocol identifies the candidate count, grids, floors, families, costs and all eight complete batches. Setup amendments are recorded with source hashes and reasons. Numerical failures and continued jobs remain in the registry. Earlier V1/V2 designs are preserved as earlier records.",
+    "location": "reproducibility/R141_FROZEN_PROTOCOL.json; audit/compute_jobs.json",
+    "status": "Implemented; see stated evidentiary limit"
+  },
+  {
+    "id": "A4",
+    "source": "R140 internal audit",
+    "comment": "The infinite-quantile branch still chooses an effect-aware candidate.",
+    "response": "The calibrated selector requires a finite quantile and a nonempty set of positive selection-family lower bounds. Otherwise its choice is null. This differs from the uncalibrated empirical selector. The analysis never rewards abstention as a useful zero-loss update.",
+    "location": "Runner: eligible/choices branches; SI: calibration theorem; executable edge-case checks",
+    "status": "Implementation corrected"
+  },
+  {
+    "id": "A5",
+    "source": "R140 internal audit",
+    "comment": "Costs omit calibration, grid size and repeated evaluations.",
+    "response": "The candidate-record budget includes all pilot/calibration-grid and selection score evaluations. Direct validation receives the same observation cap. Operation-level records retain prompt, generation and sequence positions, elapsed time where available, and common versus method-specific roles. Missing pre-crash shared-stage times remain unavailable; no full-runtime saving is inferred.",
+    "location": "Methods: comparators and resource accounting; operation_costs.csv",
+    "status": "Observation accounting corrected; missing historical timing disclosed"
+  },
+  {
+    "id": "A6",
+    "source": "R140 internal audit",
+    "comment": "Generation and margin prompts use different truncation rules.",
+    "response": "Prompts and canonical target lengths are checked before outcomes. The same complete prompt-token arrays are used in generation and score measurement. The scored target is the actual accepted incumbent response including stopping. No canonical response is substituted for a different incumbent output. Numerical differences between cached generation and full-sequence scoring are explicitly acknowledged.",
+    "location": "Runner: prompt_ids, evaluate and margins; Methods: margins and declarations",
+    "status": "Input mismatch corrected; numerical guarantee scope stated"
+  },
+  {
+    "id": "A7",
+    "source": "R140 internal audit",
+    "comment": "Grouping does not normalize equivalent parallel-call order.",
+    "response": "The key is an order-invariant multiset of function names and ground-truth argument-name sets, retaining duplicate calls. Each whole group remains in one split. The paper states that this operational grouping does not prove full semantic independence or exchangeability. Historical ToolSandbox alternative-base leakage is not retroactively erased.",
+    "location": "Runner: canonical_family and family_split; split manifests",
+    "status": "Specified leakage corrected; broader sampling assumption retained"
+  },
+  {
+    "id": "A8",
+    "source": "R140 internal audit",
+    "comment": "A fixed-radius theorem is used after candidate/strength selection.",
+    "response": "The calibration score now takes a maximum over the frozen candidate set, full strength grid and protected family members. A rank proof then bounds the false-declaration event for any selected coordinate. The old fixed-radius claim is kept within its original scope. The theorem does not apply to candidates trained on the same calibration outcomes.",
+    "location": "SI: simultaneous finite-grid theorem; Figure 2",
+    "status": "Formal statement and implementation corrected"
+  },
+  {
+    "id": "A9",
+    "source": "R140 internal audit",
+    "comment": "The general iterated-logarithm validation upper bound lacks a complete proof.",
+    "response": "That generic upper remainder is withdrawn in both current and supporting text. The replacement specifies independent Gaussian measurements with known variance, an explicit stopping boundary, a finite-error upper bound and a proof of the sharp leading asymptotic constant. Seeded simulations compare achieved cost with both bounds.",
+    "location": "SI: Gaussian theorem and proof; Figure 4",
+    "status": "Proved scoped replacement delivered"
+  },
+  {
+    "id": "A10",
+    "source": "R140 internal audit",
+    "comment": "Stagewise information lower bounds may double-count reusable pilot data.",
+    "response": "The current result uses the stopped-transcript chain rule. An observation contributes conditional information once. Additive stage bounds are restricted to fixed-design, non-reuse, conditionally correct fresh-stage architectures; random designs require conditional rates inside expectations. Generic stagewise attainability is withdrawn.",
+    "location": "SI: Count reusable observations once; corrected supporting information section",
+    "status": "Mathematical accounting corrected"
+  },
+  {
+    "id": "A11",
+    "source": "R138/R140 internal audit",
+    "comment": "Robust affine feasibility was incorrectly tied to convexity of the uncertainty set.",
+    "response": "The Supplement states that intersection of linear inequalities is convex for any fixed uncertainty set. The new theorem uses conservative inner and optimistic outer systems with a budgeted dual witness. An infeasible inner system alone is not an impossibility certificate.",
+    "location": "SI: repair theorem and supporting tractability table; Figure 3",
+    "status": "Corrected and extended"
+  },
+  {
+    "id": "A12",
+    "source": "R138/R140 internal audit",
+    "comment": "Breaking one Farkas witness does not establish feasibility.",
+    "response": "The current result requires elimination of every remaining witness and accounts for the cost of a new direction. The earlier failed fifth-direction attempt and separately frozen successful follow-up are both retained, including fresh repair failure.",
+    "location": "SI: new-intervention condition; Extended Data 4c",
+    "status": "Corrected interpretation and retained null result"
+  },
+  {
+    "id": "A13",
+    "source": "R140 internal audit",
+    "comment": "Old retention and new benefit were measured at different strengths.",
+    "response": "The later R134 joint reevaluation is recovered separately and both endpoints are plotted at quarter and full strength. Every R141 selected update is audited on both endpoints at its exact chosen strength. Historical original and reevaluated loss counts are not pooled.",
+    "location": "Figure 1; Figure 5; control method tables",
+    "status": "Same-final-model comparison delivered"
+  },
+  {
+    "id": "A14",
+    "source": "R140 internal audit",
+    "comment": "A candidate pair is not a replication of a selection procedure.",
+    "response": "R141 repeats complete incumbent training, candidate construction, calibration, selection and audit in four blocks for each of two model families. Sixty-four candidate training runs belong to eight complete batches. Repeated use of the same benchmark pool is disclosed, so these are not eight independent task populations.",
+    "location": "Methods: units of inference; batches.csv",
+    "status": "Complete-recipe repetition delivered; population scope limited"
+  },
+  {
+    "id": "A15",
+    "source": "R140 internal audit",
+    "comment": "Closest compatibility and forgetting methods need faithful comparisons.",
+    "response": "The Introduction and Supplement identify MUSCLE, forgetting forecasting, KnowNo and safe-update regions as substantive neighbours. Six operational selectors are implemented, with a strong direct-validation control. They are not faithful reproductions of all those learning algorithms. Accordingly, no algorithmic superiority over those methods is claimed. A broader competitive claim remains unsupported and is explicitly left open.",
+    "location": "Main: Discussion; SI: closest-method comparison",
+    "status": "Scope corrected; faithful learning-algorithm benchmark remains uncompleted"
+  },
+  {
+    "id": "A16",
+    "source": "R140 internal audit",
+    "comment": "A zero transfer radius was described as a physical boundary.",
+    "response": "The historical n=8, 90% rank calculation is shown explicitly. It yields an infinite statistical allowance and abstention, not an observed universal zero feasible radius. New calibration sizes and sensitivity analyses separate sufficient sample count from an informative bound.",
+    "location": "SI: calibration and R138 sections; Figure 2",
+    "status": "Interpretation corrected"
+  },
+  {
+    "id": "A17",
+    "source": "R140 internal audit",
+    "comment": "Version priority still points to older mathematical statements.",
+    "response": "R141 governs the integrated manuscript. Current formal statements and corrected supporting passages supersede conflicting historical wording. Immutable old versions remain in a separate preservation archive rather than appearing as competing current claims.",
+    "location": "SI reading map and correction rule",
+    "status": "Corrected"
+  },
+  {
+    "id": "A18",
+    "source": "Current integration audit",
+    "comment": "A false-declaration guarantee was liable to be mistaken for a total old-loss target.",
+    "response": "An explicit sharp probability bound now distinguishes the two: total failure can be as high as one minus declaration probability plus the allowed false-declaration probability. Its proof, attainable construction and operational interpretation are supplied. Empirical declaration fractions are not silently substituted for a population probability.",
+    "location": "SI: declaration guarantee versus total old-task loss; main calibration result",
+    "status": "New clarification and proof"
+  },
+  {
+    "id": "A19",
+    "source": "Author instruction",
+    "comment": "Give each problem, assumption and result literature support and clear mathematical/mechanism/management interpretation.",
+    "response": "The assumption/source table identifies published scientific bases, established mathematical tools, official model documentation and numerical design choices. It explains what each source does and does not justify. Main equations define the reserve, movement, error, deficits, budget, costs and dual weights in plain English; supporting formal results receive scoped interpretation paragraphs. Invented stage acronyms are removed from the current main narrative.",
+    "location": "Main: all Results; SI: sources/access table and formal-result explanations",
+    "status": "Implemented; modelling assumptions remain explicit assumptions"
+  }
+]

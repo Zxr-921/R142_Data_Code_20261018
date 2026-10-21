@@ -1,0 +1,66 @@
+[
+  {
+    "run": "qwen_batch1",
+    "name": "scientific_record.json",
+    "bytes": 5302263,
+    "sha256": "a481c86b9ab8981f3ccadf23dd283b115239302bcb32b9cabf000942851a9b49",
+    "chunks": 89,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "sdk_recovery_report.json",
+    "bytes": 21468,
+    "sha256": "d36daddc63c10d83e047d000826683e95dec8de30d6a5697016356b6d487e4f9",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch2",
+    "name": "scientific_record.json",
+    "bytes": 5358213,
+    "sha256": "f63691d3c92c80eae8e1b79dc43b3c18766e7c78f8c94a88e2c28e294f27e15b",
+    "chunks": 88,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch2",
+    "name": "sdk_recovery_report.json",
+    "bytes": 21468,
+    "sha256": "2d68d89036a565a40576d004712ea6bf4bbf9ed18edb88dbd38aa7d1d4c037ba",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch3",
+    "name": "scientific_record.json",
+    "bytes": 5573664,
+    "sha256": "bb2a887816113945f05c931013b4748e6b4f7f2e2bdd1efea8ba33768c14436f",
+    "chunks": 91,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch3",
+    "name": "sdk_recovery_report.json",
+    "bytes": 21468,
+    "sha256": "7dca984638b9962f91cf403d0122ffc96d54b64fbb4b7f39c58ff70bcbcf4909",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch4",
+    "name": "scientific_record.json",
+    "bytes": 5421834,
+    "sha256": "f66b5872a3639bd85983fb01d9abeefda704f9511b4842e75116abcd22da092d",
+    "chunks": 85,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch4",
+    "name": "sdk_recovery_report.json",
+    "bytes": 22224,
+    "sha256": "d6d6afaf4650f5d2d09c95603685656adfe810ab8619ccbd5e0bc5bc6db752b2",
+    "chunks": 1,
+    "status": "verified"
+  }
+]

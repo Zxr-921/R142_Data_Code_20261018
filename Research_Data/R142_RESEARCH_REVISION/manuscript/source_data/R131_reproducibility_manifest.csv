@@ -1,0 +1,10 @@
+experiment_id,included_in_R131_package,missing_for_full_independent_rerun
+FRONTIER-4,summary CSV available,raw matched task/trial ledger not present in supplied R130 package
+SORRY-JUDGE-4400,summary CSV available,per-record logits/outcomes not present in supplied R130 package
+FIXDIR-QWEN,summary CSV available,per-example logits/gradients not present; exact directional sensitivity cannot be reconstructed
+FIXDIR-SMOL,summary CSV available,per-example logits/gradients not present
+AFFINE-DIGITS,summary available in manuscript,raw split/model script not present
+RELU-DIGITS,summary available in manuscript,raw split/model script not present
+REPAIR-1,summary CSV available,training logs/checkpoints not present
+REPAIR-10,run-level CSV available,training logs/checkpoints not present
+TB-87,summary available in manuscript,trial-level archived order not present

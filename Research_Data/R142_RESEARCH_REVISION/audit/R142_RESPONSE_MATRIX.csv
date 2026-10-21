@@ -1,0 +1,224 @@
+sequence,item,request,response_tex,source
+1,latest_R1,The manuscript still seems distant from Nature or Science.,"We agree that the remaining distance is substantive. The question is important, but many mathematical components are applications of established results and the strongest current generated-output evidence uses two small-model families and previously studied BFCL pools. The revision defines the contribution and its limitations directly. It does not promise editorial review or acceptance, or present additional simulations as independent deployment evidence.
+
+\textbf{Action:} a separate author-facing assessment distinguishes scientific importance, established mathematics, original observations, executable procedures and the evidence still needed for a broad claim. The title and Discussion connect task requirements to evidence and deployment work.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+2,latest_R2,Methods contains prose but no algorithms.,"Methods now contains four numbered, linked procedures with inputs, outputs, steps and failure cases: fixed-grid update selection; robust repair with a checked dual witness; exact finite-record evaluation and minimum-cut work planning; and the published compatibility-loss experiment with a matched continuation control. Executable Python accompanies them. Fixed-price minimum cut is not claimed to solve uncertain adaptive testing, training and repeated adoption jointly.
+
+\textbf{Verification:} 24,562 exhaustive bounded-tape cases, 600 minimum-cut comparisons with exhaustive optimization, and 360 synthetic workflow replays all satisfy their stated equality checks. Proofs, assumptions and complexity are given in the Supplement.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+3,latest_R3,Expand Extended Data and distinguish lines and bars.,"Extended Data grows from four displays to ten while retaining all sixteen earlier panels. The additions show every candidate--strength outcome, declarations versus all losses, calibration and benefit sensitivity, observation/token/time costs, all eight compatibility comparisons, and deployment checks. Bars use colours and hatches; lines use colours, styles and markers. Main Figures 1 and 5 gain controlled-execution and training-comparison panels. Vector PDF/SVG and high-resolution PNG files are supplied.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+4,latest_R4,Link every result and display to its appendix support and back.,"Main Table 1 provides a result-to-proof and implementation map. Every supplementary section and formal result has a return link. Supplementary tables and main/Extended Data captions link to their relevant results and supporting protocols. A complete supporting index and machine-readable link map accompany the files. The combined PDF uses internal links; standalone Main and Supplement use relative links when kept together. A PDF link audit checks destination resolution, including cross-document links.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+5,latest_R5,Do the substantive work and judge research quality.,"The revision adds sixteen actually trained compatibility/control adapters across all eight batches, evaluates all 800 old-record appearances rather than only incumbent successes, and supplies all paired transitions. Mean protected-family loss is 4.69\% with MUSCLE loss, 7.09\% with ordinary continuation and 8.92\% for the jointly reevaluated full update. All three meet the experimental new-benefit floors in all eight batches. The comparison is supplementary because the audit pools were previously used, and the original selection experiment remains a distinct record.
+
+A targeted same-weight check also reproduces one discrepancy: complete-pool evaluation loses 1/72 protected Qwen tasks, protected-only batches lose 3/72, and repeating the complete pool returns to 1/72 with identical tokens. The code, weights, device and evaluator are fixed. This establishes batch-composition sensitivity for that case, not a universal floating-point mechanism or an explanation of every historical mismatch.
+
+\textbf{Remaining scientific boundary:} a broadly predictive mechanism, independent new task distributions, stronger comparisons under matched total resources, and consequential multi-release or organizational outcomes are still required for the intended foundational claim. This revision makes the work more complete and testable; it does not establish that it exceeds comparable Nature or Science papers.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+6,prior_D1,Introduce the problem in nontechnical terms.,"The Introduction begins with an assistant acquiring a new tool-use capability while disrupting familiar requests. It states the organization's three practical questions before introducing margins. A deployment replacement is distinguished from a known continued-training path.
+
+\textbf{Location:} Main: Introduction, first two paragraphs.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+7,prior_D2,Give specific task examples and explain what is updated.,"The study overview gives a triangle-area request and a parallel music request from the pinned BFCL records. It explains that the output must contain correct function names and arguments. BANKING77 is identified as 77-way service-intent classification, not a banking transaction or credit decision.
+
+\textbf{Location:} Main: Tasks, measurements and study design; Methods: task definitions.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+8,prior_D3,"Provide an overview before Results; identify decisions, models and processing.","A dedicated overview before Results identifies the old single-call and new parallel-call tasks, the training and pilot stages, separate calibration/selection/audit roles, both model families and the unit of outcome. Figure 1 now names the old and new endpoints directly.
+
+\textbf{Location:} Main: Tasks, measurements and study design; Figure 1.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+9,prior_D4,The italic question and later research questions do not fit together.,"The disconnected italic question and acronym-based research-question sequence are removed from the current main text. One overarching question links benefit, existing requirements and limited evidence; the following paragraph explains the roles of prediction, repair and verification.
+
+\textbf{Location:} Main: Introduction, paragraphs three to five.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+10,prior_D5,Theorems are referenced before readers know what they say.,"Each main result introduces its decision, variables and plain meaning before pointing to the proof. Part I of the Supplement states and proves the current results. Supporting formal results receive an interpretation-and-scope paragraph with an appropriate mathematical source.
+
+\textbf{Location:} Main: Results; SI: Part I and formal-result explanations in Part III.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+11,prior_D6,Check page breaks at the reported page transitions.,"The full main text is rebuilt and compiled as one document. The final audit checks page boundaries, undefined references and overflow. Historical page numbers are not treated as current locations because the supplied annotated PDF and the email refer to different earlier layouts.
+
+\textbf{Location:} Final PDFs and audit/layout\_verification.json.
+
+\textbf{Status:} Layout checked in the delivered revision.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+12,prior_D7,Text overlaps the bars in Figure 5g/h.,"Current main and Extended Data figures are rebuilt with short panel titles and separate legends/captions. All sixteen panels from the recovered complete main source remain represented. Earlier immutable figures remain in the preservation archive; their panel numbers are not silently assigned to current figures.
+
+\textbf{Location:} Figures 1--5; Extended Data 1--10; original figure archive.
+
+\textbf{Status:} Current figures redrawn and visually checked.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+13,prior_D8,"Fix the paragraph indent near page 21, line 327.","The current manuscript uses a consistent zero-indent paragraph style. Manual local indentation is avoided and the compiled pages are checked.
+
+\textbf{Location:} Main and SI document preambles.
+
+\textbf{Status:} Implemented.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+14,prior_F1,Specify ``under M\_t''.,"The incumbent and replacement are defined before use, and every measured outcome has an explicit model state.
+
+\textbf{Location:} Main: Introduction and study overview.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+15,prior_F2,An action notation is undefined.,"The current main text removes the unexplained action-estimate notation. The supporting decision formulation defines incumbent and full-information actions before their comparisons.
+
+\textbf{Location:} Main: study overview; SI: definitions and decision preservation.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+16,prior_F3,Identify the central question.,"The Introduction states one overarching deployment question and explains how the component questions relate.
+
+\textbf{Location:} Main: Introduction.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+17,prior_F4,``Carry an old decision'' is unclear.,"Current main text uses preserving a specified task outcome or reusing valid evidence. In the supporting operational model, retained decisions and avoided recomputation are distinguished and illustrated.
+
+\textbf{Location:} Main: Introduction; SI: access and shared-work explanation.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+18,prior_F5,Insert the missing article.,"The affected introductory passage has been rewritten in plain academic English.
+
+\textbf{Location:} Main: Introduction.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+19,prior_F6,Specify the word ``decision''.,"The revised passage names task outcomes, decisions and evidence separately.
+
+\textbf{Location:} Main: study overview.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+20,prior_F7,Clarify the ordering word ``following''.,"The revised introduction follows a single problem-to-method-to-result order.
+
+\textbf{Location:} Main: Introduction and study overview.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+21,prior_F8,Is sensitivity analysis needed for important parameters?,"The new simulations vary confidence, margin/noise, calibration count, uncertainty and budget. Additional analyses use saved experimental margins for pilot strengths 0.05, 0.25 and 0.50, several confidence levels and calibration-family counts. Benefit-floor sweeps are audit-only sensitivity analyses and never replace frozen primary choices.
+
+\textbf{Location:} Figures 2--4; SI: numerical checks; results/control\_analysis.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+22,prior_F9,How easy or expensive is estimation for a black box?,"The Supplement has an explicit access/cost table. Output-only APIs permit paired task testing but generally do not identify exact token margins or hidden parameter directions. Pilot, calibration-grid, selection and audit operations are recorded separately.
+
+\textbf{Location:} SI: Sources, assumptions and access requirements; Methods: resource accounting.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+23,prior_F10,Highlight the shared downstream-work result.,"The supporting model now explains that only identical deterministic operations with identical inputs and state are reusable. Statistical correlation between tasks is not sufficient.
+
+\textbf{Location:} SI: access table and shared-lookup example.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+24,prior_F11,Why does reopening one task make part of another task free?,"The example uses two tasks sharing one verified database lookup. The lookup is paid once; distinct later responses and actions retain their own costs. No whole-task free-work claim is made.
+
+\textbf{Location:} SI: shared-lookup example.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+25,prior_F12,Remove figure/text overlap on old page 13.,"The current figures are redrawn from source tables, with explanations outside data marks.
+
+\textbf{Location:} Current figures and final visual QA.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+26,prior_F13,Remove figure/text overlap on old page 17.,"The repair figure retains all scientific panels with shorter titles, separate annotations and readable axes.
+
+\textbf{Location:} Extended Data 3 and Figure 3.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+27,prior_F14,Remove figure/text overlap on old page 19.,"The prospective experiment figure separates capability, prediction, feasibility and fresh-audit outcomes.
+
+\textbf{Location:} Extended Data 4.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+28,prior_F15,Remove figure/text overlap on old page 44.,"All current figure layouts are inspected at rendered manuscript size; the unchanged earlier PDF is kept as provenance.
+
+\textbf{Location:} Final PDFs and preservation archive.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+29,prior_A1,"Deliver a complete integrated manuscript, not a replacement patch.","R142 contains a complete editable main manuscript, Methods, Supplement, figures, source data, code, result tables and this response. The complete R132 main source was recovered and used with the later technical record to restore integration. Earlier packages remain unchanged.
+
+\textbf{Location:} Main/SI PDFs and LaTeX; preservation folder.
+
+\textbf{Status:} Completed integrated deliverable.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+30,prior_A2,The functional endpoint can pass without the required user-facing answer.,"Ten original stateful-agent archives were recovered and checksum-verified. The retrospective audit finds that both full-strength candidates omit all nine required old-task confirmations. Their new-task successes change from two each to zero and one among 152 variants; the remaining benchmark task has no final-answer milestone. All counts and task-family limitations are updated. The nine incumbent confirmations were reviewed by the revising assistant, not independent human annotators.
+
+\textbf{Location:} SI: required-answer audit; results/R138\_communication\_audit.
+
+\textbf{Status:} Recovered-data issue resolved; stronger independent conversational validation remains open.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+31,prior_A3,"Protocol, implementation and delivered results are inconsistent.","One frozen R142 protocol identifies the candidate count, grids, floors, families, costs and all eight complete batches. Setup amendments are recorded with source hashes and reasons. Numerical failures and continued jobs remain in the registry. Earlier V1/V2 designs are preserved as earlier records.
+
+\textbf{Location:} reproducibility/R142\_FROZEN\_PROTOCOL.json; audit/compute\_jobs.json.
+
+\textbf{Status:} Implemented; see stated evidentiary limit.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+32,prior_A4,The infinite-quantile branch still chooses an effect-aware candidate.,"The calibrated selector requires a finite quantile and a nonempty set of positive selection-family lower bounds. Otherwise its choice is null. This differs from the uncalibrated empirical selector. The analysis never rewards abstention as a useful zero-loss update.
+
+\textbf{Location:} Runner: eligible/choices branches; SI: calibration theorem; executable edge-case checks.
+
+\textbf{Status:} Implementation corrected.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+33,prior_A5,"Costs omit calibration, grid size and repeated evaluations.","The candidate-record budget includes all pilot/calibration-grid and selection score evaluations. Direct validation receives the same observation cap. Operation-level records retain prompt, generation and sequence positions, elapsed time where available, and common versus method-specific roles. Missing pre-crash shared-stage times remain unavailable; no full-runtime saving is inferred.
+
+\textbf{Location:} Methods: comparators and resource accounting; operation\_costs.csv.
+
+\textbf{Status:} Observation accounting corrected; missing historical timing disclosed.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+34,prior_A6,Generation and margin prompts use different truncation rules.,"Prompts and canonical target lengths are checked before outcomes. The same complete prompt-token arrays are used in generation and score measurement. The scored target is the actual accepted incumbent response including stopping. No canonical response is substituted for a different incumbent output. Numerical differences between cached generation and full-sequence scoring are explicitly acknowledged.
+
+\textbf{Location:} Runner: prompt\_ids, evaluate and margins; Methods: margins and declarations.
+
+\textbf{Status:} Input mismatch corrected; numerical guarantee scope stated.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+35,prior_A7,Grouping does not normalize equivalent parallel-call order.,"The key is an order-invariant multiset of function names and ground-truth argument-name sets, retaining duplicate calls. Each whole group remains in one split. The paper states that this operational grouping does not prove full semantic independence or exchangeability. Historical ToolSandbox alternative-base leakage is not retroactively erased.
+
+\textbf{Location:} Runner: canonical\_family and family\_split; split manifests.
+
+\textbf{Status:} Specified leakage corrected; broader sampling assumption retained.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+36,prior_A8,A fixed-radius theorem is used after candidate/strength selection.,"The calibration score now takes a maximum over the frozen candidate set, full strength grid and protected family members. A rank proof then bounds the false-declaration event for any selected coordinate. The old fixed-radius claim is kept within its original scope. The theorem does not apply to candidates trained on the same calibration outcomes.
+
+\textbf{Location:} SI: simultaneous finite-grid theorem; Figure 2.
+
+\textbf{Status:} Formal statement and implementation corrected.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+37,prior_A9,The general iterated-logarithm validation upper bound lacks a complete proof.,"That generic upper remainder is withdrawn in both current and supporting text. The replacement specifies independent Gaussian measurements with known variance, an explicit stopping boundary, a finite-error upper bound and a proof of the sharp leading asymptotic constant. Seeded simulations compare achieved cost with both bounds.
+
+\textbf{Location:} SI: Gaussian theorem and proof; Figure 4.
+
+\textbf{Status:} Proved scoped replacement delivered.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+38,prior_A10,Stagewise information lower bounds may double-count reusable pilot data.,"The current result uses the stopped-transcript chain rule. An observation contributes conditional information once. Additive stage bounds are restricted to fixed-design, non-reuse, conditionally correct fresh-stage architectures; random designs require conditional rates inside expectations. Generic stagewise attainability is withdrawn.
+
+\textbf{Location:} SI: Count reusable observations once; corrected supporting information section.
+
+\textbf{Status:} Mathematical accounting corrected.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+39,prior_A11,Robust affine feasibility was incorrectly tied to convexity of the uncertainty set.,"The Supplement states that intersection of linear inequalities is convex for any fixed uncertainty set. The new theorem uses conservative inner and optimistic outer systems with a budgeted dual witness. An infeasible inner system alone is not an impossibility certificate.
+
+\textbf{Location:} SI: repair theorem and supporting tractability table; Figure 3.
+
+\textbf{Status:} Corrected and extended.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+40,prior_A12,Breaking one Farkas witness does not establish feasibility.,"The current result requires elimination of every remaining witness and accounts for the cost of a new direction. The earlier failed fifth-direction attempt and separately frozen successful follow-up are both retained, including fresh repair failure.
+
+\textbf{Location:} SI: new-intervention condition; Extended Data 4c.
+
+\textbf{Status:} Corrected interpretation and retained null result.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+41,prior_A13,Old retention and new benefit were measured at different strengths.,"The later R134 joint reevaluation is recovered separately and both endpoints are plotted at quarter and full strength. Every R142 selected update is audited on both endpoints at its exact chosen strength. Historical original and reevaluated loss counts are not pooled.
+
+\textbf{Location:} Figure 1; Figure 5; control method tables.
+
+\textbf{Status:} Same-final-model comparison delivered.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+42,prior_A14,A candidate pair is not a replication of a selection procedure.,"The R141 selection experiment retained in R142 includes complete incumbent training, candidate construction, calibration, selection and audit in four blocks for each model family. Sixty-four candidate training runs belong to eight complete batches. Repeated use of the same benchmark pool is disclosed, so these are not eight independent task populations.
+
+\textbf{Location:} Methods: units of inference; batches.csv.
+
+\textbf{Status:} Complete-recipe repetition delivered; population scope limited.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+43,prior_A15,Closest compatibility and forgetting methods need faithful comparisons.,"R142 implements MUSCLE's published student-error mask and KL objective on every one of the eight frozen full-update candidates, with a paired extra cross-entropy epoch from the same initialization. All sixteen trained adapters, token outputs, checker results, costs and hashes are recovered. The loss is faithfully specified; the adapter rank, target layers, duration and tasks follow our resource setting rather than reproduce the original paper's benchmark. The audit pools were previously inspected. This closes a specific missing learning-method comparison, while comparisons with every neighbouring method and independent cross-domain confirmation remain open.
+
+\textbf{Location:} Algorithm 4; Figure 5d--f; Extended Data 9; Supplement: compatibility comparison.
+
+\textbf{Status:} Published-loss comparison completed under disclosed settings; broad superiority is not established.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+44,prior_A16,A zero transfer radius was described as a physical boundary.,"The historical n=8, 90\% rank calculation is shown explicitly. It yields an infinite statistical allowance and abstention, not an observed universal zero feasible radius. New calibration sizes and sensitivity analyses separate sufficient sample count from an informative bound.
+
+\textbf{Location:} SI: calibration and R138 sections; Figure 2.
+
+\textbf{Status:} Interpretation corrected.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+45,prior_A17,Version priority still points to older mathematical statements.,"R142 governs the integrated manuscript. Current formal statements and corrected supporting passages supersede conflicting historical wording. Immutable old versions remain in a separate preservation archive rather than appearing as competing current claims.
+
+\textbf{Location:} SI reading map and correction rule.
+
+\textbf{Status:} Corrected.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+46,prior_A18,A false-declaration guarantee was liable to be mistaken for a total old-loss target.,"An explicit sharp probability bound now distinguishes the two: total failure can be as high as one minus declaration probability plus the allowed false-declaration probability. Its proof, attainable construction and operational interpretation are supplied. Empirical declaration fractions are not silently substituted for a population probability.
+
+\textbf{Location:} SI: declaration guarantee versus total old-task loss; main calibration result.
+
+\textbf{Status:} New clarification and proof.",manuscript/R142_RESPONSE_TO_COMMENTS.tex
+47,prior_A19,"Give each problem, assumption and result literature support and clear mathematical/mechanism/management interpretation.","The assumption/source table identifies published scientific bases, established mathematical tools, official model documentation and numerical design choices. It explains what each source does and does not justify. Main equations define the reserve, movement, error, deficits, budget, costs and dual weights in plain English; supporting formal results receive scoped interpretation paragraphs. Invented stage acronyms are removed from the current main narrative.
+
+\textbf{Location:} Main: all Results; SI: sources/access table and formal-result explanations.
+
+\textbf{Status:} Implemented; modelling assumptions remain explicit assumptions.",manuscript/R142_RESPONSE_TO_COMMENTS.tex

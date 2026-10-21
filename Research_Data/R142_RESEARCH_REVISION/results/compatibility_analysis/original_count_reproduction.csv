@@ -1,0 +1,9 @@
+run,original_candidate,recovered_candidate,old_protected_n_match,old_loss_match,new_success_match,original_old_loss,reevaluated_old_loss,original_new_success,reevaluated_new_success
+qwen_batch1,V5@1.00,V5,True,False,True,3,1,39,39
+qwen_batch2,V2@1.00,V2,True,False,True,10,8,34,34
+qwen_batch3,V8@1.00,V8,True,False,True,6,5,39,39
+qwen_batch4,V7@1.00,V7,True,True,True,3,3,34,34
+smollm_batch1,V5@1.00,V5,True,True,True,4,4,31,31
+smollm_batch2,V7@1.00,V7,True,True,True,10,10,27,27
+smollm_batch3,V1@1.00,V1,True,True,True,9,9,30,30
+smollm_batch4,V3@1.00,V3,True,True,True,8,8,34,34

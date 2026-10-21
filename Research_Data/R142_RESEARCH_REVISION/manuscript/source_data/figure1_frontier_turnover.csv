@@ -1,0 +1,6 @@
+update,net_trial_gain,old_strict_4of4,new_strict_4of4,exits,entries,retained
+GPT 5.4→5.5,20,21,29,7,15,14
+Claude 4.7→4.8,-2,24,22,8,6,16
+Claude 4.8→5.0,35,22,31,6,15,16
+Gemini 3 Pro→3.0 Flash,19,4,4,3,3,1
+Grok 4.1 Fast→4.2,20,5,7,3,5,2

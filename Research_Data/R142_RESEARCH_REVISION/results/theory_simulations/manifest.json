@@ -1,0 +1,25 @@
+{
+  "seed": 1410921,
+  "scientific_role": "Numerical checks of stated model; not new LLM experiments.",
+  "gaussian": {
+    "replicate_n": 28800,
+    "max_simulated_error_rate": 0.0033333333333333335
+  },
+  "calibration": {
+    "replicate_n": 48000,
+    "design": "Exchangeable Gaussian family effects; 16 coordinates; correlation .7. Envelope coverage, not empirical LLM safety."
+  },
+  "feasibility": {
+    "grid_n": 8181,
+    "dual_certificates": 1274
+  },
+  "seconds": 27.341505527496338,
+  "files": {
+    "conformal_replicates.csv": "e2e39be060c661dfe185fabdb0d97e2beb3ee0ad1f76821fdcb0c8db08917030",
+    "conformal_summary.csv": "821ad0753c7b4291d5831fa6e40b704afcfafcc59147e699242eb3f07f409d04",
+    "gaussian_replicates.csv": "4eb8e283b626c0769e768aac1349e97ae67543b40effab1af7a58d2599731dd7",
+    "gaussian_summary.csv": "ec9c68a8036a9b23eac6a3789d91d6496a3b0b3e8c99cbcee0cf4843824bca65",
+    "repair_design.json": "e6a04f7e24c90a572e7de1cbe785b204fbab02b43ea06e4d6056cb0dbf683363",
+    "repair_feasibility_grid.csv": "8ea1c8a1f583c37d037a9c463e37a64132f0c26c34e867651f0e8b658471b13b"
+  }
+}

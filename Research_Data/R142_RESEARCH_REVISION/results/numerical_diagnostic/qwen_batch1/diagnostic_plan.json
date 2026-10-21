@@ -1,0 +1,1 @@
+{"order": ["all_first", "protected_only", "all_repeat"], "post_hoc": true, "purpose": "Check batching as a cause of the observed Qwen old-count discrepancy", "same_weights_same_device": true}

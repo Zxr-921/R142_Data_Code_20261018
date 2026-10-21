@@ -1,0 +1,52 @@
+Note that User Simulator few shot messages have been omitted
+shape: (34, 8)
+┌────────────┬────────────┬────────────┬───────────┬───────────┬───────────┬───────────┬───────────┐
+│ sandbox_me ┆ sender     ┆ recipient  ┆ content   ┆ openai_fu ┆ tool_call ┆ tool_trac ┆ visible_t │
+│ ssage_inde ┆ ---        ┆ ---        ┆ ---       ┆ nction_na ┆ _exceptio ┆ e         ┆ o         │
+│ x          ┆ enum       ┆ enum       ┆ str       ┆ me        ┆ n         ┆ ---       ┆ ---       │
+│ ---        ┆            ┆            ┆           ┆ ---       ┆ ---       ┆ list[str] ┆ list[enum │
+│ i32        ┆            ┆            ┆           ┆ str       ┆ str       ┆           ┆ ]         │
+╞════════════╪════════════╪════════════╪═══════════╪═══════════╪═══════════╪═══════════╪═══════════╡
+│ 0          ┆ SYSTEM     ┆ EXECUTION_ ┆ import    ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆ ENVIRONMEN ┆ json      ┆           ┆           ┆           ┆           │
+│            ┆            ┆ T          ┆ from tool ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ _sandbox. ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ …         ┆           ┆           ┆           ┆           │
+│ 1          ┆ SYSTEM     ┆ AGENT      ┆ Don't     ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ make assu ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ mptions   ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ about w…  ┆           ┆           ┆           ┆           │
+│ 14         ┆ SYSTEM     ┆ USER       ┆ You are   ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ no longer ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ an assist ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ ant…      ┆           ┆           ┆           ┆           │
+│ 15         ┆ USER       ┆ AGENT      ┆ I can't   ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ access my ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ current   ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ loca…     ┆           ┆           ┆           ┆           │
+│ 16         ┆ AGENT      ┆ EXECUTION_ ┆ call_47f8 ┆ search_lo ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 60ef44_1_ ┆ cation_ar ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆ ound_lat_ ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆ lon       ┆           ┆           ┆ ME…       │
+│ …          ┆ …          ┆ …          ┆ …         ┆ …         ┆ …         ┆ …         ┆ …         │
+│ 41         ┆ EXECUTION_ ┆ AGENT      ┆ TypeError ┆ get_locat ┆ TypeError ┆ null      ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ : got an  ┆ ion_servi ┆ : got an  ┆           ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ unexpecte ┆ ce_status ┆ unexpecte ┆           ┆ NMENT",   │
+│            ┆            ┆            ┆ d k…      ┆           ┆ d k…      ┆           ┆ "AGE…     │
+│ 42         ┆ AGENT      ┆ EXECUTION_ ┆ call_26ff ┆ get_locat ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 1f73d0_1_ ┆ ion_servi ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆ ce_status ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 43         ┆ EXECUTION_ ┆ AGENT      ┆ TypeError ┆ get_locat ┆ TypeError ┆ null      ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ : got an  ┆ ion_servi ┆ : got an  ┆           ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ unexpecte ┆ ce_status ┆ unexpecte ┆           ┆ NMENT",   │
+│            ┆            ┆            ┆ d k…      ┆           ┆ d k…      ┆           ┆ "AGE…     │
+│ 44         ┆ AGENT      ┆ EXECUTION_ ┆ call_c1b4 ┆ get_locat ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 3f3c1f_1_ ┆ ion_servi ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆ ce_status ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 45         ┆ EXECUTION_ ┆ AGENT      ┆ TypeError ┆ get_locat ┆ TypeError ┆ null      ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ : got an  ┆ ion_servi ┆ : got an  ┆           ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ unexpecte ┆ ce_status ┆ unexpecte ┆           ┆ NMENT",   │
+│            ┆            ┆            ┆ d k…      ┆           ┆ d k…      ┆           ┆ "AGE…     │
+└────────────┴────────────┴────────────┴───────────┴───────────┴───────────┴───────────┴───────────┘

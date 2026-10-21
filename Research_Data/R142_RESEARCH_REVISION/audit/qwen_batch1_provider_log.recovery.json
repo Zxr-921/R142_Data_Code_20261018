@@ -1,0 +1,202 @@
+[
+  {
+    "run": "qwen_batch1",
+    "name": "protocol.json",
+    "bytes": 93978,
+    "sha256": "268cd1f63b5b8f4cfcc9ec58a997acc9cd2aca2594cbe2d8614f2c20fb8a7b34",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "benchmark_rows.json",
+    "bytes": 2116793,
+    "sha256": "ea1fcb17d38dafa82722ec02a85e7518373f879bb2497b7017581ea4ec2ad829",
+    "chunks": 37,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/M0_fresh_old.json",
+    "bytes": 43280,
+    "sha256": "5851bd637da25fabf9cc2323ec0f113ae27bccff58f8cae5faf95a44b3492d6a",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/M0_cap_validation.json",
+    "bytes": 30147,
+    "sha256": "8ef522add5c34d0d2f085c91f1256e9a91cbce90715e23723dcd166d7d3dcf4e",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/M0_cap_audit.json",
+    "bytes": 45414,
+    "sha256": "d306bb6e5d3b3ca50d8e6eadd4dca04d23d4b4cd988554ad893282cbc0b955ce",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/full_update_fresh_old.json",
+    "bytes": 43951,
+    "sha256": "88febf262b5f62df04b0653cc1a45c9f213db317337486401af32b735448901d",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/full_update_cap_validation.json",
+    "bytes": 36359,
+    "sha256": "42cb33305321e43232e8b3f33949a312edce0987806f85c28be4435f8a951a4f",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/full_update_cap_audit.json",
+    "bytes": 53668,
+    "sha256": "20d5804259a3ef634666ca0da7001e9e5936375ce1bd147dddb993148fcb9c93",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "training/muscle_loss.json",
+    "bytes": 3954,
+    "sha256": "e2e63639b9ee4179e2793273bb053c1ce18687a9bf060b2632f9d8feab27b95c",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "adapters/muscle_loss/README.md",
+    "bytes": 5098,
+    "sha256": "121eaa9ed2afeed18cf4af575eff30578a951ac4f4e9b2c1e9489db4eef89a8f",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "adapters/muscle_loss/adapter_config.json",
+    "bytes": 778,
+    "sha256": "77ed0e4799fe49644f678bb63a87de58968d733299218e968f642b643760b369",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "adapters/muscle_loss/adapter_model.safetensors",
+    "bytes": 4372840,
+    "sha256": "f69db6fadeefd85023d4722757aa0eaf4dd310db89fd947effa46bb0c12881e6",
+    "chunks": 448,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/muscle_loss_fresh_old.json",
+    "bytes": 44975,
+    "sha256": "e5199d5e35f7cd8bc0995807a6d67b938f11571f64322fbfe8328dad542f5967",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/muscle_loss_cap_validation.json",
+    "bytes": 35649,
+    "sha256": "a7b8d7270555f64d0aa4cbe3e40faaca0dee97c95f2b739728ede0053e9f6759",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/muscle_loss_cap_audit.json",
+    "bytes": 54158,
+    "sha256": "dc19ada6ffb08926d50944a15b780b1546dd5fa3760fa2e82cca322c67228bf1",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "training/extra_cross_entropy.json",
+    "bytes": 3868,
+    "sha256": "990255970e50ce34c72363076e0b2f4edabd2bc28f58e5087c99459c91434432",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "adapters/extra_cross_entropy/README.md",
+    "bytes": 5098,
+    "sha256": "121eaa9ed2afeed18cf4af575eff30578a951ac4f4e9b2c1e9489db4eef89a8f",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "adapters/extra_cross_entropy/adapter_config.json",
+    "bytes": 778,
+    "sha256": "77ed0e4799fe49644f678bb63a87de58968d733299218e968f642b643760b369",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "adapters/extra_cross_entropy/adapter_model.safetensors",
+    "bytes": 4372840,
+    "sha256": "88742ea6c75efa36cdda7cac37113d6d5ffaa46adac53bae6b7d1a16cdc576d4",
+    "chunks": 448,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/extra_cross_entropy_fresh_old.json",
+    "bytes": 43284,
+    "sha256": "95e72d4346a1b855acb13c8176b6c1d4d545fdbae17fc5054aee9f9fa6ca5c3a",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/extra_cross_entropy_cap_validation.json",
+    "bytes": 33559,
+    "sha256": "1bf3bb92f0e86fecbe966696321fa52dadc12a2a0899094eabf494a729ae6843",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/extra_cross_entropy_cap_audit.json",
+    "bytes": 53284,
+    "sha256": "60531d5e138b54dc3a46b6ba73b30aa982fd43ffa92555c8ea6704fe13af7c97",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "cost_events.json",
+    "bytes": 2252,
+    "sha256": "16e83863ddb5ba90435d6b9aca7193255eb490ded9b929c96dd1c5de0a2f084f",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "RESULT.json",
+    "bytes": 639,
+    "sha256": "1d9ec33e2bbe929daf36ddac7e029db567626ec24a9a157ccccc8004c49fa023",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "artifact_manifest.json",
+    "bytes": 4194,
+    "sha256": "3225d7014eb6a28b877a40d30275c5fd74acbe8b6587407450567d764ef35049",
+    "chunks": 1,
+    "status": "verified"
+  }
+]

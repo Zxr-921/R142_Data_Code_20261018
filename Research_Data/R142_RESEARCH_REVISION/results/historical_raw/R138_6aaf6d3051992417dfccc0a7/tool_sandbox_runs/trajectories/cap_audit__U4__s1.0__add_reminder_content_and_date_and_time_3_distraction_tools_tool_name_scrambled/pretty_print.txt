@@ -1,0 +1,52 @@
+Note that User Simulator few shot messages have been omitted
+shape: (34, 8)
+┌────────────┬────────────┬────────────┬───────────┬───────────┬───────────┬───────────┬───────────┐
+│ sandbox_me ┆ sender     ┆ recipient  ┆ content   ┆ openai_fu ┆ tool_call ┆ tool_trac ┆ visible_t │
+│ ssage_inde ┆ ---        ┆ ---        ┆ ---       ┆ nction_na ┆ _exceptio ┆ e         ┆ o         │
+│ x          ┆ enum       ┆ enum       ┆ str       ┆ me        ┆ n         ┆ ---       ┆ ---       │
+│ ---        ┆            ┆            ┆           ┆ ---       ┆ ---       ┆ list[str] ┆ list[enum │
+│ i32        ┆            ┆            ┆           ┆ str       ┆ str       ┆           ┆ ]         │
+╞════════════╪════════════╪════════════╪═══════════╪═══════════╪═══════════╪═══════════╪═══════════╡
+│ 0          ┆ SYSTEM     ┆ EXECUTION_ ┆ import    ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆ ENVIRONMEN ┆ json      ┆           ┆           ┆           ┆           │
+│            ┆            ┆ T          ┆ from tool ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ _sandbox. ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ …         ┆           ┆           ┆           ┆           │
+│ 1          ┆ SYSTEM     ┆ AGENT      ┆ Don't     ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ make assu ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ mptions   ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ about w…  ┆           ┆           ┆           ┆           │
+│ 14         ┆ SYSTEM     ┆ USER       ┆ You are   ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ no longer ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ an assist ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ ant…      ┆           ┆           ┆           ┆           │
+│ 15         ┆ USER       ┆ AGENT      ┆ Remind me ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ to buy    ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ chocolate ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ mil…      ┆           ┆           ┆           ┆           │
+│ 16         ┆ AGENT      ┆ EXECUTION_ ┆ call_fd08 ┆ reminder_ ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 0263e7_1_ ┆ 0         ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ …          ┆ …          ┆ …          ┆ …         ┆ …         ┆ …         ┆ …         ┆ …         │
+│ 41         ┆ EXECUTION_ ┆ AGENT      ┆ {'days':  ┆ utilities ┆ null      ┆ ["{"tool_ ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ 0, 'secon ┆ _6        ┆           ┆ name":    ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ ds': 0}   ┆           ┆           ┆ "timestam ┆ NMENT",   │
+│            ┆            ┆            ┆           ┆           ┆           ┆ p_dif…    ┆ "AGE…     │
+│ 42         ┆ AGENT      ┆ EXECUTION_ ┆ call_2b97 ┆ utilities ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ db168f_1_ ┆ _5        ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 43         ┆ EXECUTION_ ┆ AGENT      ┆ 168000000 ┆ utilities ┆ null      ┆ ["{"tool_ ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ 0.0       ┆ _5        ┆           ┆ name":    ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆           ┆           ┆           ┆ "shift_ti ┆ NMENT",   │
+│            ┆            ┆            ┆           ┆           ┆           ┆ mesta…    ┆ "AGE…     │
+│ 44         ┆ AGENT      ┆ EXECUTION_ ┆ call_abc6 ┆ utilities ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ acd985_1_ ┆ _7        ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 45         ┆ EXECUTION_ ┆ AGENT      ┆ {'year':  ┆ utilities ┆ null      ┆ ["{"tool_ ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ 2023,     ┆ _7        ┆           ┆ name":    ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ 'month':  ┆           ┆           ┆ "timestam ┆ NMENT",   │
+│            ┆            ┆            ┆ 3, 'da…   ┆           ┆           ┆ p_to_…    ┆ "AGE…     │
+└────────────┴────────────┴────────────┴───────────┴───────────┴───────────┴───────────┴───────────┘

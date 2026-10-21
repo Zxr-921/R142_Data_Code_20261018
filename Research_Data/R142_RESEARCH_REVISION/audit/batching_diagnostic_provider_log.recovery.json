@@ -1,0 +1,82 @@
+[
+  {
+    "run": "qwen_batch1",
+    "name": "protocol.json",
+    "bytes": 93978,
+    "sha256": "e28f8f00331acc5b9591b3b9330bd313dcdda78bf3a94e26d515df9a1f42b779",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "benchmark_rows.json",
+    "bytes": 2116793,
+    "sha256": "ea1fcb17d38dafa82722ec02a85e7518373f879bb2497b7017581ea4ec2ad829",
+    "chunks": 37,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "diagnostic_plan.json",
+    "bytes": 191,
+    "sha256": "37a5bbbda05ef891f9bee0e8431e25ba94fca6074a11eb848e46f83b733a600f",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/M0_old_complete.json",
+    "bytes": 43280,
+    "sha256": "5851bd637da25fabf9cc2323ec0f113ae27bccff58f8cae5faf95a44b3492d6a",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/full_all_first.json",
+    "bytes": 43951,
+    "sha256": "88febf262b5f62df04b0653cc1a45c9f213db317337486401af32b735448901d",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/full_protected_only.json",
+    "bytes": 29745,
+    "sha256": "d83200ae513f5fd788ba6dfb4294e1f13e240353df45087ed5f010a351b3721f",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "rows/full_all_repeat.json",
+    "bytes": 43951,
+    "sha256": "88febf262b5f62df04b0653cc1a45c9f213db317337486401af32b735448901d",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "RESULT.json",
+    "bytes": 310,
+    "sha256": "e674239745876c8653d7ef98d1f09fc96f20bab0dcce9b80a44711caa928fa82",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "cost_events.json",
+    "bytes": 579,
+    "sha256": "8c68f5d738a288865679b470f0eb6b7b8f27cb944b5d625abd8c1e5ae0b8f9f4",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "artifact_manifest.json",
+    "bytes": 1466,
+    "sha256": "228287d7ce810c61435d117e253edb66472d4be7ffb3d0106ae466fa69ed9f05",
+    "chunks": 1,
+    "status": "verified"
+  }
+]

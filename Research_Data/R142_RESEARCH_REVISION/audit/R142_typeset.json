@@ -1,0 +1,32 @@
+[
+  {
+    "file": "R142_COMBINED.pdf",
+    "pages": 130,
+    "bytes": 1006835,
+    "sha256": "3042178db8990a7ccf7b0008b2636c739c1af7ea7ca340590aa0dbed1389c4fe"
+  },
+  {
+    "file": "R142_MAIN.pdf",
+    "pages": 34,
+    "bytes": 674929,
+    "sha256": "f0ff8bbf8e3140a1ce85f989d6078f5e02f09ba84607ebbaa6a95364027de21f"
+  },
+  {
+    "file": "R142_SUPPLEMENT.pdf",
+    "pages": 99,
+    "bytes": 800651,
+    "sha256": "53eb5d3b07f2d0b794557c289abb3f4cee0ab59da7f40f77f4c976f6bb3664ff"
+  },
+  {
+    "file": "R142_RESPONSE_TO_COMMENTS.pdf",
+    "pages": 11,
+    "bytes": 74001,
+    "sha256": "a5c6e280c3e953fb5287da46895b169a2133902a6038453d736dae144f216b7b"
+  },
+  {
+    "file": "R142_COVER_LETTER_DRAFT.pdf",
+    "pages": 1,
+    "bytes": 39129,
+    "sha256": "3e553a486f3c6adab51e126e8aa07b8bd4a490e171e291087165cd15e72c2083"
+  }
+]

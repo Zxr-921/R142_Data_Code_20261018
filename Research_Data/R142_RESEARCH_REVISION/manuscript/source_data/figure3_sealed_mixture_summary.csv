@@ -1,0 +1,3 @@
+system,sign_correct,sign_total,r_squared,max_abs_margin_error
+Exact-affine sealed mixtures,800,800,1.0,0.0
+Two-layer neural sealed mixtures,800,800,0.999999687,0.001957

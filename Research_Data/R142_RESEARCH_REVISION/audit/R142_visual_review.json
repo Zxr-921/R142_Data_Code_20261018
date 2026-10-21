@@ -1,0 +1,40 @@
+{
+  "review_date": "2026-09-21",
+  "standalone_pages_inspected_via_contact_sheets": {
+    "R142_MAIN": 34,
+    "R142_SUPPLEMENT": 99,
+    "R142_RESPONSE_TO_COMMENTS": 11,
+    "R142_COVER_LETTER_DRAFT": 1
+  },
+  "full_resolution_checks": [
+    "Main Figures 1 and 5",
+    "Extended Data 5, 9 and 10",
+    "Main algorithm pages 20 and 21",
+    "Supplement opening, deployment proof and experiment tables",
+    "Cover letter"
+  ],
+  "combined_checks": "All destinations verified; duplicate body content covered by standalone render review; supplementary start and deployment proof inspected at full resolution.",
+  "corrections": [
+    "Removed isolated short pages before references",
+    "Allowed Figure 5 to float while text fills the preceding page",
+    "Moved the Figure 5f legend clear of measured lines",
+    "Clarified algorithm branches and replaced inherited section-number references by descriptive links"
+  ],
+  "remaining_layout_limits": [
+    "Single-page figures intentionally retain whitespace below captions",
+    "Cross-file links depend on PDF-viewer permissions; combined PDF has internal links"
+  ],
+  "automated_checks": {
+    "undefined_references": 0,
+    "overfull_boxes": 0,
+    "out_of_page_text": 0,
+    "broken_destinations": 0
+  },
+  "pdf_sha256": {
+    "R142_MAIN": "f0ff8bbf8e3140a1ce85f989d6078f5e02f09ba84607ebbaa6a95364027de21f",
+    "R142_SUPPLEMENT": "53eb5d3b07f2d0b794557c289abb3f4cee0ab59da7f40f77f4c976f6bb3664ff",
+    "R142_COMBINED": "3042178db8990a7ccf7b0008b2636c739c1af7ea7ca340590aa0dbed1389c4fe",
+    "R142_RESPONSE_TO_COMMENTS": "a5c6e280c3e953fb5287da46895b169a2133902a6038453d736dae144f216b7b",
+    "R142_COVER_LETTER_DRAFT": "3e553a486f3c6adab51e126e8aa07b8bd4a490e171e291087165cd15e72c2083"
+  }
+}

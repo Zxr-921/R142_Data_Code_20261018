@@ -1,0 +1,1 @@
+{"all_first_losses": 1, "all_repeat_losses": 1, "between_batch_text_differences": ["simple_python_214", "simple_python_324", "simple_python_178"], "between_batch_validity_differences": ["simple_python_214", "simple_python_324"], "protected_n": 72, "protected_only_losses": 3, "within_all_text_differences": []}

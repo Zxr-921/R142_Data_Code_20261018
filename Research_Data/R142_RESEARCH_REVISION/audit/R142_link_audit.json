@@ -1,0 +1,43 @@
+{
+  "documents": {
+    "R142_MAIN": {
+      "pages": 34,
+      "links": {
+        "4": 107,
+        "3": 54,
+        "2": 76
+      },
+      "destinations": 160
+    },
+    "R142_SUPPLEMENT": {
+      "pages": 99,
+      "links": {
+        "4": 379,
+        "3": 359,
+        "2": 76
+      },
+      "destinations": 699
+    },
+    "R142_COMBINED": {
+      "pages": 130,
+      "links": {
+        "4": 899,
+        "2": 76
+      },
+      "destinations": 809
+    },
+    "R142_RESPONSE_TO_COMMENTS": {
+      "pages": 11,
+      "links": {},
+      "destinations": 69
+    },
+    "R142_COVER_LETTER_DRAFT": {
+      "pages": 1,
+      "links": {},
+      "destinations": 2
+    }
+  },
+  "broken_links": [],
+  "section_routes": 101,
+  "formal_object_routes": 57
+}

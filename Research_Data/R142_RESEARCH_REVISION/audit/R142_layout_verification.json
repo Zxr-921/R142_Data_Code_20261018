@@ -1,0 +1,203 @@
+{
+  "documents": {
+    "R142_MAIN": {
+      "pages": 34,
+      "sha256": "f0ff8bbf8e3140a1ce85f989d6078f5e02f09ba84607ebbaa6a95364027de21f",
+      "link_counts": {
+        "4": 107,
+        "3": 54,
+        "2": 76
+      },
+      "named_destinations": 160,
+      "undefined_refs": 0,
+      "overfull_boxes": 0,
+      "outside_page": 0,
+      "thin_pages_to_review": [],
+      "full_pages_rendered": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "fonts": {
+        "NimbusRomNo9L-Medi": 2932,
+        "CMSS8": 1815,
+        "NimbusRomNo9L-Regu": 72956,
+        "CMTT10": 1867,
+        "DejaVuSans": 6199,
+        "NimbusRomNo9L-ReguItal": 1097,
+        "CMMI10": 58,
+        "CMR10": 109,
+        "CMSY10": 105,
+        "CMEX10": 12,
+        "StandardSymL-Slant_167": 46,
+        "MSBM10": 1,
+        "rsfs10": 4,
+        "StandardSymL": 3
+      }
+    },
+    "R142_SUPPLEMENT": {
+      "pages": 99,
+      "sha256": "53eb5d3b07f2d0b794557c289abb3f4cee0ab59da7f40f77f4c976f6bb3664ff",
+      "link_counts": {
+        "4": 379,
+        "3": 359,
+        "2": 76
+      },
+      "named_destinations": 699,
+      "undefined_refs": 0,
+      "overfull_boxes": 0,
+      "outside_page": 0,
+      "thin_pages_to_review": [],
+      "full_pages_rendered": [
+        1,
+        2,
+        11,
+        17,
+        21,
+        22,
+        99
+      ],
+      "fonts": {
+        "NimbusRomNo9L-Medi": 9913,
+        "CMSS8": 8625,
+        "NimbusRomNo9L-Regu": 219056,
+        "NimbusRomNo9L-ReguItal": 11943,
+        "CMR10": 1706,
+        "CMSY10": 1307,
+        "CMMI10": 683,
+        "rsfs10": 71,
+        "StandardSymL-Slant_167": 548,
+        "CMEX10": 89,
+        "StandardSymL": 143,
+        "MSAM10": 40,
+        "MSBM10": 43,
+        "CMTT10": 2834
+      }
+    },
+    "R142_COMBINED": {
+      "pages": 130,
+      "sha256": "3042178db8990a7ccf7b0008b2636c739c1af7ea7ca340590aa0dbed1389c4fe",
+      "link_counts": {
+        "4": 899,
+        "2": 76
+      },
+      "named_destinations": 809,
+      "undefined_refs": 0,
+      "overfull_boxes": 0,
+      "outside_page": 0,
+      "thin_pages_to_review": [],
+      "full_pages_rendered": [],
+      "fonts": {
+        "NimbusRomNo9L-Medi": 12765,
+        "CMSS8": 10797,
+        "NimbusRomNo9L-Regu": 286927,
+        "CMTT10": 3004,
+        "DejaVuSans": 6199,
+        "NimbusRomNo9L-ReguItal": 12197,
+        "CMMI10": 741,
+        "CMR10": 1815,
+        "CMSY10": 1412,
+        "CMEX10": 101,
+        "StandardSymL-Slant_167": 594,
+        "MSBM10": 44,
+        "rsfs10": 75,
+        "StandardSymL": 146,
+        "MSAM10": 40
+      }
+    },
+    "R142_RESPONSE_TO_COMMENTS": {
+      "pages": 11,
+      "sha256": "a5c6e280c3e953fb5287da46895b169a2133902a6038453d736dae144f216b7b",
+      "link_counts": {},
+      "named_destinations": 69,
+      "undefined_refs": 0,
+      "overfull_boxes": 0,
+      "outside_page": 0,
+      "thin_pages_to_review": [],
+      "full_pages_rendered": [
+        1,
+        2,
+        11
+      ],
+      "fonts": {
+        "NimbusRomNo9L-Medi": 3808,
+        "CMSS8": 837,
+        "NimbusRomNo9L-Regu": 20849
+      }
+    },
+    "R142_COVER_LETTER_DRAFT": {
+      "pages": 1,
+      "sha256": "3e553a486f3c6adab51e126e8aa07b8bd4a490e171e291087165cd15e72c2083",
+      "link_counts": {},
+      "named_destinations": 2,
+      "undefined_refs": 0,
+      "overfull_boxes": 0,
+      "outside_page": 0,
+      "thin_pages_to_review": [],
+      "full_pages_rendered": [
+        1
+      ],
+      "fonts": {
+        "NimbusRomNo9L-Medi": 24,
+        "NimbusRomNo9L-ReguItal": 35,
+        "NimbusRomNo9L-Regu": 2728
+      }
+    }
+  },
+  "link_errors": [],
+  "format": {
+    "main_prose_excluding_captions_tables_equations": 4292,
+    "methods_prose_excluding_algorithm_blocks": 2997,
+    "abstract_words": 190,
+    "main_figures": 5,
+    "extended_data": 10,
+    "algorithms": 4,
+    "references": 45,
+    "max_refs_per_citation": 3
+  },
+  "contacts": [
+    "qa/final/R142_MAIN_contact_01.png",
+    "qa/final/R142_MAIN_contact_02.png",
+    "qa/final/R142_MAIN_contact_03.png",
+    "qa/final/R142_SUPPLEMENT_contact_01.png",
+    "qa/final/R142_SUPPLEMENT_contact_02.png",
+    "qa/final/R142_SUPPLEMENT_contact_03.png",
+    "qa/final/R142_SUPPLEMENT_contact_04.png",
+    "qa/final/R142_SUPPLEMENT_contact_05.png",
+    "qa/final/R142_SUPPLEMENT_contact_06.png",
+    "qa/final/R142_SUPPLEMENT_contact_07.png",
+    "qa/final/R142_RESPONSE_TO_COMMENTS_contact_01.png",
+    "qa/final/R142_COVER_LETTER_DRAFT_contact_01.png"
+  ]
+}

@@ -1,0 +1,1003 @@
+[
+  {
+    "key": "noy2023",
+    "doi": "10.1126/science.adh2586",
+    "urls": [
+      "https://doi.org/10.1126/science.adh2586"
+    ],
+    "source_text": "Noy, S. \\& Zhang, W. Experimental evidence on the productivity effects of generative artificial intelligence. \\textit{Science} \\textbf{381}, 187--192 (2023). \\href{https://doi.org/10.1126/science.adh2586}{doi:10.1126/science.adh2586}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Experimental evidence on the productivity effects of generative artificial intelligence"
+    ],
+    "container": [
+      "Science"
+    ],
+    "volume": "381",
+    "page": "187-192",
+    "year": [
+      [
+        2023,
+        7,
+        14
+      ]
+    ],
+    "first_author": {
+      "ORCID": "https://orcid.org/0000-0002-7814-5184",
+      "authenticated-orcid": true,
+      "given": "Shakked",
+      "family": "Noy",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Economics, Massachusetts Institute of Technology, Cambridge, MA, USA."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "zhou2024",
+    "doi": "10.1038/s41586-024-07930-y",
+    "urls": [
+      "https://doi.org/10.1038/s41586-024-07930-y"
+    ],
+    "source_text": "Zhou, L. et al. Larger and more instructable language models become less reliable. \\textit{Nature} \\textbf{634}, 61--68 (2024). \\href{https://doi.org/10.1038/s41586-024-07930-y}{doi:10.1038/s41586-024-07930-y}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Larger and more instructable language models become less reliable"
+    ],
+    "container": [
+      "Nature"
+    ],
+    "volume": "634",
+    "page": "61-68",
+    "year": [
+      [
+        2024,
+        9,
+        25
+      ]
+    ],
+    "first_author": {
+      "ORCID": "https://orcid.org/0000-0003-1161-4270",
+      "authenticated-orcid": false,
+      "given": "Lexin",
+      "family": "Zhou",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "bansal2019",
+    "doi": "10.1609/aaai.v33i01.33012429",
+    "urls": [
+      "https://doi.org/10.1609/aaai.v33i01.33012429"
+    ],
+    "source_text": "Bansal, G. et al. Updates in human--AI teams: understanding and addressing the performance/compatibility tradeoff. \\textit{AAAI} \\textbf{33}, 2429--2437 (2019). \\href{https://doi.org/10.1609/aaai.v33i01.33012429}{doi:10.1609/aaai.v33i01.33012429}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Updates in Human-AI Teams: Understanding and Addressing the Performance/Compatibility Tradeoff"
+    ],
+    "container": [
+      "Proceedings of the AAAI Conference on Artificial Intelligence"
+    ],
+    "volume": "33",
+    "page": "2429-2437",
+    "year": [
+      [
+        2019,
+        7,
+        17
+      ]
+    ],
+    "first_author": {
+      "given": "Gagan",
+      "family": "Bansal",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "xie2021",
+    "doi": "10.18653/v1/2021.acl-long.515",
+    "urls": [
+      "https://doi.org/10.18653/v1/2021.acl-long.515"
+    ],
+    "source_text": "Xie, Y. et al. Regression bugs are in your model! Measuring, reducing and analyzing regressions in NLP model updates. \\textit{ACL} (2021). \\href{https://doi.org/10.18653/v1/2021.acl-long.515}{doi:10.18653/v1/2021.acl-long.515}.",
+    "crossref_status": "HTTPError"
+  },
+  {
+    "key": "yan2021",
+    "doi": "10.1109/CVPR46437.2021.01407",
+    "urls": [
+      "https://doi.org/10.1109/CVPR46437.2021.01407"
+    ],
+    "source_text": "Yan, S. et al. Positive-congruent training: towards regression-free model updates. \\textit{CVPR} (2021). \\href{https://doi.org/10.1109/CVPR46437.2021.01407}{doi:10.1109/CVPR46437.2021.01407}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Positive-Congruent Training: Towards Regression-Free Model Updates"
+    ],
+    "container": [
+      "2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+    ],
+    "volume": null,
+    "page": "14294-14303",
+    "year": [
+      [
+        2021,
+        6
+      ]
+    ],
+    "first_author": {
+      "given": "Sijie",
+      "family": "Yan",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "trauble2021",
+    "doi": null,
+    "urls": [],
+    "source_text": "Tr\\\"auble, F. et al. Backward-compatible prediction updates: a probabilistic approach. \\textit{NeurIPS} \\textbf{34}, 116--128 (2021)."
+  },
+  {
+    "key": "zhao2024",
+    "doi": "10.1109/TPAMI.2024.3392724",
+    "urls": [
+      "https://doi.org/10.1109/TPAMI.2024.3392724"
+    ],
+    "source_text": "Zhao, Y. et al. ELODI: Ensemble Logit Difference Inhibition for Positive-Congruent Training. \\textit{IEEE TPAMI} \\textbf{46}, 7529--7541 (2024). \\href{https://doi.org/10.1109/TPAMI.2024.3392724}{doi:10.1109/TPAMI.2024.3392724}.",
+    "crossref_status": "HTTPError"
+  },
+  {
+    "key": "schumann2024",
+    "doi": "10.18653/v1/2024.eacl-long.174",
+    "urls": [
+      "https://doi.org/10.18653/v1/2024.eacl-long.174"
+    ],
+    "source_text": "Schumann, R. et al. Backward Compatibility During Data Updates by Weight Interpolation. \\textit{EACL} (2024). \\href{https://doi.org/10.18653/v1/2024.eacl-long.174}{doi:10.18653/v1/2024.eacl-long.174}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Backward Compatibility During Data Updates by Weight Interpolation"
+    ],
+    "container": [
+      "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)"
+    ],
+    "volume": null,
+    "page": "2846-2861",
+    "year": [
+      [
+        2024
+      ]
+    ],
+    "first_author": {
+      "given": "Raphael",
+      "family": "Schumann",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  },
+  {
+    "key": "echterhoff2024",
+    "doi": "10.18653/v1/2024.findings-emnlp.430",
+    "urls": [
+      "https://doi.org/10.18653/v1/2024.findings-emnlp.430"
+    ],
+    "source_text": "Echterhoff, J. M. et al. MUSCLE: A Model Update Strategy for Compatible LLM Evolution. \\textit{Findings of EMNLP} (2024). \\href{https://doi.org/10.18653/v1/2024.findings-emnlp.430}{doi:10.18653/v1/2024.findings-emnlp.430}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "MUSCLE: A Model Update Strategy for Compatible LLM Evolution"
+    ],
+    "container": [
+      "Findings of the Association for Computational Linguistics: EMNLP 2024"
+    ],
+    "volume": null,
+    "page": "7320-7332",
+    "year": [
+      [
+        2024
+      ]
+    ],
+    "first_author": {
+      "given": "Jessica Maria",
+      "family": "Echterhoff",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "ricci2026",
+    "doi": "10.1609/aaai.v40i11.37825",
+    "urls": [
+      "https://doi.org/10.1609/aaai.v40i11.37825"
+    ],
+    "source_text": "Ricci, S., Biondi, N., Pernici, F. \\& Del Bimbo, A. Mitigating Negative Flips via Margin Preserving Training. \\textit{AAAI} \\textbf{40}, 8721--8730 (2026). \\href{https://doi.org/10.1609/aaai.v40i11.37825}{doi:10.1609/aaai.v40i11.37825}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Mitigating Negative Flips via Margin Preserving Training"
+    ],
+    "container": [
+      "Proceedings of the AAAI Conference on Artificial Intelligence"
+    ],
+    "volume": "40",
+    "page": "8721-8730",
+    "year": [
+      [
+        2026,
+        3,
+        14
+      ]
+    ],
+    "first_author": {
+      "given": "Simone",
+      "family": "Ricci",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "role": "author",
+          "vocabulary": "crossref"
+        }
+      ]
+    }
+  },
+  {
+    "key": "jin2024",
+    "doi": null,
+    "urls": [
+      "https://proceedings.mlr.press/v235/jin24d.html"
+    ],
+    "source_text": "Jin, X. \\& Ren, X. What Will My Model Forget? Forecasting Forgotten Examples in Language Model Refinement. \\textit{ICML}, PMLR 235, 22145--22159 (2024). \\url{https://proceedings.mlr.press/v235/jin24d.html}."
+  },
+  {
+    "key": "jin2025",
+    "doi": "10.52202/085713-0153",
+    "urls": [
+      "https://doi.org/10.52202/085713-0153"
+    ],
+    "source_text": "Jin, X. \\& Ren, X. Demystifying Language Model Forgetting with Low-rank Example Associations. \\textit{NeurIPS} \\textbf{38} (2025). \\href{https://doi.org/10.52202/085713-0153}{doi:10.52202/085713-0153}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Demystifying Language Model Forgetting with Low-rank Example Associations"
+    ],
+    "container": [
+      "Advances in Neural Information Processing Systems 38"
+    ],
+    "volume": null,
+    "page": "4853-4889",
+    "year": [
+      [
+        2025
+      ]
+    ],
+    "first_author": {
+      "given": "Xisen",
+      "family": "Jin",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Sahara AI"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "lopezpaz2017",
+    "doi": null,
+    "urls": [
+      "https://arxiv.org/abs/1706.08840"
+    ],
+    "source_text": "Lopez-Paz, D. \\& Ranzato, M. Gradient Episodic Memory for Continual Learning. \\textit{NeurIPS} \\textbf{30} (2017). \\url{https://arxiv.org/abs/1706.08840}."
+  },
+  {
+    "key": "meng2022",
+    "doi": "10.52202/068431-1262",
+    "urls": [
+      "https://doi.org/10.52202/068431-1262"
+    ],
+    "source_text": "Meng, K., Bau, D., Andonian, A. \\& Belinkov, Y. Locating and Editing Factual Associations in GPT. \\textit{NeurIPS} \\textbf{35} (2022). \\href{https://doi.org/10.52202/068431-1262}{doi:10.52202/068431-1262}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Locating and Editing Factual Associations in GPT"
+    ],
+    "container": [
+      "Advances in Neural Information Processing Systems 35"
+    ],
+    "volume": null,
+    "page": "17359-17372",
+    "year": [
+      [
+        2022
+      ]
+    ],
+    "first_author": {
+      "given": "Kevin",
+      "family": "Meng",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "kirkpatrick2017",
+    "doi": "10.1073/pnas.1611835114",
+    "urls": [
+      "https://doi.org/10.1073/pnas.1611835114"
+    ],
+    "source_text": "Kirkpatrick, J. et al. Overcoming catastrophic forgetting in neural networks. \\textit{PNAS} \\textbf{114}, 3521--3526 (2017). \\href{https://doi.org/10.1073/pnas.1611835114}{doi:10.1073/pnas.1611835114}.",
+    "crossref_status": "HTTPError"
+  },
+  {
+    "key": "li2018",
+    "doi": "10.1109/TPAMI.2017.2773081",
+    "urls": [
+      "https://doi.org/10.1109/TPAMI.2017.2773081"
+    ],
+    "source_text": "Li, Z. \\& Hoiem, D. Learning without Forgetting. \\textit{IEEE TPAMI} \\textbf{40}, 2935--2947 (2018). \\href{https://doi.org/10.1109/TPAMI.2017.2773081}{doi:10.1109/TPAMI.2017.2773081}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Learning without Forgetting"
+    ],
+    "container": [
+      "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    ],
+    "volume": "40",
+    "page": "2935-2947",
+    "year": [
+      [
+        2018,
+        12,
+        1
+      ]
+    ],
+    "first_author": {
+      "ORCID": "https://orcid.org/0000-0002-6068-7209",
+      "authenticated-orcid": false,
+      "given": "Zhizhong",
+      "family": "Li",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "vandeven2022",
+    "doi": "10.1038/s42256-022-00568-3",
+    "urls": [
+      "https://doi.org/10.1038/s42256-022-00568-3"
+    ],
+    "source_text": "van de Ven, G. M., Tuytelaars, T. \\& Tolias, A. S. Three types of incremental learning. \\textit{Nature Machine Intelligence} \\textbf{4}, 1185--1197 (2022). \\href{https://doi.org/10.1038/s42256-022-00568-3}{doi:10.1038/s42256-022-00568-3}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Three types of incremental learning"
+    ],
+    "container": [
+      "Nature Machine Intelligence"
+    ],
+    "volume": "4",
+    "page": "1185-1197",
+    "year": [
+      [
+        2022,
+        12,
+        5
+      ]
+    ],
+    "first_author": {
+      "ORCID": "https://orcid.org/0000-0002-5239-5660",
+      "authenticated-orcid": false,
+      "given": "Gido M.",
+      "family": "van de Ven",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "dohare2024",
+    "doi": "10.1038/s41586-024-07711-7",
+    "urls": [
+      "https://doi.org/10.1038/s41586-024-07711-7"
+    ],
+    "source_text": "Dohare, S. et al. Loss of plasticity in deep continual learning. \\textit{Nature} \\textbf{632}, 768--774 (2024). \\href{https://doi.org/10.1038/s41586-024-07711-7}{doi:10.1038/s41586-024-07711-7}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Loss of plasticity in deep continual learning"
+    ],
+    "container": [
+      "Nature"
+    ],
+    "volume": "632",
+    "page": "768-774",
+    "year": [
+      [
+        2024,
+        8,
+        21
+      ]
+    ],
+    "first_author": {
+      "ORCID": "https://orcid.org/0000-0002-3796-9347",
+      "authenticated-orcid": false,
+      "given": "Shibhansh",
+      "family": "Dohare",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "garivier2016",
+    "doi": null,
+    "urls": [
+      "https://proceedings.mlr.press/v49/garivier16a.html"
+    ],
+    "source_text": "Garivier, A. \\& Kaufmann, E. Optimal best arm identification with fixed confidence. \\textit{COLT}, PMLR 49, 998--1027 (2016). \\url{https://proceedings.mlr.press/v49/garivier16a.html}."
+  },
+  {
+    "key": "kaufmann2021",
+    "doi": null,
+    "urls": [],
+    "source_text": "Kaufmann, E. \\& Koolen, W. M. Mixture martingales revisited with applications to sequential tests and confidence intervals. \\textit{JMLR} \\textbf{22}, 1--44 (2021)."
+  },
+  {
+    "key": "sorrybench2025",
+    "doi": null,
+    "urls": [
+      "https://openreview.net/forum?id=YfKNaRktan"
+    ],
+    "source_text": "Xie, T. et al. SORRY-Bench: Systematically evaluating large language model safety refusal. \\textit{ICLR} (2025). \\url{https://openreview.net/forum?id=YfKNaRktan}."
+  },
+  {
+    "key": "bfcl2025",
+    "doi": null,
+    "urls": [
+      "https://proceedings.mlr.press/v267/patil25a.html"
+    ],
+    "source_text": "Patil, S. G. et al. The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models. \\textit{International Conference on Machine Learning} (2025). \\url{https://proceedings.mlr.press/v267/patil25a.html}."
+  },
+  {
+    "key": "terminalbench2026",
+    "doi": null,
+    "urls": [
+      "https://openreview.net/forum?id=a7Qa4CcHak"
+    ],
+    "source_text": "Merrill, M. A. et al. Terminal-Bench: Benchmarking agents on hard, realistic tasks in command line interfaces. \\textit{ICLR} (2026). \\url{https://openreview.net/forum?id=a7Qa4CcHak}."
+  },
+  {
+    "key": "betley2026",
+    "doi": "10.1038/s41586-025-09937-5",
+    "urls": [
+      "https://doi.org/10.1038/s41586-025-09937-5"
+    ],
+    "source_text": "Betley, J. et al. Training large language models on narrow tasks can lead to broad misalignment. \\textit{Nature} \\textbf{649}, 584--589 (2026). \\url{https://doi.org/10.1038/s41586-025-09937-5}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Training large language models on narrow tasks can lead to broad misalignment"
+    ],
+    "container": [
+      "Nature"
+    ],
+    "volume": "649",
+    "page": "584-589",
+    "year": [
+      [
+        2026,
+        1,
+        14
+      ]
+    ],
+    "first_author": {
+      "ORCID": "https://orcid.org/0009-0008-3518-191X",
+      "authenticated-orcid": false,
+      "given": "Jan",
+      "family": "Betley",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "farquhar2024",
+    "doi": "10.1038/s41586-024-07421-0",
+    "urls": [
+      "https://doi.org/10.1038/s41586-024-07421-0"
+    ],
+    "source_text": "Farquhar, S., Kossen, J., Kuhn, L. \\& Gal, Y. Detecting hallucinations in large language models using semantic entropy. \\textit{Nature} \\textbf{630}, 625--630 (2024). \\url{https://doi.org/10.1038/s41586-024-07421-0}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Detecting hallucinations in large language models using semantic entropy"
+    ],
+    "container": [
+      "Nature"
+    ],
+    "volume": "630",
+    "page": "625-630",
+    "year": [
+      [
+        2024,
+        6,
+        19
+      ]
+    ],
+    "first_author": {
+      "ORCID": "https://orcid.org/0000-0002-9185-6415",
+      "authenticated-orcid": false,
+      "given": "Sebastian",
+      "family": "Farquhar",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "nist2024",
+    "doi": "10.6028/NIST.AI.600-1",
+    "urls": [
+      "https://doi.org/10.6028/NIST.AI.600-1"
+    ],
+    "source_text": "National Institute of Standards and Technology. \\textit{Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile}. NIST AI 600-1 (2024). \\url{https://doi.org/10.6028/NIST.AI.600-1}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Artificial intelligence risk management framework :"
+    ],
+    "container": [],
+    "volume": null,
+    "page": null,
+    "year": [
+      [
+        2024,
+        7,
+        26
+      ]
+    ],
+    "first_author": {
+      "name": "National Institute of Standards and Technology (US)",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "toolsandbox2025",
+    "doi": null,
+    "urls": [
+      "https://aclanthology.org/2025.findings-naacl.65/"
+    ],
+    "source_text": "Lu, J. et al. ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities. \\textit{Findings of NAACL}, 1160--1183 (2025). \\url{https://aclanthology.org/2025.findings-naacl.65/}."
+  },
+  {
+    "key": "casanueva2020",
+    "doi": null,
+    "urls": [
+      "https://aclanthology.org/2020.nlp4convai-1.5/"
+    ],
+    "source_text": "Casanueva, I., Tem\\v{c}inas, T., Gerz, D., Henderson, M. \\& Vuli\\'{c}, I. Efficient Intent Detection with Dual Sentence Encoders. \\textit{NLP for Conversational AI}, 38--45 (2020). \\url{https://aclanthology.org/2020.nlp4convai-1.5/}."
+  },
+  {
+    "key": "hu2022",
+    "doi": null,
+    "urls": [
+      "https://openreview.net/forum?id=nZeVKeeFYf9"
+    ],
+    "source_text": "Hu, E. J. et al. LoRA: Low-Rank Adaptation of Large Language Models. \\textit{ICLR} (2022). \\url{https://openreview.net/forum?id=nZeVKeeFYf9}."
+  },
+  {
+    "key": "vovk2005",
+    "doi": "10.1007/b106715",
+    "urls": [
+      "https://doi.org/10.1007/b106715"
+    ],
+    "source_text": "Vovk, V., Gammerman, A. \\& Shafer, G. \\textit{Algorithmic Learning in a Random World}. Springer (2005). \\url{https://doi.org/10.1007/b106715}.",
+    "crossref_status": "HTTPError"
+  },
+  {
+    "key": "angelopoulos2023",
+    "doi": "10.1561/2200000101",
+    "urls": [
+      "https://doi.org/10.1561/2200000101"
+    ],
+    "source_text": "Angelopoulos, A. N. \\& Bates, S. A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification. \\textit{Foundations and Trends in Machine Learning} \\textbf{16}, 494--591 (2023). \\url{https://doi.org/10.1561/2200000101}.",
+    "crossref_status": "HTTPError"
+  },
+  {
+    "key": "barber2023",
+    "doi": "10.1214/23-AOS2276",
+    "urls": [
+      "https://doi.org/10.1214/23-AOS2276"
+    ],
+    "source_text": "Barber, R. F., Cand\\`es, E. J., Ramdas, A. \\& Tibshirani, R. J. Conformal prediction beyond exchangeability. \\textit{Annals of Statistics} \\textbf{51}, 816--845 (2023). \\url{https://doi.org/10.1214/23-AOS2276}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Conformal prediction beyond exchangeability"
+    ],
+    "container": [
+      "The Annals of Statistics"
+    ],
+    "volume": "51",
+    "page": null,
+    "year": [
+      [
+        2023,
+        4,
+        1
+      ]
+    ],
+    "first_author": {
+      "given": "Rina Foygel",
+      "family": "Barber",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Statistics, University of Chicago"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "howard2021",
+    "doi": "10.1214/20-AOS1991",
+    "urls": [
+      "https://doi.org/10.1214/20-AOS1991"
+    ],
+    "source_text": "Howard, S. R., Ramdas, A., McAuliffe, J. \\& Sekhon, J. Time-uniform, nonparametric, nonasymptotic confidence sequences. \\textit{Annals of Statistics} \\textbf{49}, 1055--1080 (2021). \\url{https://doi.org/10.1214/20-AOS1991}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Time-uniform, nonparametric, nonasymptotic confidence sequences"
+    ],
+    "container": [
+      "The Annals of Statistics"
+    ],
+    "volume": "49",
+    "page": null,
+    "year": [
+      [
+        2021,
+        4,
+        1
+      ]
+    ],
+    "first_author": {
+      "given": "Steven R.",
+      "family": "Howard",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Department of Statistics, University of California, Berkeley"
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "wald1945",
+    "doi": "10.1214/aoms/1177731118",
+    "urls": [
+      "https://doi.org/10.1214/aoms/1177731118"
+    ],
+    "source_text": "Wald, A. Sequential Tests of Statistical Hypotheses. \\textit{Annals of Mathematical Statistics} \\textbf{16}, 117--186 (1945). \\url{https://doi.org/10.1214/aoms/1177731118}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Sequential Tests of Statistical Hypotheses"
+    ],
+    "container": [
+      "The Annals of Mathematical Statistics"
+    ],
+    "volume": "16",
+    "page": "117-186",
+    "year": [
+      [
+        1945,
+        6
+      ]
+    ],
+    "first_author": {
+      "given": "A.",
+      "family": "Wald",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "dwork2015",
+    "doi": "10.1126/science.aaa9375",
+    "urls": [
+      "https://doi.org/10.1126/science.aaa9375"
+    ],
+    "source_text": "Dwork, C. et al. The reusable holdout: Preserving validity in adaptive data analysis. \\textit{Science} \\textbf{349}, 636--638 (2015). \\url{https://doi.org/10.1126/science.aaa9375}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "The reusable holdout: Preserving validity in adaptive data analysis"
+    ],
+    "container": [
+      "Science"
+    ],
+    "volume": "349",
+    "page": "636-638",
+    "year": [
+      [
+        2015,
+        8,
+        7
+      ]
+    ],
+    "first_author": {
+      "given": "Cynthia",
+      "family": "Dwork",
+      "sequence": "first",
+      "affiliation": [
+        {
+          "name": "Microsoft Research, Mountain View, CA 94043, USA."
+        }
+      ],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "sculley2015",
+    "doi": null,
+    "urls": [
+      "https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems"
+    ],
+    "source_text": "Sculley, D. et al. Hidden Technical Debt in Machine Learning Systems. \\textit{NeurIPS} \\textbf{28} (2015). \\url{https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems}."
+  },
+  {
+    "key": "amershi2019",
+    "doi": "10.1109/ICSE-SEIP.2019.00042",
+    "urls": [
+      "https://doi.org/10.1109/ICSE-SEIP.2019.00042"
+    ],
+    "source_text": "Amershi, S. et al. Software Engineering for Machine Learning: A Case Study. \\textit{ICSE-SEIP}, 291--300 (2019). \\url{https://doi.org/10.1109/ICSE-SEIP.2019.00042}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Software Engineering for Machine Learning: A Case Study"
+    ],
+    "container": [
+      "2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)"
+    ],
+    "volume": null,
+    "page": "291-300",
+    "year": [
+      [
+        2019,
+        5
+      ]
+    ],
+    "first_author": {
+      "given": "Saleema",
+      "family": "Amershi",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "cawley2010",
+    "doi": null,
+    "urls": [
+      "https://jmlr.org/papers/v11/cawley10a.html"
+    ],
+    "source_text": "Cawley, G. C. \\& Talbot, N. L. C. On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation. \\textit{JMLR} \\textbf{11}, 2079--2107 (2010). \\url{https://jmlr.org/papers/v11/cawley10a.html}."
+  },
+  {
+    "key": "boyd2004",
+    "doi": null,
+    "urls": [
+      "https://web.stanford.edu/~boyd/cvxbook/"
+    ],
+    "source_text": "Boyd, S. \\& Vandenberghe, L. \\textit{Convex Optimization}. Cambridge University Press (2004). \\url{https://web.stanford.edu/~boyd/cvxbook/}."
+  },
+  {
+    "key": "bental2009",
+    "doi": "10.1515/9781400831050",
+    "urls": [
+      "https://doi.org/10.1515/9781400831050"
+    ],
+    "source_text": "Ben-Tal, A., El Ghaoui, L. \\& Nemirovski, A. \\textit{Robust Optimization}. Princeton University Press (2009). \\url{https://doi.org/10.1515/9781400831050}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Robust Optimization"
+    ],
+    "container": [],
+    "volume": null,
+    "page": null,
+    "year": [
+      [
+        2009,
+        12,
+        31
+      ]
+    ],
+    "first_author": {
+      "given": "Aharon",
+      "family": "Ben-Tal",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "nocedal2006",
+    "doi": "10.1007/978-0-387-40065-5",
+    "urls": [
+      "https://doi.org/10.1007/978-0-387-40065-5"
+    ],
+    "source_text": "Nocedal, J. \\& Wright, S. J. \\textit{Numerical Optimization}, 2nd edn. Springer (2006). \\url{https://doi.org/10.1007/978-0-387-40065-5}.",
+    "crossref_status": "verified_metadata",
+    "title": [
+      "Numerical Optimization"
+    ],
+    "container": [
+      "Springer Series in Operations Research and Financial Engineering"
+    ],
+    "volume": null,
+    "page": null,
+    "year": [
+      [
+        2006
+      ]
+    ],
+    "first_author": {
+      "given": "Jorge",
+      "family": "Nocedal",
+      "sequence": "first",
+      "affiliation": [],
+      "role": [
+        {
+          "vocabulary": "crossref",
+          "role": "author"
+        }
+      ]
+    }
+  },
+  {
+    "key": "sutton2018",
+    "doi": null,
+    "urls": [
+      "https://mitpress.mit.edu/9780262039246/reinforcement-learning/"
+    ],
+    "source_text": "Sutton, R. S. \\& Barto, A. G. \\textit{Reinforcement Learning: An Introduction}, 2nd edn. MIT Press (2018). \\url{https://mitpress.mit.edu/9780262039246/reinforcement-learning/}."
+  },
+  {
+    "key": "qwenmodel",
+    "doi": null,
+    "urls": [
+      "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct"
+    ],
+    "source_text": "Qwen Team. Qwen2.5-1.5B-Instruct model card, pinned revision \\nolinkurl{989aa7980e4cf806f80c7fef2b1adb7bc71aa306}. Official technical documentation. \\url{https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct}."
+  },
+  {
+    "key": "smolmodel",
+    "doi": null,
+    "urls": [
+      "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct"
+    ],
+    "source_text": "Hugging Face. SmolLM2-1.7B-Instruct model card, pinned revision \\nolinkurl{31b70e2e869a7173562077fd711b654946d38674}. Official technical documentation. \\url{https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct}."
+  },
+  {
+    "key": "ren2023",
+    "doi": null,
+    "urls": [
+      "https://proceedings.mlr.press/v229/ren23a.html"
+    ],
+    "source_text": "Ren, A. Z. et al. Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners. \\textit{CoRL}, PMLR \\textbf{229}, 661--682 (2023). \\url{https://proceedings.mlr.press/v229/ren23a.html}."
+  },
+  {
+    "key": "elmecker2026",
+    "doi": null,
+    "urls": [
+      "https://arxiv.org/abs/2512.01899v2"
+    ],
+    "source_text": "Elmecker-Plakolm, L., Fasterling, P., Sosnin, P., Tsay, C. \\& Wicker, M. Provably Safe Model Updates. Accepted at \\textit{SaTML} (2026); authors' accepted manuscript. \\url{https://arxiv.org/abs/2512.01899v2}."
+  }
+]

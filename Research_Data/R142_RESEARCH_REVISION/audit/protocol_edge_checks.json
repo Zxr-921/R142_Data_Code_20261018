@@ -1,0 +1,78 @@
+{
+  "runner_sha256": "898815090646c1247a324e212076f6091e8069c5bc16637278167269c2eeddcb",
+  "checks": [
+    {
+      "check": "quantile_n0_alpha0.1",
+      "passed": true
+    },
+    {
+      "check": "quantile_n8_alpha0.1",
+      "passed": true
+    },
+    {
+      "check": "quantile_n9_alpha0.1",
+      "passed": true
+    },
+    {
+      "check": "quantile_n18_alpha0.05",
+      "passed": true
+    },
+    {
+      "check": "quantile_n19_alpha0.05",
+      "passed": true
+    },
+    {
+      "check": "quantile_n98_alpha0.01",
+      "passed": true
+    },
+    {
+      "check": "quantile_n99_alpha0.01",
+      "passed": true
+    },
+    {
+      "check": "infinite_bound_abstains",
+      "passed": true
+    },
+    {
+      "check": "finite_bound_without_positive_declaration_abstains",
+      "passed": true
+    },
+    {
+      "check": "exact_tie_buffer_abstains",
+      "passed": true
+    },
+    {
+      "check": "empty_selection_abstains",
+      "passed": true
+    },
+    {
+      "check": "empty_admissible_menu_abstains",
+      "passed": true
+    },
+    {
+      "check": "informative_bound_permits_choice",
+      "passed": true
+    },
+    {
+      "check": "full_update_and_scaling_are_distinct",
+      "passed": true
+    },
+    {
+      "check": "family_key_ignores_order",
+      "passed": true
+    },
+    {
+      "check": "family_key_retains_call_multiplicity",
+      "passed": true
+    },
+    {
+      "check": "quoted_bracket_parser",
+      "passed": true
+    },
+    {
+      "check": "malformed_output_rejected",
+      "passed": true
+    }
+  ],
+  "scope": "Exact frozen selector edge cases; complete-batch numerical consistency is checked by r141_analyze_control.py."
+}

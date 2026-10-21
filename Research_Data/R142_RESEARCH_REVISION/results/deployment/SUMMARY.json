@@ -1,0 +1,36 @@
+{
+  "seed": 1420921,
+  "tape_cases": 24562,
+  "optimization_cases": 600,
+  "max_optimization_gap": 0,
+  "workflow_cases": 360,
+  "workflow_equality_failures": 0,
+  "full_reads_per_workflow": 2480,
+  "selective_reads_mean": 1762.7,
+  "selective_reads_min": 1667,
+  "selective_reads_max": 1879,
+  "fingerprint_checks": [
+    {
+      "changed_field": "model",
+      "reuse_allowed": false
+    },
+    {
+      "changed_field": "input",
+      "reuse_allowed": false
+    },
+    {
+      "changed_field": "evaluator",
+      "reuse_allowed": false
+    },
+    {
+      "changed_field": "environment",
+      "reuse_allowed": false
+    },
+    {
+      "changed_field": "policy",
+      "reuse_allowed": false
+    }
+  ],
+  "evidence_status": "synthetic bounded-tape and graph validation; no measured enterprise savings",
+  "script_sha256": "6a391963b096af0f307194673788b24c2c5ca864e5ac0cd531ae80cfb9beb003"
+}

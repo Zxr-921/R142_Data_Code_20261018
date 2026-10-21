@@ -1,0 +1,51 @@
+Note that User Simulator few shot messages have been omitted
+shape: (34, 8)
+┌────────────┬────────────┬────────────┬───────────┬───────────┬───────────┬───────────┬───────────┐
+│ sandbox_me ┆ sender     ┆ recipient  ┆ content   ┆ openai_fu ┆ tool_call ┆ tool_trac ┆ visible_t │
+│ ssage_inde ┆ ---        ┆ ---        ┆ ---       ┆ nction_na ┆ _exceptio ┆ e         ┆ o         │
+│ x          ┆ enum       ┆ enum       ┆ str       ┆ me        ┆ n         ┆ ---       ┆ ---       │
+│ ---        ┆            ┆            ┆           ┆ ---       ┆ ---       ┆ list[str] ┆ list[enum │
+│ i32        ┆            ┆            ┆           ┆ str       ┆ str       ┆           ┆ ]         │
+╞════════════╪════════════╪════════════╪═══════════╪═══════════╪═══════════╪═══════════╪═══════════╡
+│ 0          ┆ SYSTEM     ┆ EXECUTION_ ┆ import    ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆ ENVIRONMEN ┆ json      ┆           ┆           ┆           ┆           │
+│            ┆            ┆ T          ┆ from tool ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ _sandbox. ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ …         ┆           ┆           ┆           ┆           │
+│ 1          ┆ SYSTEM     ┆ AGENT      ┆ Don't     ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ make assu ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ mptions   ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ about w…  ┆           ┆           ┆           ┆           │
+│ 14         ┆ SYSTEM     ┆ USER       ┆ You are   ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ no longer ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ an assist ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ ant…      ┆           ┆           ┆           ┆           │
+│ 15         ┆ USER       ┆ AGENT      ┆ Turn on   ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ location  ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ service   ┆           ┆           ┆           ┆           │
+│ 16         ┆ AGENT      ┆ EXECUTION_ ┆ call_01a6 ┆ setting_6 ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 0e70dd_1_ ┆           ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ …          ┆ …          ┆ …          ┆ …         ┆ …         ┆ …         ┆ …         ┆ …         │
+│ 41         ┆ EXECUTION_ ┆ AGENT      ┆ Permissio ┆ setting_6 ┆ Permissio ┆ null      ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ nError:   ┆           ┆ nError:   ┆           ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ Location  ┆           ┆ Location  ┆           ┆ NMENT",   │
+│            ┆            ┆            ┆ serv…     ┆           ┆ serv…     ┆           ┆ "AGE…     │
+│ 42         ┆ AGENT      ┆ EXECUTION_ ┆ call_5ec4 ┆ setting_7 ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 83f744_1_ ┆           ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 43         ┆ EXECUTION_ ┆ AGENT      ┆ ValueErro ┆ setting_7 ┆ ValueErro ┆ null      ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ r: low_ba ┆           ┆ r: low_ba ┆           ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ ttery_mod ┆           ┆ ttery_mod ┆           ┆ NMENT",   │
+│            ┆            ┆            ┆ e a…      ┆           ┆ e a…      ┆           ┆ "AGE…     │
+│ 44         ┆ AGENT      ┆ EXECUTION_ ┆ call_d780 ┆ setting_8 ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ d5545a_1_ ┆           ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 45         ┆ EXECUTION_ ┆ AGENT      ┆ Permissio ┆ setting_8 ┆ Permissio ┆ null      ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ nError:   ┆           ┆ nError:   ┆           ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ Wifi      ┆           ┆ Wifi      ┆           ┆ NMENT",   │
+│            ┆            ┆            ┆ cannot b… ┆           ┆ cannot b… ┆           ┆ "AGE…     │
+└────────────┴────────────┴────────────┴───────────┴───────────┴───────────┴───────────┴───────────┘

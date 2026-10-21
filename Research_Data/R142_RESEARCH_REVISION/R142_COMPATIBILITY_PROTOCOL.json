@@ -1,0 +1,58 @@
+{
+  "version": "R142",
+  "design": "All eight R141 full-update selected candidates; paired MUSCLE loss and extra cross-entropy training",
+  "batches": {
+    "qwen_batch1": {
+      "candidate": "V5",
+      "source_job": "6ab0754852d0dbd7f1d76612",
+      "training_seed": 64200
+    },
+    "qwen_batch2": {
+      "candidate": "V2",
+      "source_job": "6ab0773051992417dfcce471",
+      "training_seed": 64201
+    },
+    "qwen_batch3": {
+      "candidate": "V8",
+      "source_job": "6ab0773151992417dfcce473",
+      "training_seed": 64202
+    },
+    "qwen_batch4": {
+      "candidate": "V7",
+      "source_job": "6ab0773152d0dbd7f1d76658",
+      "training_seed": 64203
+    },
+    "smollm_batch1": {
+      "candidate": "V5",
+      "source_job": "6ab0743d52d0dbd7f1d765df",
+      "training_seed": 64204
+    },
+    "smollm_batch2": {
+      "candidate": "V7",
+      "source_job": "6ab0773152d0dbd7f1d7665a",
+      "training_seed": 64205
+    },
+    "smollm_batch3": {
+      "candidate": "V1",
+      "source_job": "6ab0773252d0dbd7f1d7665c",
+      "training_seed": 64206
+    },
+    "smollm_batch4": {
+      "candidate": "V3",
+      "source_job": "6ab0773352d0dbd7f1d7665e",
+      "training_seed": 64207
+    }
+  },
+  "source": "Echterhoff et al., Findings EMNLP 2024, Eq. 1 and sections 4.1, 5.3",
+  "frozen_before_new_outputs": true,
+  "audit_previously_inspected": true,
+  "training": "one epoch on original update_train plus first 40 source_train rows; no new labels",
+  "lora": "original rank 8 q_proj/v_proj adapters initialized from selected candidate; both teachers frozen",
+  "loss": "token mask student argmax != ground truth; KL(old||student) for errors else KL(new||student); temperature 1; target tokens including EOS; no auxiliary CE",
+  "optimizer": "AdamW learning rate 0.0002; accumulation 8; clip norm 1; paired seed/order; final epoch checkpoint only",
+  "comparison_limit": "Published loss under R141 resource settings, not original MUSCLE hyperparameters or numerical benchmark reproduction; extra CE controls optimizer updates but not teacher forward cost",
+  "evaluation": "joint reevaluation of all fresh_old rows, cap_validation and cap_audit under same checker and generation; existing audit reused; no prospective generalization claim",
+  "failure_rule": "retain failure; no hyperparameter selection on outcomes",
+  "timeout_seconds_per_job": 3600,
+  "runner_sha256": "9640c12a9957167bd3ec7b21dc003f9220d2c96e852fda711b50ecb11dfba5c8"
+}

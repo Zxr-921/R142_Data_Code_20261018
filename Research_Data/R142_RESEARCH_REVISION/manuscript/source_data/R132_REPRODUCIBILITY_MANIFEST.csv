@@ -1,0 +1,12 @@
+experiment_id,included_in_R132_package,remaining_limit_for_full_independent_rerun
+FRONTIER-4,summary CSV available,raw matched task/trial ledger not present in supplied R130 package
+SORRY-JUDGE-4400,summary CSV available,per-record logits/outcomes not present in supplied R130 package
+FIXDIR-QWEN,summary CSV available,per-example logits/gradients not present; exact directional sensitivity cannot be reconstructed
+FIXDIR-SMOL,summary CSV available,per-example logits/gradients not present
+AFFINE-DIGITS,summary available in manuscript,raw split/model script not present
+RELU-DIGITS,summary available in manuscript,raw split/model script not present
+REPAIR-1,summary CSV available,training logs/checkpoints not present
+REPAIR-10,run-level CSV available,training logs/checkpoints not present
+TB-87,summary available in manuscript,trial-level archived order not present
+BFCL-DIR,Frozen Markdown protocol; hash manifest; Python script; primary result JSON; machine-readable figure summaries,External rerun still downloads public BFCL source and SmolLM2 checkpoint from their public repositories; GPU/software environment is not packaged as a container image
+BFCL-REPAIR,Frozen follow-up protocol; hash manifest; Python script; fresh-audit ID hash; follow-up result JSON; machine-readable figure summaries,External replication on a second backbone/richer executable endpoint remains open; the negative fresh-audit result is fully retained

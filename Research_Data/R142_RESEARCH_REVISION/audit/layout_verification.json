@@ -1,0 +1,137 @@
+{
+  "documents": {
+    "MAIN": {
+      "pdf": "manuscript/NATURE_GENAI_UPDATE_R141_MAIN.pdf",
+      "pages": 24,
+      "sha256": "d340bf8962a914e3566b33c59f487c43d50f324e8da2e73cb78bfaa4423197cc",
+      "letter_page_size": true,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "text_outside_page": 0,
+      "critical_pages_rendered": [
+        1,
+        2,
+        3,
+        10,
+        11,
+        12,
+        13,
+        21,
+        24
+      ],
+      "fonts_by_character_count": {
+        "NimbusRomNo9L-Medi": 1746,
+        "CMSS8": 1584,
+        "NimbusRomNo9L-Regu": 58630,
+        "CMTT10": 1307,
+        "DejaVuSans": 3401,
+        "NimbusRomNo9L-ReguItal": 628,
+        "CMMI10": 38,
+        "CMR10": 58,
+        "CMSY10": 57,
+        "CMEX10": 7,
+        "StandardSymL-Slant_167": 28,
+        "MSBM10": 1
+      }
+    },
+    "SI": {
+      "pdf": "manuscript/NATURE_GENAI_UPDATE_R141_SI.pdf",
+      "pages": 87,
+      "sha256": "f99ecdc56eb6cc9cc62a5e7b934e8220d77aa9dc5b454f90673df3d6eded7169",
+      "letter_page_size": true,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "text_outside_page": 0,
+      "critical_pages_rendered": [
+        1,
+        2,
+        7,
+        16,
+        18,
+        49,
+        87
+      ],
+      "fonts_by_character_count": {
+        "NimbusRomNo9L-Medi": 14606,
+        "CMSS8": 7797,
+        "NimbusRomNo9L-Regu": 186669,
+        "NimbusRomNo9L-ReguItal": 11030,
+        "CMR10": 1588,
+        "CMSY10": 1189,
+        "CMMI10": 647,
+        "rsfs10": 68,
+        "StandardSymL-Slant_167": 545,
+        "CMEX10": 80,
+        "StandardSymL": 126,
+        "MSAM10": 40,
+        "MSBM10": 38,
+        "CMTT10": 2449
+      }
+    },
+    "RESPONSE": {
+      "pdf": "manuscript/R141_RESPONSE_TO_COMMENTS.pdf",
+      "pages": 10,
+      "sha256": "35965580d8afd73b1f98a432af613143bf8362c9f0a81cd6712c811f3191fc43",
+      "letter_page_size": true,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "text_outside_page": 0,
+      "critical_pages_rendered": [
+        1,
+        2,
+        9,
+        10
+      ],
+      "fonts_by_character_count": {
+        "NimbusRomNo9L-Medi": 3449,
+        "CMSS8": 696,
+        "NimbusRomNo9L-Regu": 16744
+      }
+    },
+    "LETTER": {
+      "pdf": "manuscript/R141_COVER_LETTER_DRAFT.pdf",
+      "pages": 1,
+      "sha256": "1aa3dc186dcd8399339b3b451b390eeb167963de96532e10127fb1692868a958",
+      "letter_page_size": true,
+      "undefined_references": 0,
+      "overfull_boxes": 0,
+      "text_outside_page": 0,
+      "critical_pages_rendered": [
+        1
+      ],
+      "fonts_by_character_count": {
+        "NimbusRomNo9L-Medi": 24,
+        "NimbusRomNo9L-ReguItal": 35,
+        "NimbusRomNo9L-Regu": 2456
+      }
+    }
+  },
+  "visual_review_status": "Reviewed all final contact-sheet pages; inspected critical equation, declaration-table, Figure 5, Extended Data and letter pages at readable scale. No observed text/mark overlap or page clipping.",
+  "format": {
+    "body_prose_words_approx_excluding_equations_captions": 4114,
+    "methods_prose_words_approx": 2843,
+    "abstract_words": 183,
+    "main_figures": 5,
+    "extended_data_figures": 4,
+    "unnumbered_display_environments": 0,
+    "main_display_equations": 4,
+    "line_numbers": true,
+    "blue_citations_and_crossreferences": true,
+    "declared_font_size": "11pt",
+    "font_family": "Times-compatible mathptmx",
+    "word_count_method": "Source-based estimate; removes figures, display/inline math, citation/reference markup and control words."
+  },
+  "reviewed_page_total": 122,
+  "reviewed_contact_sheets": [
+    "qa/final/LETTER_contact_001.jpg",
+    "qa/final/MAIN_contact_001.jpg",
+    "qa/final/MAIN_contact_017.jpg",
+    "qa/final/RESPONSE_contact_001.jpg",
+    "qa/final/SI_contact_001.jpg",
+    "qa/final/SI_contact_017.jpg",
+    "qa/final/SI_contact_033.jpg",
+    "qa/final/SI_contact_049.jpg",
+    "qa/final/SI_contact_065.jpg",
+    "qa/final/SI_contact_081.jpg"
+  ]
+}

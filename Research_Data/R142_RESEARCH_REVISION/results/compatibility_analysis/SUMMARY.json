@@ -1,0 +1,61 @@
+{
+  "batches": 8,
+  "old_row_appearances": 800,
+  "all_original_counts_reproduced": false,
+  "methods": {
+    "full_update": {
+      "audit_benefit_passes": 8,
+      "validation_benefit_passes": 8,
+      "mean_old_family_loss": 0.08920460978809006,
+      "mean_all_old_accuracy": 0.6900000000000001,
+      "mean_new_accuracy": 0.5583333333333333,
+      "old_loss_total": 48,
+      "old_entry_total": 43,
+      "additional_training_seconds": 0
+    },
+    "muscle_loss": {
+      "audit_benefit_passes": 8,
+      "validation_benefit_passes": 8,
+      "mean_old_family_loss": 0.046887173998777745,
+      "mean_all_old_accuracy": 0.7212500000000001,
+      "mean_new_accuracy": 0.53125,
+      "old_loss_total": 26,
+      "old_entry_total": 46,
+      "additional_training_seconds": 193.52478960499968
+    },
+    "extra_cross_entropy": {
+      "audit_benefit_passes": 8,
+      "validation_benefit_passes": 8,
+      "mean_old_family_loss": 0.07090508031393222,
+      "mean_all_old_accuracy": 0.7125,
+      "mean_new_accuracy": 0.575,
+      "old_loss_total": 40,
+      "old_entry_total": 53,
+      "additional_training_seconds": 107.67468025799997
+    }
+  },
+  "paired_contrasts": [
+    {
+      "method": "muscle_loss",
+      "comparator": "full_update",
+      "lower_old_loss": 6,
+      "equal_old_loss": 0,
+      "higher_old_loss": 2
+    },
+    {
+      "method": "muscle_loss",
+      "comparator": "extra_cross_entropy",
+      "lower_old_loss": 5,
+      "equal_old_loss": 1,
+      "higher_old_loss": 2
+    },
+    {
+      "method": "extra_cross_entropy",
+      "comparator": "full_update",
+      "lower_old_loss": 4,
+      "equal_old_loss": 1,
+      "higher_old_loss": 3
+    }
+  ],
+  "scope": "all eight fixed candidates; reused audit pools; unweighted batch summaries; no independent deployment-population inference"
+}

@@ -1,0 +1,53 @@
+Note that User Simulator few shot messages have been omitted
+shape: (34, 8)
+┌────────────┬────────────┬────────────┬───────────┬───────────┬───────────┬───────────┬───────────┐
+│ sandbox_me ┆ sender     ┆ recipient  ┆ content   ┆ openai_fu ┆ tool_call ┆ tool_trac ┆ visible_t │
+│ ssage_inde ┆ ---        ┆ ---        ┆ ---       ┆ nction_na ┆ _exceptio ┆ e         ┆ o         │
+│ x          ┆ enum       ┆ enum       ┆ str       ┆ me        ┆ n         ┆ ---       ┆ ---       │
+│ ---        ┆            ┆            ┆           ┆ ---       ┆ ---       ┆ list[str] ┆ list[enum │
+│ i32        ┆            ┆            ┆           ┆ str       ┆ str       ┆           ┆ ]         │
+╞════════════╪════════════╪════════════╪═══════════╪═══════════╪═══════════╪═══════════╪═══════════╡
+│ 0          ┆ SYSTEM     ┆ EXECUTION_ ┆ import    ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆ ENVIRONMEN ┆ json      ┆           ┆           ┆           ┆           │
+│            ┆            ┆ T          ┆ from tool ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ _sandbox. ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ …         ┆           ┆           ┆           ┆           │
+│ 1          ┆ SYSTEM     ┆ AGENT      ┆ Don't     ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ make assu ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ mptions   ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ about w…  ┆           ┆           ┆           ┆           │
+│ 14         ┆ SYSTEM     ┆ USER       ┆ You are   ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ no longer ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ an assist ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ ant…      ┆           ┆           ┆           ┆           │
+│ 15         ┆ USER       ┆ AGENT      ┆ Add a     ┆ null      ┆ null      ┆ null      ┆ null      │
+│            ┆            ┆            ┆ todo to   ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ buy       ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ chocolate ┆           ┆           ┆           ┆           │
+│            ┆            ┆            ┆ mi…       ┆           ┆           ┆           ┆           │
+│ 16         ┆ AGENT      ┆ EXECUTION_ ┆ call_ab23 ┆ add_remin ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ e4c81e_1_ ┆ der       ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ …          ┆ …          ┆ …          ┆ …         ┆ …         ┆ …         ┆ …         ┆ …         │
+│ 41         ┆ EXECUTION_ ┆ AGENT      ┆ 'ffa3163f ┆ add_remin ┆ null      ┆ ["{"tool_ ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ -b22a-40c ┆ der       ┆           ┆ name":    ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ 3-8305-10 ┆           ┆           ┆ "add_remi ┆ NMENT",   │
+│            ┆            ┆            ┆ f06…      ┆           ┆           ┆ nder"…    ┆ "AGE…     │
+│ 42         ┆ AGENT      ┆ EXECUTION_ ┆ call_0cea ┆ add_remin ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 7c6e69_1_ ┆ der       ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 43         ┆ EXECUTION_ ┆ AGENT      ┆ 'c4d2156e ┆ add_remin ┆ null      ┆ ["{"tool_ ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ -c3e6-4cc ┆ der       ┆           ┆ name":    ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ a-9332-fe ┆           ┆           ┆ "add_remi ┆ NMENT",   │
+│            ┆            ┆            ┆ ac4…      ┆           ┆           ┆ nder"…    ┆ "AGE…     │
+│ 44         ┆ AGENT      ┆ EXECUTION_ ┆ call_8435 ┆ add_remin ┆ null      ┆ null      ┆ ["AGENT", │
+│            ┆            ┆ ENVIRONMEN ┆ 1da49b_1_ ┆ der       ┆           ┆           ┆ "EXECUTIO │
+│            ┆            ┆ T          ┆ parameter ┆           ┆           ┆           ┆ N_ENVIRON │
+│            ┆            ┆            ┆ s =…      ┆           ┆           ┆           ┆ ME…       │
+│ 45         ┆ EXECUTION_ ┆ AGENT      ┆ '0b78575a ┆ add_remin ┆ null      ┆ ["{"tool_ ┆ ["EXECUTI │
+│            ┆ ENVIRONMEN ┆            ┆ -3300-4b9 ┆ der       ┆           ┆ name":    ┆ ON_ENVIRO │
+│            ┆ T          ┆            ┆ 6-b2fa-71 ┆           ┆           ┆ "add_remi ┆ NMENT",   │
+│            ┆            ┆            ┆ fb0…      ┆           ┆           ┆ nder"…    ┆ "AGE…     │
+└────────────┴────────────┴────────────┴───────────┴───────────┴───────────┴───────────┴───────────┘

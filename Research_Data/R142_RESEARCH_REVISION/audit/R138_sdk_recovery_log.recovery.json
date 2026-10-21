@@ -1,0 +1,162 @@
+[
+  {
+    "run": "R138_6aaf72cc52d0dbd7f1d72a11",
+    "name": "scientific_record.json",
+    "bytes": 1785214,
+    "sha256": "91fc9072b2da1d7b2c127a8c27ec1b39afb9f27d88aacc5fea0f9b6b4326b703",
+    "chunks": 12,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf72cc52d0dbd7f1d72a11",
+    "name": "recovery_status.json",
+    "bytes": 26666,
+    "sha256": "e316e726d46f48faa20c7c42b9c1e233d133298b0b03ea53de2511528dcab979",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf72cc52d0dbd7f1d72a13",
+    "name": "scientific_record.json",
+    "bytes": 8451209,
+    "sha256": "71107cbcaff036a9a7ff801129ed4995e792582a2bf761e79c31b37ee9a52e31",
+    "chunks": 46,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf72cc52d0dbd7f1d72a13",
+    "name": "recovery_status.json",
+    "bytes": 127110,
+    "sha256": "2543ae9e5d0434a293e9e0a5d50fdcfda2be57516a41a76e5b86533069346698",
+    "chunks": 3,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf6cd551992417dfccc096",
+    "name": "scientific_record.json",
+    "bytes": 30404555,
+    "sha256": "95f9714d269b00c5153c3d5e562eea40a55fabb626fd6224673a9ddd0ab34606",
+    "chunks": 133,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf6cd551992417dfccc096",
+    "name": "recovery_status.json",
+    "bytes": 67733,
+    "sha256": "8c17de9c8ba2b648588ce11d670fc0e58ab7dc20be8b5a87eb6bc3a547fff2a9",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf6cf751992417dfccc09c",
+    "name": "scientific_record.json",
+    "bytes": 27448261,
+    "sha256": "d8f18d6719582e0ebe8b65e15847978f61543f782d1901f8c49ef5c8610d9a6b",
+    "chunks": 117,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf6cf751992417dfccc09c",
+    "name": "recovery_status.json",
+    "bytes": 60379,
+    "sha256": "f584891a42c7191b2277969f84f0c8b85ac6fd8d3c3813719128aca7ce8ab884",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf6d1451992417dfccc0a5",
+    "name": "scientific_record.json",
+    "bytes": 27270523,
+    "sha256": "2e7eccf1b86d9bc8e9a654dc450d4779fe06d257e15d765952603ab294bb571a",
+    "chunks": 123,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf6d1451992417dfccc0a5",
+    "name": "recovery_status.json",
+    "bytes": 67728,
+    "sha256": "3dc2f759a9cdede385178870505f9e07891e559707fece74380581acdb462892",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf6d3051992417dfccc0a7",
+    "name": "scientific_record.json",
+    "bytes": 26693583,
+    "sha256": "5bdf9a696d3aba4004703ad989ddadfbcf8526a228d4b4a2c6ca302e0a264858",
+    "chunks": 117,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf6d3051992417dfccc0a7",
+    "name": "recovery_status.json",
+    "bytes": 60848,
+    "sha256": "3a4e713c4d7205af683b8c16008142cba0175ab0193ff207176c2e1cffb59253",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf77a452d0dbd7f1d72b65",
+    "name": "scientific_record.json",
+    "bytes": 2831446,
+    "sha256": "a9edd3f9f8dd138855f6badb523e930bf71ec4ac4822d0c3c0f941ed93580f23",
+    "chunks": 15,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf77a452d0dbd7f1d72b65",
+    "name": "recovery_status.json",
+    "bytes": 9997,
+    "sha256": "ba7cf479abd19e6900c2c2896170084a2e8abe17aff8ae38f0b59b3b8650b9e1",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf77a451992417dfccc224",
+    "name": "scientific_record.json",
+    "bytes": 3411803,
+    "sha256": "966726d532cd5e0b15c39a16d520c98383c4a85cfe6d342b313e6b87fbfcf421",
+    "chunks": 18,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf77a451992417dfccc224",
+    "name": "recovery_status.json",
+    "bytes": 10000,
+    "sha256": "0774303ae13f1d165f2f2fed7b73ab5d9f9484b3f628e6212ae83d0f411aa575",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf38c952d0dbd7f1d71c72",
+    "name": "scientific_record.json",
+    "bytes": 2629347,
+    "sha256": "e68aeb295fd4964b96cbc28dadec958d7927957bee79dbbc34a03d468a973f83",
+    "chunks": 19,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf38c952d0dbd7f1d71c72",
+    "name": "recovery_status.json",
+    "bytes": 49664,
+    "sha256": "c6fac65bdcd530a9e04b689d2527964cb54229aeae4438b3c85783db3d9fe493",
+    "chunks": 2,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf390051992417dfccb9a4",
+    "name": "scientific_record.json",
+    "bytes": 2629237,
+    "sha256": "689e808ac04919e525bf944e6ab4e6cfc5c654a0ed158fe3f758a85802ee7032",
+    "chunks": 19,
+    "status": "verified"
+  },
+  {
+    "run": "R138_6aaf390051992417dfccb9a4",
+    "name": "recovery_status.json",
+    "bytes": 49664,
+    "sha256": "6c523de844e84c49f091d243cfd54786e5636f3ee119978c64d8eb8a1c107dde",
+    "chunks": 2,
+    "status": "verified"
+  }
+]

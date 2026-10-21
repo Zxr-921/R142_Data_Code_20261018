@@ -1,0 +1,34 @@
+[
+  {
+    "run": "smollm_batch1",
+    "name": "scientific_record.json",
+    "bytes": 2902733,
+    "sha256": "53cfdfeb5836845da928e8eff5e12d759220cd39cb3860c9d16adfea08f3e2dc",
+    "chunks": 50,
+    "status": "verified"
+  },
+  {
+    "run": "smollm_batch1",
+    "name": "sdk_recovery_report.json",
+    "bytes": 8920,
+    "sha256": "4a52f635644372c66899307702c41898c1a583d056d50897a623257303057691",
+    "chunks": 1,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "scientific_record.json",
+    "bytes": 2760043,
+    "sha256": "a88de039041237400b5b81fb64b43c7f34460121138314e4871d6747a09a5c6f",
+    "chunks": 49,
+    "status": "verified"
+  },
+  {
+    "run": "qwen_batch1",
+    "name": "sdk_recovery_report.json",
+    "bytes": 8828,
+    "sha256": "e5b3df63fda6c63a926b868a89aaa7b33bbc5735400ef23ca5f4cc6ffb4c350c",
+    "chunks": 1,
+    "status": "verified"
+  }
+]

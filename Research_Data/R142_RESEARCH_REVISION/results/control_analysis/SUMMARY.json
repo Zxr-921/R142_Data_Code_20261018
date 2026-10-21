@@ -1,0 +1,215 @@
+{
+  "complete_batches": 8,
+  "candidate_training_runs": 64,
+  "audited_candidate_strength_pairs": 128,
+  "methods": {
+    "full_update": {
+      "batches": 8,
+      "choices": 8,
+      "abstentions": 0,
+      "audit_benefit_passes": 8,
+      "mean_family_loss_among_chosen": 0.09805355070224836,
+      "mean_family_loss_when_benefit_passes": 0.09805355070224836,
+      "selection_observations": 0,
+      "selection_seconds": 0
+    },
+    "simple_scaling": {
+      "batches": 8,
+      "choices": 8,
+      "abstentions": 0,
+      "audit_benefit_passes": 6,
+      "mean_family_loss_among_chosen": 0.019178040917171353,
+      "mean_family_loss_when_benefit_passes": 0.025570721222895137,
+      "selection_observations": 0,
+      "selection_seconds": 0
+    },
+    "minimum_norm": {
+      "batches": 8,
+      "choices": 8,
+      "abstentions": 0,
+      "audit_benefit_passes": 6,
+      "mean_family_loss_among_chosen": 0.019178040917171353,
+      "mean_family_loss_when_benefit_passes": 0.023318468970642884,
+      "selection_observations": 0,
+      "selection_seconds": 0
+    },
+    "local_prediction": {
+      "batches": 8,
+      "choices": 8,
+      "abstentions": 0,
+      "audit_benefit_passes": 8,
+      "mean_family_loss_among_chosen": 0.042207202122051035,
+      "mean_family_loss_when_benefit_passes": 0.042207202122051035,
+      "selection_observations": 660,
+      "selection_seconds": 24.005456924438477
+    },
+    "calibrated_prediction": {
+      "batches": 8,
+      "choices": 8,
+      "abstentions": 0,
+      "audit_benefit_passes": 8,
+      "mean_family_loss_among_chosen": 0.08326619851392787,
+      "mean_family_loss_when_benefit_passes": 0.08326619851392787,
+      "selection_observations": 9560,
+      "selection_seconds": 347.92417764663696
+    },
+    "direct_validation": {
+      "batches": 8,
+      "choices": 8,
+      "abstentions": 0,
+      "audit_benefit_passes": 8,
+      "mean_family_loss_among_chosen": 0.026373386906148696,
+      "mean_family_loss_when_benefit_passes": 0.026373386906148696,
+      "selection_observations": 8335,
+      "selection_seconds": 3137.425091266632
+    }
+  },
+  "contrasts": [
+    {
+      "method": "local_prediction",
+      "comparator": "full_update",
+      "paired_batches_both_benefit_pass": 8,
+      "lower_old_loss_n": 6,
+      "equal_old_loss_n": 2,
+      "higher_old_loss_n": 0,
+      "mean_difference": -0.05584634858019733
+    },
+    {
+      "method": "calibrated_prediction",
+      "comparator": "full_update",
+      "paired_batches_both_benefit_pass": 8,
+      "lower_old_loss_n": 3,
+      "equal_old_loss_n": 3,
+      "higher_old_loss_n": 2,
+      "mean_difference": -0.014787352188320498
+    },
+    {
+      "method": "local_prediction",
+      "comparator": "simple_scaling",
+      "paired_batches_both_benefit_pass": 6,
+      "lower_old_loss_n": 1,
+      "equal_old_loss_n": 4,
+      "higher_old_loss_n": 1,
+      "mean_difference": 0.00014864362690449628
+    },
+    {
+      "method": "calibrated_prediction",
+      "comparator": "simple_scaling",
+      "paired_batches_both_benefit_pass": 6,
+      "lower_old_loss_n": 0,
+      "equal_old_loss_n": 1,
+      "higher_old_loss_n": 5,
+      "mean_difference": 0.054893972149406924
+    },
+    {
+      "method": "local_prediction",
+      "comparator": "minimum_norm",
+      "paired_batches_both_benefit_pass": 6,
+      "lower_old_loss_n": 1,
+      "equal_old_loss_n": 3,
+      "higher_old_loss_n": 2,
+      "mean_difference": 0.02601071259242174
+    },
+    {
+      "method": "calibrated_prediction",
+      "comparator": "minimum_norm",
+      "paired_batches_both_benefit_pass": 6,
+      "lower_old_loss_n": 0,
+      "equal_old_loss_n": 1,
+      "higher_old_loss_n": 5,
+      "mean_difference": 0.06949477985366291
+    },
+    {
+      "method": "local_prediction",
+      "comparator": "direct_validation",
+      "paired_batches_both_benefit_pass": 8,
+      "lower_old_loss_n": 1,
+      "equal_old_loss_n": 4,
+      "higher_old_loss_n": 3,
+      "mean_difference": 0.015833815215902342
+    },
+    {
+      "method": "calibrated_prediction",
+      "comparator": "direct_validation",
+      "paired_batches_both_benefit_pass": 8,
+      "lower_old_loss_n": 0,
+      "equal_old_loss_n": 1,
+      "higher_old_loss_n": 7,
+      "mean_difference": 0.05689281160777917
+    }
+  ],
+  "limitations": [
+    "Repeated benchmark pools; batch outcomes are descriptive recipe replications, not new task populations.",
+    "Candidate-record equality is not FLOP or runtime equality.",
+    "Missing original shared-stage elapsed times remain missing.",
+    "A calibrated false-declaration guarantee is not a total old-task risk cap.",
+    "No faithful MUSCLE/forgetting-training baseline is implemented; no superiority claim over those algorithms.",
+    "Only incumbent-protected fresh old cases are candidate-audited; new entries into old correctness are not estimated."
+  ],
+  "verification": [
+    {
+      "run": "qwen_batch1",
+      "split_families_disjoint": true,
+      "frozen_choice_preserved": true,
+      "quantile_recomputed": true,
+      "fresh_grid_pairs": 16,
+      "result_sha256": "fc47d87f88d20bb43cee9a010b0102e7fcc8e082fccc126b624bc16cab5bf809"
+    },
+    {
+      "run": "qwen_batch2",
+      "split_families_disjoint": true,
+      "frozen_choice_preserved": true,
+      "quantile_recomputed": true,
+      "fresh_grid_pairs": 16,
+      "result_sha256": "226ff225190261e504aff9e370c290cc131ad3711ce6854257dd7c3b37c1d710"
+    },
+    {
+      "run": "qwen_batch3",
+      "split_families_disjoint": true,
+      "frozen_choice_preserved": true,
+      "quantile_recomputed": true,
+      "fresh_grid_pairs": 16,
+      "result_sha256": "3a0d7c76d314fe4c99722daa7dea8b42a61ea23bac0157d1e65fdc92add6c3d2"
+    },
+    {
+      "run": "qwen_batch4",
+      "split_families_disjoint": true,
+      "frozen_choice_preserved": true,
+      "quantile_recomputed": true,
+      "fresh_grid_pairs": 16,
+      "result_sha256": "02b38ae5d3c47ff046024c94fc0337680ce93d50eb59860927e185d77f098531"
+    },
+    {
+      "run": "smollm_batch1",
+      "split_families_disjoint": true,
+      "frozen_choice_preserved": true,
+      "quantile_recomputed": true,
+      "fresh_grid_pairs": 16,
+      "result_sha256": "d4cd3cc7ba0e75da7a68bec74a16f2b8baf0735f78cead1c244201dc3fd4815b"
+    },
+    {
+      "run": "smollm_batch2",
+      "split_families_disjoint": true,
+      "frozen_choice_preserved": true,
+      "quantile_recomputed": true,
+      "fresh_grid_pairs": 16,
+      "result_sha256": "2a10dacefc5634d52ac49248f6b6c4363bd8a33beb9baec527f6cf202d283f6b"
+    },
+    {
+      "run": "smollm_batch3",
+      "split_families_disjoint": true,
+      "frozen_choice_preserved": true,
+      "quantile_recomputed": true,
+      "fresh_grid_pairs": 16,
+      "result_sha256": "f7404c7b03279a6768163c77f4f2d926d00f1ca3ca986de35c5b695470b300ca"
+    },
+    {
+      "run": "smollm_batch4",
+      "split_families_disjoint": true,
+      "frozen_choice_preserved": true,
+      "quantile_recomputed": true,
+      "fresh_grid_pairs": 16,
+      "result_sha256": "caeeabe9498971221b5502c6a43f3aea5a28de9f5abd6912b3859619895fe9c4"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+analysis,metric,value
+SORRY M25→M50,ROC AUC,0.907
+SORRY M50→M75,ROC AUC,0.922
+SORRY M75→M100,ROC AUC,0.939
+SORRY margin,ROC AUC,0.939
+SORRY metadata,ROC AUC,0.727
+SORRY margin+metadata,ROC AUC,0.932
+Qwen2.5-3B endpoint change,ROC AUC,0.975
+Qwen2.5-3B first crossing,Spearman rho,0.823
+SmolLM2-360M endpoint change,ROC AUC,0.971
+SmolLM2-360M first crossing,Spearman rho,0.863

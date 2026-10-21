@@ -1,0 +1,79 @@
+{
+  "version": "R141",
+  "runner_sha256": "898815090646c1247a324e212076f6091e8069c5bc16637278167269c2eeddcb",
+  "complete_batches": [
+    {
+      "model": "qwen",
+      "block": 0
+    },
+    {
+      "model": "qwen",
+      "block": 1
+    },
+    {
+      "model": "qwen",
+      "block": 2
+    },
+    {
+      "model": "qwen",
+      "block": 3
+    },
+    {
+      "model": "smollm",
+      "block": 0
+    },
+    {
+      "model": "smollm",
+      "block": 1
+    },
+    {
+      "model": "smollm",
+      "block": 2
+    },
+    {
+      "model": "smollm",
+      "block": 3
+    }
+  ],
+  "candidate_n": 8,
+  "shortlist_n": 4,
+  "grid": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "pilot": 0.05,
+  "alpha": 0.1,
+  "new_accuracy_floor": 0.25,
+  "new_gain_floor": 0.15,
+  "cost_budget_unit": "candidate-record observation; GPU seconds and token costs reported separately",
+  "null_results": "Report all. Abstention never counts as successful useful update. No outcome-based stopping or candidate re-selection.",
+  "historical_data": "Previously observed benchmark data; new incumbent/candidate trajectories and within-run holdouts. No claim of newly collected independent task distribution.",
+  "pre_outcome_setup_fix": {
+    "date_utc": "2026-09-21T00:02:41.629903+00:00",
+    "previous_runner_sha256": "9ab0ce9124fbcac845d9b368a43ff231c1bc0b135504936d735a25d305f26fd7",
+    "changes": [
+      "Hyphenated BFCL checker alias to avoid undocumented underscore-to-slash lookup",
+      "Pass model and block through CLI to avoid log redaction of ordinary numerals"
+    ],
+    "scientific_rules_changed": false
+  },
+  "alias_fixed_runner_sha256": "8a8a047c69e401fcf505f5316c6da737612f11d8c48828404598bbba68790995",
+  "numerical_fix": {
+    "previous_hash": "8a8a047c69e401fcf505f5316c6da737612f11d8c48828404598bbba68790995",
+    "qwen_dtype": "bfloat16",
+    "smollm_dtype": "float16",
+    "reason": "Qwen float16 source training raised nonfinite-loss assertion before any endpoint",
+    "existing_smollm_batch1_kept": true
+  },
+  "pre_final_archive_runner_sha256": "ce3b16432c0ef9428f4dd4e0714d306ec669951c68ee8843d1a439200e6bf741",
+  "persistence_only_change": "Repeat non-checkpoint JSON scientific record at completion; no scientific rule changed",
+  "prior_runner_sha256": "85af0133655af72d6f2339e5b8426a2961051e0e074d0f0b553bedbabb407737",
+  "resume_fix": {
+    "reason": "A transformer attention module exposes a numeric scaling attribute; restrict lookup to LoRA dictionary",
+    "reuse": "All existing weights, split manifests, incumbent outcomes and full-strength capability outcomes are recovered by SHA256 from original private jobs",
+    "timing_limit": "Source-stage endpoint times were not flushed before crash; exact observation/token counts and training times retained, no invented whole-pipeline runtime comparison",
+    "access": "Official authenticated Jobs log endpoint; pinned Transformers hub client does not support latest tail keyword"
+  }
+}

@@ -1,0 +1,6 @@
+item,request,status,location
+R1,Nature/Science scientific positioning,Assessment completed; broad claim still unsupported,R142_REVISION_REPORT_CN.md
+R2,Explicit executable algorithms,"Completed: four algorithms, code and scoped proofs",manuscript/R142_ALGORITHMS.tex
+R3,Extended Data and visual encodings,"Completed: ten displays, original panels retained",manuscript/R142_EXTENDED_DATA.tex
+R4,Bidirectional claim/support links,Completed and checked in final link audit,audit/R142_link_audit.json
+R5,Substantive empirical and theoretical work,Completed within disclosed experiment scope; independent deployment evidence remains open,results/compatibility_analysis/SUMMARY.json

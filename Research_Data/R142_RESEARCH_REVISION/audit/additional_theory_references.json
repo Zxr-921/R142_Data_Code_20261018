@@ -1,0 +1,121 @@
+[
+  {
+    "doi": "10.1137/1.9781611971262",
+    "title": [
+      "Nonnegative Matrices in the Mathematical Sciences"
+    ],
+    "authors": [
+      {
+        "given": "Abraham",
+        "family": "Berman",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Technion-Israel Institute of Technology",
+            "place": [
+              "Israel"
+            ]
+          },
+          {
+            "name": "Wake Forest University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert J.",
+        "family": "Plemmons",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Technion-Israel Institute of Technology",
+            "place": [
+              "Israel"
+            ]
+          },
+          {
+            "name": "Wake Forest University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "page": null,
+    "year": {
+      "date-parts": [
+        [
+          1994,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "doi": "10.1214/aoms/1177729032",
+    "title": [
+      "Equivalent Comparisons of Experiments"
+    ],
+    "authors": [
+      {
+        "given": "David",
+        "family": "Blackwell",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "page": "265-272",
+    "year": {
+      "date-parts": [
+        [
+          1953,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "doi": "10.1007/978-1-4684-2001-2_9",
+    "title": [
+      "Reducibility among Combinatorial Problems"
+    ],
+    "authors": [
+      {
+        "given": "Richard M.",
+        "family": "Karp",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "page": "85-103",
+    "year": {
+      "date-parts": [
+        [
+          1972
+        ]
+      ]
+    }
+  }
+]

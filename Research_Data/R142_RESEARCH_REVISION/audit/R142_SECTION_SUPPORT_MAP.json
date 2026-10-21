@@ -1,0 +1,709 @@
+[
+  {
+    "section": "What is protected, and what is observed",
+    "label": "support:R142_CURRENT_THEORY:1",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "Direction and finite movement",
+    "label": "support:R142_CURRENT_THEORY:2",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "A finite-data certificate after choosing a candidate and strength",
+    "label": "support:R142_CURRENT_THEORY:3",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "Repair under both an intervention budget and uncertain effects",
+    "label": "support:R142_CURRENT_THEORY:4",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "How much validation evidence is necessary?",
+    "label": "support:R142_CURRENT_THEORY:5",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "Count reusable observations once",
+    "label": "support:R142_CURRENT_THEORY:6",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "Repeated releases and valid reuse",
+    "label": "support:R142_CURRENT_THEORY:7",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "Numerical checks and their exact evidentiary role",
+    "label": "support:R142_CURRENT_THEORY:8",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "Corrections governing the preserved technical record",
+    "label": "support:R142_CURRENT_THEORY:9",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_CURRENT_THEORY.tex"
+  },
+  {
+    "section": "Sources, assumptions and access requirements",
+    "label": "support:R142_ASSUMPTIONS:1",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_ASSUMPTIONS.tex"
+  },
+  {
+    "section": "A complete candidate-selection experiment",
+    "label": "support:R142_CONTROL_SUPPLEMENT:1",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_CONTROL_SUPPLEMENT.tex"
+  },
+  {
+    "section": "Retrospective audit of required ToolSandbox answers",
+    "label": "support:R142_R138_ENDPOINT_AUDIT:1",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_R138_ENDPOINT_AUDIT.tex"
+  },
+  {
+    "section": "Historical source map and reconstruction status",
+    "label": "support:R142_SUPPORTING_RECORD:1",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 1 recovery: exact preservation and first crossing",
+    "label": "support:R142_SUPPORTING_RECORD:2",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 2 recovery: signed joint recovery and impossibility",
+    "label": "support:R142_SUPPORTING_RECORD:3",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 3 recovery: model-changing training and later certification",
+    "label": "support:R142_SUPPORTING_RECORD:4",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 4 recovery: repeated releases and carried state",
+    "label": "support:R142_SUPPORTING_RECORD:5",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 5 recovery: data order and noncommuting training updates",
+    "label": "support:R142_SUPPORTING_RECORD:6",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 6 recovery: paid model tiers as a switching-region example",
+    "label": "support:R142_SUPPORTING_RECORD:7",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 7 recovery: controlled causal intervention and prospective prediction",
+    "label": "support:R142_SUPPORTING_RECORD:8",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical fixed-direction mechanism tests",
+    "label": "support:R142_SUPPORTING_RECORD:9",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Transformer optimizer repair and shared-parameter interference",
+    "label": "support:R142_SUPPORTING_RECORD:10",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Frozen cross-model, multi-seed Transformer replication",
+    "label": "support:R142_SUPPORTING_RECORD:11",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 8 recovery: unified solution and tractability map",
+    "label": "support:R142_SUPPORTING_RECORD:12",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 9 recovery: decision-induced observations and identifiability",
+    "label": "support:R142_SUPPORTING_RECORD:13",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical Note 10 recovery: sequential decisions and Bellman boundaries",
+    "label": "support:R142_SUPPORTING_RECORD:14",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Continuous-action and tolerance-based preservation",
+    "label": "support:R142_SUPPORTING_RECORD:15",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Shared representations and parameter-frontier geometry",
+    "label": "support:R142_SUPPORTING_RECORD:16",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Pilot identification of intervention effects",
+    "label": "support:R142_SUPPORTING_RECORD:17",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Train--then--certify characteristic information beyond the Gaussian example",
+    "label": "support:R142_SUPPORTING_RECORD:18",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "End-to-end information accounting: pilot, intervention and final certificate",
+    "label": "support:R142_SUPPORTING_RECORD:19",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Empirical release-family robustness archive",
+    "label": "support:R142_SUPPORTING_RECORD:20",
+    "main_label": "main:joint",
+    "main_support": "Result 1: paired task outcomes",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Human-labelled safety and reviewer non-portability archive",
+    "label": "support:R142_SUPPORTING_RECORD:21",
+    "main_label": "main:joint",
+    "main_support": "Result 1: paired task outcomes",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Asset-level reproducibility and claim boundary",
+    "label": "support:R142_SUPPORTING_RECORD:22",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Historical content classification after R128",
+    "label": "support:R142_SUPPORTING_RECORD:23",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Reading map and claim boundary",
+    "label": "support:R142_SUPPORTING_RECORD:24",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Release-level turnover",
+    "label": "support:R142_SUPPORTING_RECORD:25",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Boundary-crossing theory",
+    "label": "support:R142_SUPPORTING_RECORD:26",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Prospective boundary prediction",
+    "label": "support:R142_SUPPORTING_RECORD:27",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Fixed-direction mechanism tests",
+    "label": "support:R142_SUPPORTING_RECORD:28",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Joint recovery under signed interventions",
+    "label": "support:R142_SUPPORTING_RECORD:29",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Exact-affine controlled intervention",
+    "label": "support:R142_SUPPORTING_RECORD:30",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Nonlinear neural robustness",
+    "label": "support:R142_SUPPORTING_RECORD:31",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Actual-optimizer shared-parameter repair",
+    "label": "support:R142_SUPPORTING_RECORD:32",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Pre-frozen cross-model, multi-seed replication",
+    "label": "support:R142_SUPPORTING_RECORD:33",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Repeated-release history as supporting evidence",
+    "label": "support:R142_SUPPORTING_RECORD:34",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "General decision preservation under a model update",
+    "label": "support:R142_SUPPORTING_RECORD:35",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Nonlinear update paths and higher-order failure modes",
+    "label": "support:R142_SUPPORTING_RECORD:36",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Fixed-confidence information at a decision boundary",
+    "label": "support:R142_SUPPORTING_RECORD:37",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Joint recovery geometry",
+    "label": "support:R142_SUPPORTING_RECORD:38",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Partial recovery and discrete intervention libraries",
+    "label": "support:R142_SUPPORTING_RECORD:39",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Robust recovery when the effect map is estimated",
+    "label": "support:R142_SUPPORTING_RECORD:40",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Pilot intervention identification",
+    "label": "support:R142_SUPPORTING_RECORD:41",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Nonlinear recovery and path-integrated effects",
+    "label": "support:R142_SUPPORTING_RECORD:42",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Shared-parameter interference and repair trade-offs",
+    "label": "support:R142_SUPPORTING_RECORD:43",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Architecture-independent decision semantics",
+    "label": "support:R142_SUPPORTING_RECORD:44",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Continuous-action extension",
+    "label": "support:R142_SUPPORTING_RECORD:45",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Repeated model releases as margin dynamics",
+    "label": "support:R142_SUPPORTING_RECORD:46",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Data order and curriculum effects",
+    "label": "support:R142_SUPPORTING_RECORD:47",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Decision-induced observations as an optional extension",
+    "label": "support:R142_SUPPORTING_RECORD:48",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Sequential decision systems: Bellman boundary form",
+    "label": "support:R142_SUPPORTING_RECORD:49",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Paid model tiers as a boundary example",
+    "label": "support:R142_SUPPORTING_RECORD:50",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Empirical archive: controlled open-weight trajectory",
+    "label": "support:R142_SUPPORTING_RECORD:51",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Empirical archive: boundary localization",
+    "label": "support:R142_SUPPORTING_RECORD:52",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Empirical archive: fixed-direction interventions",
+    "label": "support:R142_SUPPORTING_RECORD:53",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Empirical archive: exact-affine intervention study",
+    "label": "support:R142_SUPPORTING_RECORD:54",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Empirical archive: nonlinear neural robustness",
+    "label": "support:R142_SUPPORTING_RECORD:55",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Empirical archive: actual optimizer and frozen replication",
+    "label": "support:R142_SUPPORTING_RECORD:56",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Frontier-family turnover archive",
+    "label": "support:R142_SUPPORTING_RECORD:57",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "History dependence: retained only as a secondary diagnostic",
+    "label": "support:R142_SUPPORTING_RECORD:58",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Supporting migration-work reconstruction: validate, repair and reopen",
+    "label": "support:R142_SUPPORTING_RECORD:59",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Minimality of the margin vector for prospective affine crossings",
+    "label": "support:R142_SUPPORTING_RECORD:60",
+    "main_label": "main:direction",
+    "main_support": "Result 2: direction and preservation",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Training versus later certification",
+    "label": "support:R142_SUPPORTING_RECORD:61",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "End-to-end pilot, intervention and certification information",
+    "label": "support:R142_SUPPORTING_RECORD:62",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Multi-release recovery and no-return conditions",
+    "label": "support:R142_SUPPORTING_RECORD:63",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Exact tractability map retained from the earlier Supplement",
+    "label": "support:R142_SUPPORTING_RECORD:64",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Relationship to neighbouring model-update methods",
+    "label": "support:R142_SUPPORTING_RECORD:65",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Detailed experimental protocols retained for replication",
+    "label": "support:R142_SUPPORTING_RECORD:66",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Data provenance and claim-level reproducibility",
+    "label": "support:R142_SUPPORTING_RECORD:67",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Partial-information preservation certificates",
+    "label": "support:R142_SUPPORTING_RECORD:68",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Finite repeated-run reliability rules",
+    "label": "support:R142_SUPPORTING_RECORD:69",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "A shared system reliability budget",
+    "label": "support:R142_SUPPORTING_RECORD:70",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Recovery value, shadow prices and sensitivity",
+    "label": "support:R142_SUPPORTING_RECORD:71",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Exact partial recovery in separable subclasses",
+    "label": "support:R142_SUPPORTING_RECORD:72",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Summary of tractable mathematical cases",
+    "label": "support:R142_SUPPORTING_RECORD:73",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Additional release-family robustness",
+    "label": "support:R142_SUPPORTING_RECORD:74",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Human-labelled safety release check",
+    "label": "support:R142_SUPPORTING_RECORD:75",
+    "main_label": "main:joint",
+    "main_support": "Result 1: paired task outcomes",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Recovered transformer-scale prospective intervention geometry",
+    "label": "support:R142_SUPPORTING_RECORD:76",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Recovered update-qualification evidence",
+    "label": "support:R142_SUPPORTING_RECORD:77",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Recovered same-case evidence beyond the frontier release ledgers",
+    "label": "support:R142_SUPPORTING_RECORD:78",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Recovered reviewer-portability and human-gold safety evidence",
+    "label": "support:R142_SUPPORTING_RECORD:79",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Recovered repeated-release history diagnostic",
+    "label": "support:R142_SUPPORTING_RECORD:80",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Recovered sequential and architecture-general supporting experiments",
+    "label": "support:R142_SUPPORTING_RECORD:81",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Recovered historical learning-comparator block",
+    "label": "support:R142_SUPPORTING_RECORD:82",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "R137 integration relative to the historical 154-page SI",
+    "label": "support:R142_SUPPORTING_RECORD:83",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Prospective effect transfer, official-BFCL confirmation and stateful execution (R132--R138)",
+    "label": "support:R142_SUPPORTING_RECORD:84",
+    "main_label": "main:repair",
+    "main_support": "Result 3: feasible repair",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Asset and reproducibility map",
+    "label": "support:R142_SUPPORTING_RECORD:85",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Scope and future extensions",
+    "label": "support:R142_SUPPORTING_RECORD:86",
+    "main_label": "main:methods",
+    "main_support": "Methods: scope, assumptions and provenance",
+    "file": "R142_SUPPORTING_RECORD.tex"
+  },
+  {
+    "section": "Exact finite-work decisions and a tractable deployment plan",
+    "label": "support:R142_DEPLOYMENT_THEORY:1",
+    "main_label": "main:information",
+    "main_support": "Result 4: evidence and deployment work",
+    "file": "R142_DEPLOYMENT_THEORY.tex"
+  },
+  {
+    "section": "Compatibility training and complete old-task transitions",
+    "label": "support:R142_COMPATIBILITY_SUPPLEMENT:1",
+    "main_label": "main:control",
+    "main_support": "Result 5: complete update evaluation",
+    "file": "R142_COMPATIBILITY_SUPPLEMENT.tex"
+  },
+  {
+    "section": "Paired reevaluation and an explicit batch-composition control",
+    "label": "support:R142_PAIRED_RECORDS:1",
+    "main_label": "main:joint",
+    "main_support": "Result 1: paired outcomes and execution control",
+    "file": "R142_PAIRED_RECORDS.tex"
+  }
+]

@@ -1,0 +1,5 @@
+candidate,strength,new_success_n,new_n,old_loss_n,protected_n
+U1,0.25,10,60,2,61
+U1,1.0,23,60,17,61
+U4,0.25,9,60,3,61
+U4,1.0,21,60,32,61

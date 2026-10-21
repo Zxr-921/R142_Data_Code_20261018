@@ -1,0 +1,50 @@
+[
+  {
+    "run": "qwen_batch1",
+    "id": "6ab0925551992417dfcce765",
+    "url": "https://huggingface.co/jobs/jianlau7550/6ab0925551992417dfcce765",
+    "timeout_seconds": 3600
+  },
+  {
+    "run": "smollm_batch1",
+    "id": "6ab0926051992417dfcce767",
+    "url": "https://huggingface.co/jobs/jianlau7550/6ab0926051992417dfcce767",
+    "timeout_seconds": 3600
+  },
+  {
+    "run": "qwen_batch2",
+    "id": "6ab0944251992417dfcce790",
+    "url": "https://huggingface.co/jobs/jianlau7550/6ab0944251992417dfcce790",
+    "timeout_seconds": 3600
+  },
+  {
+    "run": "qwen_batch3",
+    "id": "6ab0944c52d0dbd7f1d76ca5",
+    "url": "https://huggingface.co/jobs/jianlau7550/6ab0944c52d0dbd7f1d76ca5",
+    "timeout_seconds": 3600
+  },
+  {
+    "run": "qwen_batch4",
+    "id": "6ab0945752d0dbd7f1d76ca9",
+    "url": "https://huggingface.co/jobs/jianlau7550/6ab0945752d0dbd7f1d76ca9",
+    "timeout_seconds": 3600
+  },
+  {
+    "run": "smollm_batch2",
+    "id": "6ab0946351992417dfcce796",
+    "url": "https://huggingface.co/jobs/jianlau7550/6ab0946351992417dfcce796",
+    "timeout_seconds": 3600
+  },
+  {
+    "run": "smollm_batch3",
+    "id": "6ab0946d51992417dfcce79a",
+    "url": "https://huggingface.co/jobs/jianlau7550/6ab0946d51992417dfcce79a",
+    "timeout_seconds": 3600
+  },
+  {
+    "run": "smollm_batch4",
+    "id": "6ab0947852d0dbd7f1d76cbf",
+    "url": "https://huggingface.co/jobs/jianlau7550/6ab0947852d0dbd7f1d76cbf",
+    "timeout_seconds": 3600
+  }
+]

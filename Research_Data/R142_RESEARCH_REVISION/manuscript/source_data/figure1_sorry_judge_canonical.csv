@@ -1,0 +1,5 @@
+checkpoint,test_records,strict_10of10_groups,accuracy
+M25,4400,14,0.7118
+M50,4400,37,0.7775
+M75,4400,42,0.7825
+M100,4400,26,0.7561
